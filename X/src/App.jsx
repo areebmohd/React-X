@@ -1,6 +1,8 @@
+import Leftbar from "./components/leftbar"
 function App() {
   return (
     <>
+    <Leftbar/>
     </>
   )
 }
