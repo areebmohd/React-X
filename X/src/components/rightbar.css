@@ -1,0 +1,117 @@
+.rightbar{
+    width: 35%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.rightbar .searchBox{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.170);
+    padding: 13px;
+    border-radius: 30px;
+    width: 70%;
+}
+.rightbar span svg{
+    fill: rgba(255, 255, 255, 0.418);
+  }
+.rightbar span input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.rightbar .ad{
+    border: 1px solid rgba(255, 255, 255, 0.170);
+    border-radius: 20px;
+    padding: 20px;
+    width: 70%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.rightbar .ad button{
+    width: 150px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: rgb(0, 170, 255);
+    font-weight: bold;
+    color: white;
+    font-size: large;
+}
+.rightbar .ad button:hover{
+    background-color: rgba(0, 170, 255, 0.860);
+    cursor: pointer;
+}
+.rightbar .whoToFollow{
+    border: 1px solid rgba(255, 255, 255, 0.170);
+    border-radius: 20px;
+    padding: 20px;
+    width: 70%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.rightbar .accountToFollow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rightbar .accountToFollow .account{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.rightbar .account svg{
+    fill: white;
+}
+.rightbar .account p{
+    color: rgba(255, 255, 255, 0.444);
+    font-size: small;
+}
+.rightbar .accountToFollow button{
+    width: 80px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 20px;
+}
+.rightbar .accountToFollow button:hover{
+    background-color: rgba(255, 255, 255, 0.890);
+    cursor: pointer;
+}
+.rightbar .whoToFollow .showMore{
+    color: rgba(30, 155, 240, 0.935);
+    cursor: pointer;
+}
+.rightbar .footer{
+    font-size: small;
+    color: rgba(255, 255, 255, 0.444);
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.rightbar .footer span{
+    display: flex;
+    gap: 20px;
+}
+.rightbar .footer span p{
+    color: rgba(225, 223, 254, 0.444);
+}

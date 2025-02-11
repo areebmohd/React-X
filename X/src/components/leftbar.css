@@ -52,6 +52,9 @@
     font-size: large;
     cursor: pointer;
 }
+.createButton:hover{
+    background-color: rgba(0, 170, 255, 0.860);
+}
 .leftbar .account{
     display: flex;
     align-items: center;
@@ -60,12 +63,17 @@
     padding: 15px;
     border-radius: 30px;
 }
-.account:hover{
+.leftbar .account:hover{
     background-color: #33333376;
     cursor: pointer;
 }
-.accountLeft{
+.leftbar .accountLeft{
     display: flex;
     align-items: center;
     gap: 10px;
 }
+.leftbar .accountLeft p{
+    color: rgba(255, 255, 255, 0.444);
+    font-size: small;
+}
+
