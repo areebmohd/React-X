@@ -24,6 +24,12 @@
     gap: 20px;
     width: fit-content;
 }
+.leftbar ul li .link{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+}
 .leftbar svg{
     fill: white;
 }

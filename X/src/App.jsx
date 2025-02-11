@@ -1,16 +1,18 @@
+import "./app.css"
 import Leftbar from "./components/leftbar"
 import Rightbar from "./components/rightbar"
-import { BrowserRouter } from "react-router-dom"
-import "./app.css"
-import Mainbar from "./components/mainbar"
+import HomePage from "./components/homePage"
+import ExplorePage from "./components/explorePage"
+import { Routes, Route } from "react-router-dom"
 
 function App() {
   return (
     <div className="app">
       <Leftbar />
-      <BrowserRouter>
-        <Mainbar />
-      </BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/explorePage" element={<ExplorePage />} />
+      </Routes>
       <Rightbar />
     </div>
   )
