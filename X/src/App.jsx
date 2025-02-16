@@ -7,6 +7,8 @@ import { Routes, Route } from "react-router-dom"
 import { useState } from "react"
 import ContentMenu from "./contentMenu"
 import Originals from "./components/originals"
+import Trending from "./components/trending"
+import Videos from "./components/videos"
 
 function App() {
 
@@ -18,6 +20,8 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage contentMenu={contentMenu} setContentMenu={setContentMenu}/>} />
         <Route path="/originals" element={<Originals contentMenu={contentMenu} setContentMenu={setContentMenu}/>} />
+        <Route path="/trending" element={<Trending contentMenu={contentMenu} setContentMenu={setContentMenu}/>} />
+        <Route path="/videos" element={<Videos contentMenu={contentMenu} setContentMenu={setContentMenu}/>} />
         <Route path="/explorePage" element={<ExplorePage />} />
       </Routes>
       <Rightbar />

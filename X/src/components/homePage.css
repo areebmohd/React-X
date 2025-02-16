@@ -44,6 +44,14 @@
     align-items: center;
     gap: 10px;
 }
+.homePage .titleLeft div h4{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.homePage .titleLeft div h4 svg{
+    fill: rgba(29,155,240,1);
+}
 .homePage .titleLeft p{
     color: rgba(113,118,123,1);
     font-size: 14px;
@@ -54,7 +62,7 @@
 }
 .homePage .contentPic{
     border-radius: 20px;
-    height: 500px;
+    max-height: 600px;
     width: 100%;
     object-fit: cover;
 }
