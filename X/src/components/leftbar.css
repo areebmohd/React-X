@@ -33,9 +33,6 @@
     gap: 20px;
     text-decoration: none;
 }
-.leftbar svg{
-    fill: white;
-}
 .leftbar ul li:hover{
     background-color: #33333376;
     cursor: pointer;

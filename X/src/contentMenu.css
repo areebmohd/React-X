@@ -1,0 +1,49 @@
+.contentMenu{
+    background-color: black;
+    height: 100vh;
+    width: 25%;
+    padding-left: 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+.contentMenu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contentMenu ul li{
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 30px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.contentMenu ul li .svg2{
+    padding-left: 5px;
+    padding-right: 2px;
+}
+.contentMenu ul li .link{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.contentMenu ul li:hover{
+    background-color: #33333376;
+    cursor: pointer;
+}
+.contentMenu ul li p{
+    font-size: 1.2rem;
+}
+.contentMenu .createList{
+    font-size: large;
+    color: #0299fe;
+    cursor: pointer;
+    margin-top: 30px;
+}

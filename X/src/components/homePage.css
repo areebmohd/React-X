@@ -22,6 +22,7 @@
 }
 .homePage svg {
     fill: white;
+    cursor: pointer;
 }
 .homePage .posts{
     display: flex;
@@ -67,6 +68,9 @@
     align-items: center;
     gap: 5px;
     cursor: pointer;
+}
+.homePage .posts svg:hover{
+    fill: rgba(29, 155, 240, 1);
 }
 .homePage .icons .icon:hover p,
 .homePage .icons .icon:hover svg {
