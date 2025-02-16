@@ -20,10 +20,6 @@
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
 }
-.homePage svg {
-    fill: white;
-    cursor: pointer;
-}
 .homePage .posts{
     display: flex;
     flex-direction: column;
@@ -55,6 +51,12 @@
 .homePage .titleLeft img{
     height: 45px;
     border-radius: 50%;
+}
+.homePage .contentPic{
+    border-radius: 20px;
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
 }
 .homePage .icons{
     display: flex;

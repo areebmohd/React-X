@@ -6,6 +6,7 @@ import ExplorePage from "./components/explorePage"
 import { Routes, Route } from "react-router-dom"
 import { useState } from "react"
 import ContentMenu from "./contentMenu"
+import Originals from "./components/originals"
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       {!contentMenu ? <Leftbar /> : <ContentMenu />}
       <Routes>
         <Route path="/" element={<HomePage contentMenu={contentMenu} setContentMenu={setContentMenu}/>} />
+        <Route path="/originals" element={<Originals contentMenu={contentMenu} setContentMenu={setContentMenu}/>} />
         <Route path="/explorePage" element={<ExplorePage />} />
       </Routes>
       <Rightbar />
