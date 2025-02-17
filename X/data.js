@@ -50,7 +50,7 @@ export const usernames  = ['@elonmusk • 1h','@DongWookChung2 • 2h','@BRICSin
 export const content = ['If ANY judge ANYWHERE can stop EVERY Presidential action EVERYWHERE, we do NOT live in a democracy.',
                         'More community updates: <br/><br/> - All community posts can now be pinned to profile.<br/>- Premium users can now join more communities, up to 50.<br/>- Community admin/mod/member badge is now visible on Android',
                         'JUST IN: Russian President Putin and US President Trump could meet in Saudi Arabia by the end of this month.',
-                        'how do you respond when someone says thank you? idk why but saying “you’re welcome” feels wrong/rude so I always say “no problem”',
+                        'How do you respond when someone says thank you? idk why but saying “you’re welcome” feels wrong/rude so I always say “no problem”',
                         'Redline (2009)',
                         'Duolingo has the best marketing and social media team in the world!',
                         'Time it took to reach a $100 billion valuation: <br/><br/>Google: 7 years <br/>Facebook: 8 years <br/>Amazon: 16 years <br/>Tesla: 17 years <br/>Microsoft: 20 years '
@@ -88,3 +88,17 @@ export const vcontent = ['雪のバラの作り方、これはお洒落だ…',
     'Niagara Falls',
     'What If You Swallow A Live Fish? 🤔'
 ]
+
+export const vinepics = [jjpic,mspic,bbpic,sgpic,zdfpic,fidiasvideo,rapic]
+export const vineprofilePictures = [jj,ms,bb,sg,zdf,fidias,ra]
+export const vinenames = ['癒しのお届け便 📦【動物】','Marvel Studios','Buitengebieden','Science Girl','Zack D. Films','Fidias Panayiotou','Retro Anime']
+export const vineusernames  = ['@Bakutan_bot1','@MarvelStudios','@buitengebieden','@gunsnrosesgirl3','@zackdfilms1','@fidias0','@retro_twt']
+export const vinecontent = ['雪のバラの作り方、これはお洒落だ…',
+    'Marvel Studios’ Thunderbolts new trailer.',
+    'Octopus found a new house.. 😊',
+    'Niagara Falls',
+    'What If You Swallow A Live Fish? 🤔',
+    'Social Media Platforms Could Be Manipulating You',
+    'Redline (2009)'
+]
+

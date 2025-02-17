@@ -15,7 +15,7 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 8px;
 }
 .leftbar ul li{
     padding: 8px;

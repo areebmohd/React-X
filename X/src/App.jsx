@@ -9,6 +9,8 @@ import ContentMenu from "./contentMenu"
 import Originals from "./components/originals"
 import Trending from "./components/trending"
 import Videos from "./components/videos"
+import Vines from "./components/vines"
+import Spaces from "./components/spaces"
 
 function App() {
 
@@ -22,6 +24,8 @@ function App() {
         <Route path="/originals" element={<Originals contentMenu={contentMenu} setContentMenu={setContentMenu}/>} />
         <Route path="/trending" element={<Trending contentMenu={contentMenu} setContentMenu={setContentMenu}/>} />
         <Route path="/videos" element={<Videos contentMenu={contentMenu} setContentMenu={setContentMenu}/>} />
+        <Route path="/vines" element={<Vines contentMenu={contentMenu} setContentMenu={setContentMenu}/>} />
+        <Route path="/spaces" element={<Spaces contentMenu={contentMenu} setContentMenu={setContentMenu}/>} />
         <Route path="/explorePage" element={<ExplorePage />} />
       </Routes>
       <Rightbar />
