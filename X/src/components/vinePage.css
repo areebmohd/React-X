@@ -32,7 +32,7 @@
     background-color: rgba(5, 5, 5, 0.820);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
-    z-index: 10;
+    z-index: 11;
 }
 
 .vinePage .videoPosts {
@@ -57,6 +57,40 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-y: auto;
+}
+
+.vinePage .vineTopics{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px; 
+    overflow-x: auto;
+    z-index: 10;
+}
+
+.vineTopics::-webkit-scrollbar {
+    display: none;
+}
+
+.vineTopics {
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+
+.vinePage .vineTopics p{
+    min-width: fit-content;
+    font-weight: 650;
+    font-size: large;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.vinePage .vineTopics .mainTopic{
+    opacity: 1;
 }
 
 .vinePage .vineVideo {
@@ -117,7 +151,7 @@
 .vinePage .icons p{
     font-size: 13px;
 }
-.vinePage svg:hover{
+.vinePage .videoPost svg:hover{
     fill: rgba(29, 155, 240, 1);
 }
 .vinePage .icons .icon:hover p,

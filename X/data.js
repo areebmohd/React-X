@@ -102,3 +102,13 @@ export const vinecontent = ['雪のバラの作り方、これはお洒落だ…
     'Redline (2009)'
 ]
 
+export const spaceContent = ['Live at SpaceX for Starship Launch',
+    'Talking about upcoming features for Communities',
+    'Dollar vs BRICS and coversation on World War 3',
+    'Discussing new features for Livestreams',
+    'One piece anime 2025 talk',
+    "Bored, Let's talk",
+    'Emergency meeting for subscribers'
+]
+export const spacenames = ['Elon','Dongwook','BRICS','Nate','Retro','Nima','Statistics','Cristiano','Dragon','Duolingo','Zack','Fidias','MrBeast','ShahRukh','Speed','Marvel']
+export const spacepics = [elon, dongwook, bn, nate, ra, nima, wos, cr, db, duo, zdf, fidias,mb,srk,speed,ms]

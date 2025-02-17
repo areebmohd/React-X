@@ -79,7 +79,7 @@
     gap: 5px;
     cursor: pointer;
 }
-.homePage .posts svg:hover{
+.homePage .posts .title svg:hover{
     fill: rgba(29, 155, 240, 1);
 }
 .homePage .icons .icon:hover p,
@@ -103,4 +103,42 @@
 .homePage .icons p{
     color: rgba(113,118,123,1);
     font-size: 13px;
+}
+.homePage .space {
+    background-image: linear-gradient(to right,blue,blueviolet); 
+    padding: 20px; 
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    text-decoration: none;
+}
+.homePage .space div{
+    display: flex; 
+    align-items: center;
+    gap: 10px;
+}
+.homePage .space div h4{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.homePage .space div p{
+    font-size: small;
+    background-color: rgba(255, 255, 255, 0.355);
+    padding: 5px;
+    border-radius: 5px;
+}
+.homePage .space button{
+    background-color: rgba(255, 255, 255, 0.330);
+    padding: 15px;
+    font-size: large;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.homePage .space button:hover{
+    background-color: rgba(255, 255, 255, 0.650);
+    cursor: pointer;
 }
