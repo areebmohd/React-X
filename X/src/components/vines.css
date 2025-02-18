@@ -86,11 +86,12 @@
     font-weight: 650;
     font-size: large;
     cursor: pointer;
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
 .vinePage .vineTopics .mainTopic{
     opacity: 1;
+    font-size: larger;
 }
 
 .vinePage .vineVideo {

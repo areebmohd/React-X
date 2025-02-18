@@ -112,3 +112,13 @@ export const spaceContent = ['Live at SpaceX for Starship Launch',
 ]
 export const spacenames = ['Elon','Dongwook','BRICS','Nate','Retro','Nima','Statistics','Cristiano','Dragon','Duolingo','Zack','Fidias','MrBeast','ShahRukh','Speed','Marvel']
 export const spacepics = [elon, dongwook, bn, nate, ra, nima, wos, cr, db, duo, zdf, fidias,mb,srk,speed,ms]
+
+export const valueConverter = (value) => {
+    if(value>1000000){
+        return Math.floor(value/1000000)+'M';
+    }else if(value>1000){
+        return Math.floor(value/1000)+'K';
+    }else{
+        return value;
+    }
+}

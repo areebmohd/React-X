@@ -100,5 +100,6 @@
     padding-right: 15px;
     font-size: large;
     font-weight: bold;
+    font-family: monospace;
     cursor: pointer;
 }

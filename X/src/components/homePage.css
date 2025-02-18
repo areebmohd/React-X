@@ -6,6 +6,7 @@
     position: relative;
     left: 25%;
 }
+
 .homePage .topBar {
     display: flex;
     align-items: center;
@@ -20,11 +21,42 @@
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
 }
-.homePage .posts{
+
+.homePage .topics {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    padding-bottom: 0;
+    overflow-x: scroll;
+}
+
+.homePage .topic {
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: fit-content;
+    border: 1px solid rgba(255, 255, 255, 0.270);
+    border-radius: 20px;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+.topics::-webkit-scrollbar {
+    display: none;
+}
+
+.topics {
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+
+.homePage .posts {
     display: flex;
     flex-direction: column;
+    border-top: 1px solid rgba(255, 255, 255, 0.170);
 }
-.homePage .post{
+
+.homePage .post {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -32,104 +64,124 @@
     padding-right: 20px;
     padding-bottom: 10px;
     padding-top: 10px;
-    border-top: 1px solid rgba(255, 255, 255, 0.170);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.170);
 }
-.homePage .title{
+
+.homePage .title {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.homePage .titleLeft{
+
+.homePage .titleLeft {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.homePage .titleLeft div h4{
+
+.homePage .titleLeft div h4 {
     display: flex;
     align-items: center;
     gap: 3px;
 }
-.homePage .titleLeft div h4 svg{
-    fill: rgba(29,155,240,1);
+
+.homePage .titleLeft div h4 svg {
+    fill: rgba(29, 155, 240, 1);
 }
-.homePage .titleLeft p{
-    color: rgba(113,118,123,1);
+
+.homePage .titleLeft p {
+    color: rgba(113, 118, 123, 1);
     font-size: 14px;
 }
-.homePage .titleLeft img{
+
+.homePage .titleLeft img {
     height: 45px;
     border-radius: 50%;
 }
-.homePage .contentPic{
+
+.homePage .contentPic {
     border-radius: 20px;
     max-height: 600px;
     width: 100%;
     object-fit: cover;
 }
-.homePage .icons{
+
+.homePage .icons {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 5px;
     padding-right: 5px;
 }
-.homePage .icons .icon{
+
+.homePage .icons .icon {
     display: flex;
     align-items: center;
     gap: 5px;
     cursor: pointer;
 }
-.homePage .posts .title svg:hover{
+
+.homePage .posts .title svg:hover {
     fill: rgba(29, 155, 240, 1);
 }
+
 .homePage .icons .icon:hover p,
 .homePage .icons .icon:hover svg {
     color: rgba(29, 155, 240, 1);
     fill: rgba(29, 155, 240, 1);
 }
+
 .homePage .icons .repost:hover p,
 .homePage .icons .repost:hover svg {
     color: rgba(0, 186, 124, 1);
     fill: rgba(0, 186, 124, 1);
 }
+
 .homePage .icons .like:hover p,
 .homePage .icons .like:hover svg {
     color: rgba(249, 24, 128, 1);
     fill: rgba(249, 24, 128, 1);
 }
-.homePage .icons svg{
-    fill: rgba(113,118,123,1);
+
+.homePage .icons svg {
+    fill: rgba(113, 118, 123, 1);
 }
-.homePage .icons p{
-    color: rgba(113,118,123,1);
+
+.homePage .icons p {
+    color: rgba(113, 118, 123, 1);
     font-size: 13px;
 }
+
 .homePage .space {
-    background-image: linear-gradient(to right,blue,blueviolet); 
-    padding: 20px; 
+    background-image: linear-gradient(to right, blue, blueviolet);
+    padding: 20px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    gap: 10px; 
+    gap: 10px;
     text-decoration: none;
 }
-.homePage .space div{
-    display: flex; 
+
+.homePage .space div {
+    display: flex;
     align-items: center;
     gap: 10px;
 }
-.homePage .space div h4{
+
+.homePage .space div h4 {
     display: flex;
     align-items: center;
     gap: 3px;
 }
-.homePage .space div p{
+
+.homePage .space div p {
     font-size: small;
     background-color: rgba(255, 255, 255, 0.355);
     padding: 5px;
     border-radius: 5px;
 }
-.homePage .space button{
+
+.homePage .space button {
     background-color: rgba(255, 255, 255, 0.330);
     padding: 15px;
     font-size: large;
@@ -138,7 +190,8 @@
     font-weight: bold;
     margin-top: 20px;
 }
-.homePage .space button:hover{
+
+.homePage .space button:hover {
     background-color: rgba(255, 255, 255, 0.650);
     cursor: pointer;
 }
