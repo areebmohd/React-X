@@ -140,6 +140,9 @@
     align-items: center;
     gap: 20px;
 }
+.spaces2 .top div .link{
+    padding-top: 3px;
+}
 .spaces2 .top div h4{
     color: red;
     cursor: pointer;

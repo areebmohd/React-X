@@ -1,0 +1,104 @@
+.spaces3{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 15;
+}
+.spaces3 .top{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+}
+.spaces3 .top div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.spaces3 .top h4{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.spaces3 .top p{
+    font-size: small;
+    background-color: rgba(255, 255, 255, 0.355);
+    padding: 5px;
+    border-radius: 5px;
+    width: fit-content;
+}
+.spaces3 .top h4 svg{
+    fill: rgba(29,155,240,1);
+}
+.spaces3 .mid{
+    display: flex;
+    justify-content: space-around;
+}
+.spaces3 .mid .spaceVideos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.spaces3 .mid .spaceVideo{
+    height: 290px;
+    width: 600px;
+    border: 1px solid rgba(255, 255, 255, 0.170);
+    border-radius: 20px;
+    text-align: center;
+    align-content: center;
+    font-size: larger;
+}
+.spaces3 .mid div{
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+}
+.spaces3 .mid .people{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+    margin-right: 40px;
+}
+.spaces3 .mid .people h3{
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+.spaces3 .mid .people h3 svg{
+    fill: rgba(29,155,240,1);
+}
+.spaces3 .mid .people img{
+    height: 80px;
+    border-radius: 50%;
+}
+.spaces3 .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid rgba(255, 255, 255, 0.170);
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 20;
+    background-color: black;
+}
+.spaces3 .bottom button{
+    background-color: red;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+}
