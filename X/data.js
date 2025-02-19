@@ -43,6 +43,7 @@ import bbpic from './src/assets/bbpic.mp4'
 import jjpic from './src/assets/jjpic.mp4'
 import zdfpic from './src/assets/zdfpic.mp4'
 
+export const feednames = ['@elonmusk','@DongWookChung2','@BRICSinfo','@natemcgrady','@retro_twt','@nima_owji','@stats_feed']
 export const pics = ['','',bnpic,'',rapic,'','']
 export const profilePictures = [elon,dongwook,bn,nate,ra,nima,wos]
 export const names = ['Elon Musk','Dongwook','BRICS News','Nate','Retro Anime','Nima Owji','World of Statistics']
@@ -78,15 +79,15 @@ export const trcontent = ['$5,000,000 Prize<br/>50 World Records broken<br/>1,00
                         'A win and first goal after 40! ✌🏽'
 ]
 
-export const vpics = [jjpic,mspic,bbpic,sgpic,zdfpic]
-export const vprofilePictures = [jj,ms,bb,sg,zdf]
-export const vnames = ['癒しのお届け便 📦【動物】','Marvel Studios','Buitengebieden','Science Girl','Zack D. Films']
-export const vusernames  = ['@Bakutan_bot1 • 1h','@MarvelStudios • 2h','@buitengebieden • 23m','@gunsnrosesgirl3 • 2d','@zackdfilms1 • 3h']
-export const vcontent = ['雪のバラの作り方、これはお洒落だ…',
+export const vpics = [zdfpic,jjpic,mspic,bbpic,sgpic]
+export const vprofilePictures = [zdf,jj,ms,bb,sg]
+export const vnames = ['Zack D. Films','癒しのお届け便 📦【動物】','Marvel Studios','Buitengebieden','Science Girl']
+export const vusernames  = ['@zackdfilms1 • 3h','@Bakutan_bot1 • 1h','@MarvelStudios • 2h','@buitengebieden • 23m','@gunsnrosesgirl3 • 2d']
+export const vcontent = ['What If You Swallow A Live Fish? 🤔',
+    '雪のバラの作り方、これはお洒落だ…',
     'Not super. Not heroes. Not giving up.<br/><br/>Watch the new trailer for Marvel Studios’ Thunderbolts only in theaters May 2.',
     'Octopus found a new house.. 😊',
-    'Niagara Falls',
-    'What If You Swallow A Live Fish? 🤔'
+    'Niagara Falls'
 ]
 
 export const vinepics = [jjpic,mspic,bbpic,sgpic,zdfpic,fidiasvideo,rapic]

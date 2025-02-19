@@ -5,6 +5,9 @@
   font-family: sans-serif;
   color: white;
 }
+#root{
+  position: relative;
+}
 svg{
   fill: white;
   cursor: pointer;
