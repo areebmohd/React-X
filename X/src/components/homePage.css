@@ -30,7 +30,7 @@
     overflow-x: scroll;
 }
 
-.homePage .topics button{
+.homePage .topics button {
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.270);
     border-radius: 50%;
@@ -57,7 +57,7 @@
 
 .topics {
     -ms-overflow-style: none;
-    scrollbar-width: none; 
+    scrollbar-width: none;
 }
 
 .homePage .posts {
@@ -107,6 +107,20 @@
 .homePage .titleLeft img {
     height: 45px;
     border-radius: 50%;
+}
+
+.videoWrapper {
+    position: relative;
+}
+
+.playIcon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    fill: white;
+    opacity: 0.8;
 }
 
 .homePage .contentPic {

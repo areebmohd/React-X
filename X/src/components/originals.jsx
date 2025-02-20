@@ -1,7 +1,9 @@
 import './homePage.css'
 import { ogProfilePictures, ogNames, ogUsernames, ogContent, ogPics, valueConverter } from '../../data';
+import React, { useRef } from 'react';
 
 function Originals({ setContentMenu }) {
+    const videoRef = useRef(null);
     return (
         <div className="homePage">
             <div className="topBar">
@@ -44,12 +46,32 @@ function Originals({ setContentMenu }) {
                         {ogPics[index] && (
                             <div className="media">
                                 {ogPics[index].endsWith('.mp4') ? (
-                                    <video className="contentPic" controls>
-                                        <source src={ogPics[index]} type="video/mp4" />
-                                        Your browser does not support the video tag.
-                                    </video>
+                                    <div className="videoWrapper">
+                                        <video className="contentPic" ref={videoRef}>
+                                            <source src={ogPics[index]} type="video/mp4" />
+                                            Your browser does not support the video tag.
+                                        </video>
+                                        <svg
+                                            className="playIcon"
+                                            viewBox="0 0 60 61"
+                                            aria-hidden="true"
+                                            height="50px"
+                                            onClick={() => {
+                                                if (videoRef.current) {
+                                                    videoRef.current.play();
+                                                    videoRef.current.controls = true;
+                                                    videoRef.current.nextElementSibling.style.display = 'none';
+                                                }
+                                            }}
+                                        >
+                                            <g>
+                                                <circle cx="30" cy="30.4219" fill="#333333" opacity="0.6" r="30"></circle>
+                                                <path d="M22.2275 17.1971V43.6465L43.0304 30.4218L22.2275 17.1971Z" fill="white"></path>
+                                            </g>
+                                        </svg>
+                                    </div>
                                 ) : (
-                                    <img className="contentPic" src={ogPics[index]} alt="content" />
+                                    <img className="contentPic" src={ogPics[index]} alt="content"/>
                                 )}
                             </div>
                         )}
