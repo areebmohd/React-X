@@ -44,7 +44,7 @@ function HomePage({ setContentMenu }) {
                         className="playIcon"
                         viewBox="0 0 60 61"
                         aria-hidden="true"
-                        height="50px"
+                        height="60px"
                         onClick={() => {
                           if (videoRef.current) {
                             videoRef.current.play();

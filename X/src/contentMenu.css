@@ -50,3 +50,12 @@
     color: #0371bb;
     cursor: pointer;
 }
+@media (max-width:1000px){
+    .contentMenu{
+        width: 7%;
+        padding-left: 0;
+    }
+    .contentMenu p{
+        display: none;
+    }
+}

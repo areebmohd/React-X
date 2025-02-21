@@ -194,3 +194,8 @@
     position: absolute;
     bottom: 0;
 }
+@media (max-width:1000px){
+    .rightbar{
+        display: none;
+    }
+}

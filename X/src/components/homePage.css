@@ -219,3 +219,10 @@
     background-color: rgba(255, 255, 255, 0.650);
     cursor: pointer;
 }
+
+@media (max-width:1000px){
+    .homePage{
+        width: 93%;
+        left: 7%;
+    }
+}

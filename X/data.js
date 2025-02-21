@@ -43,24 +43,41 @@ import bbpic from './src/assets/bbpic.mp4'
 import jjpic from './src/assets/jjpic.mp4'
 import zdfpic from './src/assets/zdfpic.mp4'
 
-export const feednames = ['@elonmusk','@DongWookChung2','@BRICSinfo','@natemcgrady','@retro_twt','@nima_owji','@stats_feed']
-export const pics = ['','',bnpic,'',rapic,'','']
-export const profilePictures = [elon,dongwook,bn,nate,ra,nima,wos]
-export const names = ['Elon Musk','Dongwook','BRICS News','Nate','Retro Anime','Nima Owji','World of Statistics']
-export const usernames  = ['@elonmusk • 1h','@DongWookChung2 • 2h','@BRICSinfo • 1d','@natemcgrady • 23m','@retro_twt • 5h','@nima_owji • 2d','@stats_feed • 3h'] 
-export const content = ['If ANY judge ANYWHERE can stop EVERY Presidential action EVERYWHERE, we do NOT live in a democracy.',
-                        'More community updates: <br/><br/> - All community posts can now be pinned to profile.<br/>- Premium users can now join more communities, up to 50.<br/>- Community admin/mod/member badge is now visible on Android',
-                        'JUST IN: Russian President Putin and US President Trump could meet in Saudi Arabia by the end of this month.',
-                        'How do you respond when someone says thank you? idk why but saying “you’re welcome” feels wrong/rude so I always say “no problem”',
-                        'Redline (2009)',
-                        'Duolingo has the best marketing and social media team in the world!',
-                        'Time it took to reach a $100 billion valuation: <br/><br/>Google: 7 years <br/>Facebook: 8 years <br/>Amazon: 16 years <br/>Tesla: 17 years <br/>Microsoft: 20 years '
+export const topicnames = ['@Cristiano', '@elonmusk','@MrBeast', '@DongWookChung2', '@BRICSinfo', '@natemcgrady', '@ishowspeedsui', '@retro_twt', '@nima_owji', '@stats_feed']
+export const feedpics = [crpic, mbpic, crpic2, '', '', bnpic, '', speedpic, rapic, '', '']
+export const feedprofilePictures = [cr, mb, cr, elon, dongwook, bn, nate, speed, ra, nima, wos]
+export const feednames = ['Christiano Ronaldo', 'Mr. Beast', 'Christiano Ronaldo', 'Elon Musk', 'Dongwook', 'BRICS News', 'Nate', 'Speed', 'Retro Anime', 'Nima Owji', 'World of Statistics']
+export const feedusernames = ['@Cristiano • 1h', '@MrBeast • 1h', '@Cristiano • 1h', '@elonmusk • 1h', '@DongWookChung2 • 2h', '@BRICSinfo • 1d', '@natemcgrady • 23m', '@ishowspeedsui • 2d', '@retro_twt • 5h', '@nima_owji • 2d', '@stats_feed • 3h']
+export const feedcontent = ['✌️',
+    '$5,000,000 Prize<br/>50 World Records broken<br/>1,000 Contestants duking it outBiggest sets in entertainment history<br/><br/>Beast Games drops Thursday 🥰',
+    'A win and first goal after 40! ✌🏽',
+    'If ANY judge ANYWHERE can stop EVERY Presidential action EVERYWHERE, we do NOT live in a democracy.',
+    'More community updates: <br/><br/> - All community posts can now be pinned to profile.<br/>- Premium users can now join more communities, up to 50.<br/>- Community admin/mod/member badge is now visible on Android',
+    'JUST IN: Russian President Putin and US President Trump could meet in Saudi Arabia by the end of this month.',
+    'How do you respond when someone says thank you? idk why but saying “you’re welcome” feels wrong/rude so I always say “no problem”',
+    'Quitting WWE!',
+    'Redline (2009)',
+    'Duolingo has the best marketing and social media team in the world!',
+    'Time it took to reach a $100 billion valuation: <br/><br/>Google: 7 years <br/>Facebook: 8 years <br/>Amazon: 16 years <br/>Tesla: 17 years <br/>Microsoft: 20 years '
 ]
 
-export const ogPics = [crpic,dbpic,srkpic,dvkpic,fidiasvideo]
-export const ogProfilePictures = [cr,db,srk,dvk,fidias]
-export const ogNames = ['Christiano Ronaldo','Daily Dragon Ball','Shah Rukh Khan','DVK the artist','Fidias Panayiotou']
-export const ogUsernames  = ['@Cristiano • 1h','@DragonBallPics_ • 2h','@iamsrk • 23m','@DVKtheartist • 2d','@fidias0 • 3h']
+export const pics = ['', '', bnpic, '', rapic, '', '']
+export const profilePictures = [elon, dongwook, bn, nate, ra, nima, wos]
+export const names = ['Elon Musk', 'Dongwook', 'BRICS News', 'Nate', 'Retro Anime', 'Nima Owji', 'World of Statistics']
+export const usernames = ['@elonmusk • 1h', '@DongWookChung2 • 2h', '@BRICSinfo • 1d', '@natemcgrady • 23m', '@retro_twt • 5h', '@nima_owji • 2d', '@stats_feed • 3h']
+export const content = ['If ANY judge ANYWHERE can stop EVERY Presidential action EVERYWHERE, we do NOT live in a democracy.',
+    'More community updates: <br/><br/> - All community posts can now be pinned to profile.<br/>- Premium users can now join more communities, up to 50.<br/>- Community admin/mod/member badge is now visible on Android',
+    'JUST IN: Russian President Putin and US President Trump could meet in Saudi Arabia by the end of this month.',
+    'How do you respond when someone says thank you? idk why but saying “you’re welcome” feels wrong/rude so I always say “no problem”',
+    'Redline (2009)',
+    'Duolingo has the best marketing and social media team in the world!',
+    'Time it took to reach a $100 billion valuation: <br/><br/>Google: 7 years <br/>Facebook: 8 years <br/>Amazon: 16 years <br/>Tesla: 17 years <br/>Microsoft: 20 years '
+]
+
+export const ogPics = [crpic, dbpic, srkpic, dvkpic, fidiasvideo]
+export const ogProfilePictures = [cr, db, srk, dvk, fidias]
+export const ogNames = ['Christiano Ronaldo', 'Daily Dragon Ball', 'Shah Rukh Khan', 'DVK the artist', 'Fidias Panayiotou']
+export const ogUsernames = ['@Cristiano • 1h', '@DragonBallPics_ • 2h', '@iamsrk • 23m', '@DVKtheartist • 2d', '@fidias0 • 3h']
 export const ogContent = ['✌️',
     'Monkeys 😁',
     'Odd one out. <br/><br/>X3. Midnight Tee and Knight Walker II Pants.<br/><br/>Get yours on 12th January only on dyavolx.com',
@@ -68,21 +85,21 @@ export const ogContent = ['✌️',
     'Social Media Platforms Could Be Manipulating You'
 ]
 
-export const trpics = [mbpic,duopic,xdnpic,speedpic,crpic2]
-export const trprofilePictures = [mb,duo,xdn,speed,cr]
-export const trnames = ['Mr. Beast','Duolingo','X Daily News','Speed','Christiano Ronaldo']
-export const trusernames  = ['@MrBeast • 1h','@Duolingo • 2h','@xDaily • 23m','@ishowspeedsui • 2d','@Cristiano • 1h'] 
+export const trpics = [mbpic, duopic, xdnpic, speedpic, crpic2]
+export const trprofilePictures = [mb, duo, xdn, speed, cr]
+export const trnames = ['Mr. Beast', 'Duolingo', 'X Daily News', 'Speed', 'Christiano Ronaldo']
+export const trusernames = ['@MrBeast • 1h', '@Duolingo • 2h', '@xDaily • 23m', '@ishowspeedsui • 2d', '@Cristiano • 1h']
 export const trcontent = ['$5,000,000 Prize<br/>50 World Records broken<br/>1,000 Contestants duking it outBiggest sets in entertainment history<br/><br/>Beast Games drops Thursday 🥰',
-                        'an important message from Duolingo',
-                        'NEWS: xAI is Discussing $10 Billion Raise at $75 Billion Valuation',
-                        'Duolingo has the best marketing and social media team in the world!',
-                        'A win and first goal after 40! ✌🏽'
+    'an important message from Duolingo',
+    'NEWS: xAI is Discussing $10 Billion Raise at $75 Billion Valuation',
+    'Quitting WWE!',
+    'A win and first goal after 40! ✌🏽'
 ]
 
-export const vpics = [zdfpic,jjpic,mspic,bbpic,sgpic]
-export const vprofilePictures = [zdf,jj,ms,bb,sg]
-export const vnames = ['Zack D. Films','癒しのお届け便 📦【動物】','Marvel Studios','Buitengebieden','Science Girl']
-export const vusernames  = ['@zackdfilms1 • 3h','@Bakutan_bot1 • 1h','@MarvelStudios • 2h','@buitengebieden • 23m','@gunsnrosesgirl3 • 2d']
+export const vpics = [zdfpic, jjpic, mspic, bbpic, sgpic]
+export const vprofilePictures = [zdf, jj, ms, bb, sg]
+export const vnames = ['Zack D. Films', '癒しのお届け便 📦【動物】', 'Marvel Studios', 'Buitengebieden', 'Science Girl']
+export const vusernames = ['@zackdfilms1 • 3h', '@Bakutan_bot1 • 1h', '@MarvelStudios • 2h', '@buitengebieden • 23m', '@gunsnrosesgirl3 • 2d']
 export const vcontent = ['What If You Swallow A Live Fish? 🤔',
     '雪のバラの作り方、これはお洒落だ…',
     'Not super. Not heroes. Not giving up.<br/><br/>Watch the new trailer for Marvel Studios’ Thunderbolts only in theaters May 2.',
@@ -90,10 +107,10 @@ export const vcontent = ['What If You Swallow A Live Fish? 🤔',
     'Niagara Falls'
 ]
 
-export const vinepics = [jjpic,mspic,bbpic,sgpic,zdfpic,fidiasvideo,rapic]
-export const vineprofilePictures = [jj,ms,bb,sg,zdf,fidias,ra]
-export const vinenames = ['癒しのお届け便 📦【動物】','Marvel Studios','Buitengebieden','Science Girl','Zack D. Films','Fidias Panayiotou','Retro Anime']
-export const vineusernames  = ['@Bakutan_bot1','@MarvelStudios','@buitengebieden','@gunsnrosesgirl3','@zackdfilms1','@fidias0','@retro_twt']
+export const vinepics = [jjpic, mspic, bbpic, sgpic, zdfpic, fidiasvideo, rapic]
+export const vineprofilePictures = [jj, ms, bb, sg, zdf, fidias, ra]
+export const vinenames = ['癒しのお届け便 📦【動物】', 'Marvel Studios', 'Buitengebieden', 'Science Girl', 'Zack D. Films', 'Fidias Panayiotou', 'Retro Anime']
+export const vineusernames = ['@Bakutan_bot1', '@MarvelStudios', '@buitengebieden', '@gunsnrosesgirl3', '@zackdfilms1', '@fidias0', '@retro_twt']
 export const vinecontent = ['雪のバラの作り方、これはお洒落だ…',
     'Marvel Studios’ Thunderbolts new trailer.',
     'Octopus found a new house.. 😊',
@@ -111,15 +128,16 @@ export const spaceContent = ['Live at SpaceX for Starship Launch',
     "Bored, Let's talk",
     'Emergency meeting for subscribers'
 ]
-export const spacenames = ['Elon','Dongwook','BRICS','Nate','Retro','Nima','Statistics','Cristiano','Dragon','Duolingo','Zack','Fidias','MrBeast','ShahRukh','Speed','Marvel']
-export const spacepics = [elon, dongwook, bn, nate, ra, nima, wos, cr, db, duo, zdf, fidias,mb,srk,speed,ms]
+
+export const spacenames = ['Elon', 'Dongwook', 'BRICS', 'Nate', 'Retro', 'Nima', 'Statistics', 'Cristiano', 'Dragon', 'Duolingo', 'Zack', 'Fidias', 'MrBeast', 'ShahRukh', 'Speed', 'Marvel']
+export const spacepics = [elon, dongwook, bn, nate, ra, nima, wos, cr, db, duo, zdf, fidias, mb, srk, speed, ms]
 
 export const valueConverter = (value) => {
-    if(value>1000000){
-        return Math.floor(value/1000000)+'M';
-    }else if(value>1000){
-        return Math.floor(value/1000)+'K';
-    }else{
+    if (value > 1000000) {
+        return Math.floor(value / 1000000) + 'M';
+    } else if (value > 1000) {
+        return Math.floor(value / 1000) + 'K';
+    } else {
         return value;
     }
 }

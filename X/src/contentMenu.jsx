@@ -23,7 +23,7 @@ function createFeed() {
     let feedbox = document.createElement("div");
     feedbox.style.padding = "20px";
     feedbox.style.borderRadius = "20px";
-    feedbox.style.height = "500px";
+    feedbox.style.height = "450px";
     feedbox.style.width = "500px";
     feedbox.style.backgroundColor = "black";
     feedbox.style.display = "flex";
@@ -34,7 +34,7 @@ function createFeed() {
     topbar.style.display = "flex";
     topbar.style.justifyContent = "space-between";
     topbar.style.alignItems = "center";
-    topbar.style.marginBottom = "60px";
+    topbar.style.marginBottom = "50px";
     feedbox.appendChild(topbar);
 
     let closeButton = document.createElement("button");
@@ -53,6 +53,8 @@ function createFeed() {
     createButton.style.border = "none";
     createButton.style.borderRadius = "20px";
     createButton.style.padding = "10px";
+    createButton.style.paddingLeft = "15px";
+    createButton.style.paddingRight = "15px";
     createButton.style.cursor = "pointer";
     createButton.onclick = () => newdiv.remove();
     topbar.appendChild(createButton);

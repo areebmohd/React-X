@@ -86,3 +86,24 @@
     height: 40px;
     border-radius: 50%;
 }
+@media (max-width:1000px){
+    .leftbar{
+        width: 7%;
+        padding-left: 0;
+    }
+    .leftbar p{
+        display: none;
+    }
+    .leftbar h2{
+        display: none;
+    }
+    .accountLeft div{
+        display: none;
+    }
+    .accountRight{
+        display: none;
+    }
+    .createButton{
+        display: none;
+    }
+}
