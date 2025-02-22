@@ -4,7 +4,7 @@
     width: 25%;
     padding-left: 7%;
     text-align: center;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1200;
 }
@@ -53,7 +53,7 @@
 @media (max-width:1240px){
     .contentMenu{
         width: fit-content;
-        padding-right: 10px;
-        padding-left: 3%;
+        padding-right: 15%;
+        padding-left: 5%;
     }
 }

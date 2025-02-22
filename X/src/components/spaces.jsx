@@ -1,4 +1,4 @@
-import './spaces.css';
+import './homePage.css';
 import { useState } from 'react';
 import { profilePictures, names, usernames, spaceContent, valueConverter } from '../../data';
 import dp from '../assets/dp.jpg';

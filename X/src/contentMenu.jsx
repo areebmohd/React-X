@@ -19,6 +19,7 @@ function createFeed() {
     newdiv.style.display = "flex";
     newdiv.style.justifyContent = "center";
     newdiv.style.alignItems = "center";
+    newdiv.style.zIndex = '5000';
 
     let feedbox = document.createElement("div");
     feedbox.style.padding = "20px";

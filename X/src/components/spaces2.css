@@ -4,13 +4,12 @@
     background-color: black;
     color: white;
     display: flex;
-    flex-direction: column;
-    gap: 20px;
     padding-top: 10px;
     padding-bottom: 20px;
-    padding-left: 30px;
-    position: sticky;
+    padding-left: 50px;
+    position: fixed;
     top: 0;
+    left: 0;
 }
 .spaces .spaces2{
     display: flex;
@@ -81,6 +80,7 @@
     align-items: center;
     justify-content: space-around;
     border-top: 1px solid rgba(255, 255, 255, 0.170);
+    background-color: black;
     padding: 15px;
     width: 100%;
     position: absolute;
@@ -89,11 +89,21 @@
 @media (max-width:1240px){
     .spaces{
         width: 100%;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
+        padding-left: 0;
+    }
+    .spaces .spaces2{
+        width: 100%;
     }
     .spaces2 .top div .link{
         display: none;
+    }
+    .spaces2 .mid div{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .spaces2 .bottom{
+        bottom: 20px;
     }
 }

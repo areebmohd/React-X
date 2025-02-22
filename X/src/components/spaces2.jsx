@@ -1,4 +1,4 @@
-import './rightbar.css'
+import './spaces2.css';
 import { spacepics, spacenames } from '../../data';
 import { Link } from 'react-router-dom';
 

@@ -3,7 +3,7 @@
     height: 100vh;
     width: 25%;
     padding-left: 7%;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1200;
 }
@@ -90,7 +90,7 @@
     .leftbar{
         display: none;
         width: fit-content;
-        padding-right: 10px;
-        padding-left: 3%;
+        padding-right: 10%;
+        padding-left: 5%;
     }
 }
