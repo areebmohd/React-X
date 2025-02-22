@@ -40,7 +40,7 @@ function create() {
   }
 }
 
-function Leftbar() {
+function Leftbar({showLeftbar}) {
     return (
         <div className="leftbar">
             <ul>

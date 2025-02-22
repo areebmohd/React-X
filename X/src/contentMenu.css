@@ -3,10 +3,10 @@
     height: 100vh;
     width: 25%;
     padding-left: 7%;
-    position: fixed;
-    top: 0;
-    left: 0;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1200;
 }
 .contentMenu ul{
     list-style: none;
@@ -50,12 +50,10 @@
     color: #0371bb;
     cursor: pointer;
 }
-@media (max-width:1000px){
+@media (max-width:1240px){
     .contentMenu{
-        width: 7%;
-        padding-left: 0;
-    }
-    .contentMenu p{
-        display: none;
+        width: fit-content;
+        padding-right: 10px;
+        padding-left: 3%;
     }
 }

@@ -1,13 +1,26 @@
 import './homePage.css'
 import { ogProfilePictures, ogNames, ogUsernames, ogContent, ogPics, valueConverter } from '../../data';
 import React, { useRef } from 'react';
+import dp from '../assets/dp.jpg';
+
+function showLeftbar() {
+    let leftbar = document.querySelector('.leftbar');
+    if (leftbar.style.display === 'none') {
+        leftbar.style.display = 'block'
+    } else {
+        leftbar.style.display = 'none'
+    }
+}
 
 function Originals({ setContentMenu }) {
     const videoRef = useRef(null);
     return (
         <div className="homePage">
-            <div className="topBar">
-                <h2>Originals</h2>
+            <div className="topBar" onClick={() => showLeftbar()}>
+                <div>
+                    <img src={dp} alt="" />
+                    <h2>Originals</h2>
+                </div>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height='25px' onClick={() => setContentMenu(prev => !prev)}>
                     <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
                 </svg>
@@ -71,7 +84,7 @@ function Originals({ setContentMenu }) {
                                         </svg>
                                     </div>
                                 ) : (
-                                    <img className="contentPic" src={ogPics[index]} alt="content"/>
+                                    <img className="contentPic" src={ogPics[index]} alt="content" />
                                 )}
                             </div>
                         )}

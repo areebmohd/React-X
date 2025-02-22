@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Spaces2({ spacesContent, spacesHost, setSpaces2 }) {
     return (
-        <div className="rightbar">
+        <div className="spaces">
             <div className="spaces2">
                 <div className="top">
                     <h2>Space</h2>
