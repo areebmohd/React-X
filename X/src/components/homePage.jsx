@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
-import './homePage.css';
-import './leftbar.css'
+import '../css/homePage.css';
 import { profilePictures, names, usernames, content, pics } from '../../data';
 import { valueConverter } from '../../data';
 import dp from '../assets/dp.jpg';

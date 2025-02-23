@@ -1,4 +1,4 @@
-import './contentMenu.css'
+import '../css/contentMenu.css'
 import { Link } from 'react-router-dom'
 
 let newdiv;

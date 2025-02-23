@@ -1,4 +1,4 @@
-import './homePage.css';
+import '../css/homePage.css';
 import { vprofilePictures, vnames, vusernames, vcontent, vpics, valueConverter } from '../../data';
 import React, { useRef, useState } from 'react';
 import dp from '../assets/dp.jpg';

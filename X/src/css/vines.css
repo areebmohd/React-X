@@ -5,6 +5,9 @@
     height: 100vh;
     border-left: 1px solid rgba(255, 255, 255, 0.170);
     border-right: 1px solid rgba(255, 255, 255, 0.170);
+    position: fixed;
+    top: 0;
+    left: 25%;
 }
 
 .vinePage::-webkit-scrollbar {
@@ -225,8 +228,15 @@
         top: 0;
         left: 0;
     }
-
     .vinePage .topBar div img {
         display: block;
+    }
+    .vinePage .videoPosts{
+        gap: 0;
+        margin-top: 0;
+    }
+    .vinePage .videoPost{
+        border-radius: 0;
+        border: none;
     }
 }

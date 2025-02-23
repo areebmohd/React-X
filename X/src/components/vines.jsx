@@ -1,4 +1,4 @@
-import './vines.css';
+import '../css/vines.css';
 import { vineprofilePictures, vinenames, vineusernames, vinecontent, vinepics, valueConverter } from '../../data';
 import React, { useState } from 'react';
 import dp from '../assets/dp.jpg';

@@ -1,4 +1,4 @@
-import './rightbar.css'
+import '../css/rightbar.css'
 
 function Rightbar() {
     return (

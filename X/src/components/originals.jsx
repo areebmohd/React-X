@@ -1,4 +1,4 @@
-import './homePage.css'
+import '../css/homePage.css';
 import { ogProfilePictures, ogNames, ogUsernames, ogContent, ogPics, valueConverter } from '../../data';
 import React, { useRef } from 'react';
 import dp from '../assets/dp.jpg';

@@ -1,4 +1,4 @@
-import './homePage.css';
+import '../css/homePage.css';
 import { trprofilePictures, trnames, trusernames, trcontent, trpics, valueConverter } from '../../data';
 import dp from '../assets/dp.jpg';
 

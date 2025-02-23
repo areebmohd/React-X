@@ -1,7 +1,7 @@
 import menu from '../assets/menu.png';
 import { Link } from 'react-router-dom';
 import dp from '../assets/dp.jpg';
-import './leftbar.css';
+import '../css/leftbar.css';
 
 let newdiv;
 

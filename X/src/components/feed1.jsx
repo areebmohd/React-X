@@ -1,4 +1,4 @@
-import './homePage.css';
+import '../css/homePage.css';
 import { feedprofilePictures, feednames, feedusernames, feedcontent, feedpics, topicnames } from '../../data';
 import { valueConverter } from '../../data';
 import { useState } from 'react';

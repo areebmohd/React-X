@@ -1,4 +1,4 @@
-import './spaces2.css';
+import '../css/spaces2.css';
 import { spacepics, spacenames } from '../../data';
 import { Link } from 'react-router-dom';
 

@@ -1,4 +1,4 @@
-import './explorePage.css'
+import '../css/explorePage.css'
 
 function ExplorePage(){
     return(
