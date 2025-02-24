@@ -43,6 +43,55 @@ import bbpic from './src/assets/bbpic.mp4'
 import jjpic from './src/assets/jjpic.mp4'
 import zdfpic from './src/assets/zdfpic.mp4'
 
+import tc from './src/assets/tc.jpg'
+import bo from './src/assets/bo.jpg'
+import dsm from './src/assets/dsm.jpg'
+import dt from './src/assets/dt.jpeg'
+import g3 from './src/assets/g3.jpg'
+import hc from './src/assets/hc.jpg'
+import mrb from './src/assets/mrb.webp'
+import sn from './src/assets/sn.webp'
+import rdj from './src/assets/rdj.webp'
+import vk from './src/assets/vk.webp'
+import sj from './src/assets/sj.jpg'
+
+export const trendPictures1 = [elon,mbpic,dvkpic,srkpic,bo]
+export const trendPostCount1 = ['533k','218k','127k','78k','121k',]
+export const trendTitle1 = ["Elon Musk's xAI Unveils 'scary smart' AI Chatbot to Challenge OpenAI, DeepSeek",
+    "MrBeast Said Making 'Beast Games' was 'not a good' Financial Move: 'I lost millions of dollars'",
+    'Art Gallery Opens With Show of Mythology Inspired Artworks',
+    "SRK Stuns Internet With New Pic for Son's Clothing Brand, Fans Say 'forever Jawaan'",
+    "Barack & Michelle Obama Bring In Lawyers For 'Secret' $70 Million Split: Report",
+]
+
+export const trendPictures2 = [xdnpic,dt,sn,g3,sj]
+export const trendPostCount2 = ['92k','60k','34k','45k','54k']
+export const trendTitle2 = ['xAI Discussing 10$ Billion Raise at 75$ Billion Valuation',
+    '"People Tired Of...": Trump Hails Conservative Wave In German Election',
+    'Satya Nadella Shares Video Of AI-Powered Farming In Baramati, Elon Musk Reacts',
+    'Grok 3 launch Updates: X Nearly Doubles Premium+ Subscription Price After Grok 3 launch',
+    'iPhone Designer Still Asks: ‘I wonder what Steve Jobs would do?’'
+]
+
+export const trendPictures3 = [crpic,vk,speedpic,dbpic,duopic]
+export const trendPostCount3 = ['79k','86k','57k','35k','34k',]
+export const trendTitle3 = ['Cristiano Ronaldo Questions Lionel Messi’s 7 Ballon d’Or Awards',
+    'Virat Kohli Gets the Monkey Off His Back as India Race to an Impressive Win',
+    'MrBeast tells IShowSpeed What to Avoid During a Potential Cristiano Ronaldo Collab',
+    'Dragon Ball DAIMA Episode 19 Grows Up As Super Saiyan 3 Vegeta & Super Saiyan 4 Appear',
+    'Duolingo ‘killed’ its mascot with a Cybertruck, and it’s going weirdly well',
+]
+
+export const trendPictures4 = [dsm,hc,mrb,rdj,tc]
+export const trendPostCount4 = ['65k','23k','10k','25k','7K']
+export const trendTitle4 = ['‘Demon Slayer’ Infinity Castle Trilogy to Premiere First Film in 2025',
+    'Henry Cavill More Likely Than Ever to be Next James Bond with Christopher Nolan Directing',
+    'Rowan Atkinson Turns 70: Let’s Talk About Mr. Bean’s Love for Formula 1',
+    "The MCU Just Hinted At A Major Change To Robert Downey Jr's Doctor Doom",
+    'Timothée Chalamet is the Youngest Best Actor Winner in SAG Awards History',
+]
+
+
 export const topicnames = ['@Cristiano', '@elonmusk','@MrBeast', '@DongWookChung2', '@BRICSinfo', '@natemcgrady', '@ishowspeedsui', '@retro_twt', '@nima_owji', '@stats_feed']
 export const feedpics = [crpic, mbpic, crpic2, '', '', bnpic, '', speedpic, rapic, '', '']
 export const feedprofilePictures = [cr, mb, cr, elon, dongwook, bn, nate, speed, ra, nima, wos]

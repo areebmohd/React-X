@@ -1,14 +1,24 @@
 .explorePage{
     width: 40%;
-    height: 100vh;
     background-color: black;
     border-left: 1px solid rgba(255, 255, 255, 0.170);
     border-right: 1px solid rgba(255, 255, 255, 0.170);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 25%;
+    overflow-y: auto;
+    height: 100vh;
+}
+.explorePage::-webkit-scrollbar {
+    display: none;
+}
+.explorePage {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 .explorePage .topbar{
+    display: flex;
+    flex-direction: column;
     position: sticky;
     top: 0;
     width: 100%;
@@ -29,6 +39,7 @@
     align-items: center;
     gap: 7px;
     border: 1px solid rgba(255, 255, 255, 0.170);
+    background-color: black;
     padding: 13px;
     border-radius: 30px;
     width: 90%;
@@ -56,15 +67,48 @@
     background-color: #33333376;
     cursor: pointer;
 }
-.explorePage .exploreOptions .trending{
+.explorePage .exploreOptions .highlight{
     color: white;
 }
-.explorePage .exploreOptions .news{
+.explorePage .exploreOptions .highlight::after {
+    content: "";
+    height: 4px;
+    width: 70px;
+    position: absolute;
+    bottom: 1px;
+    border-radius: 2px;
+    background-color: rgb(0, 170, 255);
+    display: block;
+}
+.explorePage .exploreOptions .normal{
     color: rgba(113, 118, 123, 1);
 }
-.explorePage .exploreOptions .sports{
-    color: rgba(113, 118, 123, 1);
+.explorePage .trendingSection{
+    background-color: black;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
-.explorePage .exploreOptions .entertainment{
-    color: rgba(113, 118, 123, 1);
+.explorePage .trend{
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
+.explorePage .trend .image img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.explorePage .trend .text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.explorePage .trend .text p{
+    color: rgba(113, 118, 123, 1);
+    font-size: 13px;
+}
+
+
