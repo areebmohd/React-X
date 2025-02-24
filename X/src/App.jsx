@@ -20,10 +20,11 @@ function App() {
   const [spaces2, setSpaces2] = useState(false)
   const [spacesContent, setSpacesContent] = useState(null)
   const [spacesHost, setSpacesHost] = useState(null)
+  const [explorePage,setExplorePage] = useState(false)
 
   return (
     <div className="app">
-      {!contentMenu ? <Leftbar /> : <ContentMenu />}
+      {!contentMenu ? <Leftbar setExplorePage={setExplorePage}/> : <ContentMenu />}
       <Routes>
         <Route path="/" element={<HomePage contentMenu={contentMenu} setContentMenu={setContentMenu}/>} />
         <Route path="/originals" element={<Originals contentMenu={contentMenu} setContentMenu={setContentMenu}/>} />
@@ -33,9 +34,9 @@ function App() {
         <Route path="/spaces" element={<Spaces contentMenu={contentMenu} setContentMenu={setContentMenu} setSpaces2={setSpaces2} setSpacesHost={setSpacesHost} spacesContent={spacesContent} setSpacesContent={setSpacesContent}/>} />
         <Route path="/spaces3" element={<Spaces3 contentMenu={contentMenu} setContentMenu={setContentMenu} setSpaces2={setSpaces2} spacesHost={spacesHost} setSpacesHost={setSpacesHost} spacesContent={spacesContent} setSpacesContent={setSpacesContent}/>} />
         <Route path="/feed1" element={<Feed1 contentMenu={contentMenu} setContentMenu={setContentMenu}/>} />
-        <Route path="/explorePage" element={<ExplorePage />} />
+        <Route path="/explorePage" element={<ExplorePage setExplorePage={setExplorePage}/>} />
       </Routes>
-      {!spaces2 ? <Rightbar />:<Spaces2 setSpaces2={setSpaces2} spaces2={spaces2} setSpacesHost={setSpacesHost} spacesHost={spacesHost} spacesContent={spacesContent} setSpacesContent={setSpacesContent}/>} 
+      {!spaces2 ? <Rightbar explorePage={explorePage}/>:<Spaces2 setSpaces2={setSpaces2} spaces2={spaces2} setSpacesHost={setSpacesHost} spacesHost={spacesHost} spacesContent={spacesContent} setSpacesContent={setSpacesContent}/>} 
     </div>
   )
 }
