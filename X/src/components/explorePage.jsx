@@ -1,7 +1,7 @@
 import '../css/explorePage.css'
 import { useEffect, useState } from 'react';
 import TrendingSection from './trendingSection';
-import NewsSection from './newssection';
+import NewsSection from './newsSection';
 import SportsSection from './sportsSection';
 import EntertainmentSection from './entertainmentSection';
 import dp from '../assets/dp.jpg';
