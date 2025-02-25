@@ -1,4 +1,4 @@
-.explorePage{
+.explorePage {
     width: 40%;
     background-color: black;
     border-left: 1px solid rgba(255, 255, 255, 0.170);
@@ -9,14 +9,17 @@
     overflow-y: auto;
     height: 100vh;
 }
+
 .explorePage::-webkit-scrollbar {
     display: none;
 }
+
 .explorePage {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
-.explorePage .topbar{
+
+.explorePage .topbar {
     display: flex;
     flex-direction: column;
     position: sticky;
@@ -25,8 +28,10 @@
     background-color: rgba(5, 5, 5, 0.820);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
+    z-index: 10000;
 }
-.explorePage .topbar .search{
+
+.explorePage .topbar .search {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,7 +39,14 @@
     padding-left: 15px;
     padding-right: 20px;
 }
-.explorePage .searchBox{
+
+.explorePage .topbar .search img {
+    height: 30px;
+    border-radius: 50%;
+    display: none;
+}
+
+.explorePage .searchBox {
     display: flex;
     align-items: center;
     gap: 7px;
@@ -44,32 +56,41 @@
     border-radius: 30px;
     width: 90%;
 }
-.explorePage span svg{
+
+.explorePage span svg {
     fill: rgba(255, 255, 255, 0.418);
-  }
-.explorePage span input{
+}
+
+.explorePage span input {
+    width: 90%;
     background-color: transparent;
     border: none;
     outline: none;
 }
-.explorePage .exploreOptions{
+
+.explorePage .exploreOptions {
     display: flex;
     align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.170);
 }
-.explorePage .exploreOptions h4{
+
+.explorePage .exploreOptions h4 {
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 7.1%;
     padding-right: 7.1%;
 }
-.explorePage .exploreOptions h4:hover{
+
+.explorePage .exploreOptions h4:hover {
     background-color: #33333376;
     cursor: pointer;
 }
-.explorePage .exploreOptions .highlight{
+
+.explorePage .exploreOptions .highlight {
     color: white;
+    position: relative;
 }
+
 .explorePage .exploreOptions .highlight::after {
     content: "";
     height: 4px;
@@ -80,35 +101,303 @@
     background-color: rgb(0, 170, 255);
     display: block;
 }
-.explorePage .exploreOptions .normal{
+
+.explorePage .exploreOptions .news::after {
+    width: 43px;
+}
+
+.explorePage .exploreOptions .sports::after {
+    width: 50px;
+}
+
+.explorePage .exploreOptions .entertainment::after {
+    width: 110px;
+}
+
+.explorePage .exploreOptions .normal {
     color: rgba(113, 118, 123, 1);
 }
-.explorePage .trendingSection{
+
+.explorePage .content {
     background-color: black;
     padding: 15px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.explorePage .trend{
+
+.explorePage .trend {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.explorePage .trend .image img{
+
+.explorePage .trend .image img {
     height: 100px;
     width: 100px;
     object-fit: cover;
     border-radius: 20px;
 }
-.explorePage .trend .text{
+
+.explorePage .trend .text {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.explorePage .trend .text p{
+
+.explorePage .trend .text p {
     color: rgba(113, 118, 123, 1);
-    font-size: 13px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
+.explorePage .posts {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    gap: 10px;
+    margin-top: 10px;
+}
 
+.explorePage .posts::-webkit-scrollbar {
+    display: none;
+}
+
+.explorePage .posts {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.explorePage .post {
+    border: 1px solid rgba(255, 255, 255, 0.170);
+    border-radius: 20px;
+    padding: 10px;
+    height: 300px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.explorePage .post .account {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.explorePage .post .account img {
+    height: 20px;
+    border-radius: 50%;
+}
+
+.explorePage .post .account h4 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.explorePage .post svg {
+    fill: rgba(29, 155, 240, 1);
+}
+
+.explorePage .post .account p {
+    color: rgba(113, 118, 123, 1);
+    font-size: 14px;
+}
+
+.explorePage .post .media {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.explorePage .playIcon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    fill: white;
+    opacity: 0.8;
+}
+
+.explorePage .contentPic {
+    border-radius: 20px;
+    max-height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.explorePage .people {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.explorePage .people::-webkit-scrollbar {
+    display: none;
+}
+
+.explorePage .people {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.explorePage .person {
+    border: 1px solid rgba(255, 255, 255, 0.170);
+    border-radius: 20px;
+    height: 250px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.explorePage .person .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+.explorePage .person .dp {
+    height: 80px;
+    width: 80px;
+    border: 5px solid black;
+    border-radius: 50%;
+}
+
+.explorePage .person .account {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.explorePage .person .account p {
+    color: rgba(113, 118, 123, 1);
+    font-size: 15px;
+}
+
+.explorePage .person .account button {
+    width: 80px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.explorePage .communities {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.explorePage .communities::-webkit-scrollbar {
+    display: none;
+}
+
+.explorePage .communities {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.explorePage .community {
+    border: 1px solid rgba(255, 255, 255, 0.170);
+    border-radius: 20px;
+    height: 230px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.explorePage .community .info {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.explorePage .community .info p {
+    color: rgba(113, 118, 123, 1);
+    font-size: 15px;
+}
+
+.explorePage .community .info button {
+    width: 70px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.explorePage .text .info div {
+    position: relative;
+    width: 60px;
+    height: 30px;
+}
+
+.explorePage .text .info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid black;
+    position: absolute;
+}
+
+.explorePage .text .info .img1 {
+    left: 0;
+    z-index: 3;
+}
+
+.explorePage .text .info .img2 {
+    left: 20px;
+    z-index: 2;
+}
+
+.explorePage .text .info .img3 {
+    left: 35px;
+    z-index: 1;
+}
+
+@media (max-width:1240px) {
+    .explorePage {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .explorePage .topbar .search img {
+        display: block;
+    }
+
+    .explorePage .searchBox {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

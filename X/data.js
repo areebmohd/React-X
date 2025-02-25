@@ -55,6 +55,40 @@ import rdj from './src/assets/rdj.webp'
 import vk from './src/assets/vk.webp'
 import sj from './src/assets/sj.jpg'
 
+import mbbanner from './src/assets/mbbanner.jpg'
+import crbanner from './src/assets/crbanner.jpg'
+import elonbanner from './src/assets/elonbanner.jpg'
+import speedbanner from './src/assets/speedbanner.jpg'
+import fidiasbanner from './src/assets/fidiasbanner.jpg'
+
+import apple from './src/assets/apple.jpg'
+import marvel from './src/assets/marvel.jpg'
+import grok from './src/assets/grok.jpg'
+import memes from './src/assets/memes.jpg'
+import op from './src/assets/op.jpg'
+
+export const trendingPostPeople = [[crpic,bb,bn],[bo,cr,db],[dongwook,zdf,dsm],[srk,duo,dvk],[elon,fidias,jj]]
+
+export const trendingCommunitiesPics = [apple,grok,memes,op,marvel]
+export const trendingCommunitiesName = ['Apple','Grok','Memes','One Piece','Marvel']
+export const trendingCommunitiesMembers = ['439k','101k','381k','65k','79k']
+
+export const trendingPeopleDp = [elon,cr,mb,fidias,speed]
+export const trendingPeopleBanner = [elonbanner,crbanner,mbbanner,fidiasbanner,speedbanner]
+export const trendingPeopleName = ['Elon Musk','Christiano Ronaldo', 'Mr. Beast', 'Fidias Panayiotou', 'Speed']
+export const trendingPeopleUsernames = ['@elonmusk','@Cristiano','@MrBeast','@fidias0','@ishowspeedsui']
+
+export const trendingPostDp = [cr,ms,speed,mb,srk]
+export const trendingPostNames = ['Christiano Ronaldo', 'Marvel Studios', 'Speed', 'Mr. Beast', 'Shah Rukh Khan']
+export const trendingPostUsernames = ['@Cristiano • 1h', '@MarvelStudios • 2h', '@ishowspeedsui • 2d', '@MrBeast • 1h', '@iamsrk • 23m',]
+export const trendingPostPics = [crpic2,mspic,speedpic,mbpic,srkpic]
+export const trendingPostContent = ['A win and first goal after 40! ✌🏽',
+    'New trailer for Marvel Studios’ Thunderbolts',
+    'Quitting WWE!',
+    '$5,000,000 Prize, 50 World Records broken 🥰',
+    'Midnight Tee and Knight Walker II Pants on dyavolx.com'
+]
+
 export const trendPictures1 = [elon,mbpic,dvkpic,srkpic,bo]
 export const trendPostCount1 = ['533k','218k','127k','78k','121k',]
 export const trendTitle1 = ["Elon Musk's xAI Unveils 'scary smart' AI Chatbot to Challenge OpenAI, DeepSeek",

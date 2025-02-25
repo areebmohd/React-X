@@ -21,12 +21,13 @@ function App() {
   const [spacesContent, setSpacesContent] = useState(null)
   const [spacesHost, setSpacesHost] = useState(null)
   const [explorePage,setExplorePage] = useState(false)
+  const [homePage,setHomePage] = useState(true)
 
   return (
     <div className="app">
-      {!contentMenu ? <Leftbar setExplorePage={setExplorePage}/> : <ContentMenu />}
+      {!contentMenu ? <Leftbar setExplorePage={setExplorePage} explorePage={explorePage} setHomePage={setHomePage} homePage={homePage}/> : <ContentMenu />}
       <Routes>
-        <Route path="/" element={<HomePage contentMenu={contentMenu} setContentMenu={setContentMenu}/>} />
+        <Route path="/" element={<HomePage contentMenu={contentMenu} setContentMenu={setContentMenu} setHomePage={setHomePage}/>} />
         <Route path="/originals" element={<Originals contentMenu={contentMenu} setContentMenu={setContentMenu}/>} />
         <Route path="/trending" element={<Trending contentMenu={contentMenu} setContentMenu={setContentMenu}/>} />
         <Route path="/videos" element={<Videos contentMenu={contentMenu} setContentMenu={setContentMenu}/>} />
@@ -34,7 +35,7 @@ function App() {
         <Route path="/spaces" element={<Spaces contentMenu={contentMenu} setContentMenu={setContentMenu} setSpaces2={setSpaces2} setSpacesHost={setSpacesHost} spacesContent={spacesContent} setSpacesContent={setSpacesContent}/>} />
         <Route path="/spaces3" element={<Spaces3 contentMenu={contentMenu} setContentMenu={setContentMenu} setSpaces2={setSpaces2} spacesHost={spacesHost} setSpacesHost={setSpacesHost} spacesContent={spacesContent} setSpacesContent={setSpacesContent}/>} />
         <Route path="/feed1" element={<Feed1 contentMenu={contentMenu} setContentMenu={setContentMenu}/>} />
-        <Route path="/explorePage" element={<ExplorePage setExplorePage={setExplorePage}/>} />
+        <Route path="/explorePage" element={<ExplorePage setExplorePage={setExplorePage} setHomePage={setHomePage}/>} />
       </Routes>
       {!spaces2 ? <Rightbar explorePage={explorePage}/>:<Spaces2 setSpaces2={setSpaces2} spaces2={spaces2} setSpacesHost={setSpacesHost} spacesHost={spacesHost} spacesContent={spacesContent} setSpacesContent={setSpacesContent}/>} 
     </div>
