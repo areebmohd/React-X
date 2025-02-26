@@ -18,7 +18,7 @@ function TrendingSection() {
                                 <p>{index + 1} • Trending • {trendPostCount1[index]} posts</p>
                             </div>
                             <div className="title">
-                                <h3>{trendTitle1[index]}</h3>
+                                <p>{trendTitle1[index]}</p>
                             </div>
                         </div>
                     </div>
@@ -83,7 +83,7 @@ function TrendingSection() {
                                 <p>{index + 6} • Trending • {trendPostCount2[index]} posts</p>
                             </div>
                             <div className="title">
-                                <h3>{trendTitle2[index]}</h3>
+                                <p>{trendTitle2[index]}</p>
                             </div>
                         </div>
                     </div>
@@ -122,7 +122,7 @@ function TrendingSection() {
                                 <p>{index + 11} • Trending • {trendPostCount3[index]} posts</p>
                             </div>
                             <div className="title">
-                                <h3>{trendTitle3[index]}</h3>
+                                <p>{trendTitle3[index]}</p>
                             </div>
                         </div>
                     </div>
@@ -158,7 +158,7 @@ function TrendingSection() {
                                 <p>{index + 16} • Trending • {trendPostCount4[index]} posts</p>
                             </div>
                             <div className="title">
-                                <h3>{trendTitle4[index]}</h3>
+                                <p>{trendTitle4[index]}</p>
                             </div>
                         </div>
                     </div>

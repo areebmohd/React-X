@@ -145,12 +145,17 @@
     gap: 10px;
 }
 
-.explorePage .trend .text p {
+.explorePage .trend .text .info p {
     color: rgba(113, 118, 123, 1);
     font-size: 15px;
     display: flex;
     align-items: center;
     gap: 15px;
+}
+
+.explorePage .trend .text .title p {
+    font-weight: bold;
+    font-size: large;
 }
 
 .explorePage .posts {
@@ -399,5 +404,29 @@
     .explorePage .searchBox {
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    .explorePage .trend .text .title p {
+        font-size: medium;
+    }
+
+    .explorePage .exploreOptions h4 {
+        padding-left: 4.7%;
+        padding-right: 4.7%;
+    }
+
+    .explorePage .post {
+        height: 300px;
+        min-width: 350px;
+        gap: 0;
+    }
+
+    .explorePage .person {
+        min-width: 350px;
+    }
+
+    .explorePage .community {
+        height: 210px;
+        min-width: 350px;
     }
 }

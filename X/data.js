@@ -69,9 +69,9 @@ import op from './src/assets/op.jpg'
 
 export const trendingPostPeople = [[crpic,bb,bn],[bo,cr,db],[dongwook,zdf,dsm],[srk,duo,dvk],[elon,fidias,jj]]
 
-export const trendingCommunitiesPics = [apple,grok,memes,op,marvel]
-export const trendingCommunitiesName = ['Apple','Grok','Memes','One Piece','Marvel']
-export const trendingCommunitiesMembers = ['439k','101k','381k','65k','79k']
+export const trendingCommunitiesPics = [memes,apple,grok,op,marvel]
+export const trendingCommunitiesName = ['Memes','Apple','Grok','One Piece','Marvel']
+export const trendingCommunitiesMembers = ['381k','439k','101k','65k','79k']
 
 export const trendingPeopleDp = [elon,cr,mb,fidias,speed]
 export const trendingPeopleBanner = [elonbanner,crbanner,mbbanner,fidiasbanner,speedbanner]
