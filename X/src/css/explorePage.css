@@ -72,6 +72,16 @@
     display: flex;
     align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.170);
+    overflow-y: auto;
+}
+
+.explorePage .exploreOptions::-webkit-scrollbar {
+    display: none;
+}
+
+.explorePage .exploreOptions {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .explorePage .exploreOptions h4 {
@@ -183,7 +193,6 @@
     min-width: 400px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
     position: relative;
     overflow: hidden;
 }
@@ -199,19 +208,25 @@
     border-radius: 50%;
 }
 
-.explorePage .post .account h4 {
+.explorePage .post .account div {
     display: flex;
     align-items: center;
+    font-weight: bold;
     gap: 5px;
 }
 
-.explorePage .post svg {
+.explorePage .post .account svg {
     fill: rgba(29, 155, 240, 1);
 }
 
 .explorePage .post .account p {
     color: rgba(113, 118, 123, 1);
     font-size: 14px;
+}
+
+.explorePage .postContent{
+    margin-top: 7px;
+    margin-bottom: 7px;
 }
 
 .explorePage .post .media {
@@ -411,22 +426,44 @@
     }
 
     .explorePage .exploreOptions h4 {
-        padding-left: 4.7%;
-        padding-right: 4.7%;
+        padding-left: 4.5%;
+        padding-right: 4.5%;
     }
 
     .explorePage .post {
-        height: 300px;
-        min-width: 350px;
-        gap: 0;
+        height: 250px;
+        min-width: 300px;
+    }
+    
+    .explorePage .post .account img {
+        height: 15px;
+    }
+    
+    .explorePage .post .account div {
+        font-size: small;
+    }
+    
+    .explorePage .post .account svg {
+        height: 15px;
+    }
+    
+    .explorePage .post .account p {
+        font-size: 13px;
     }
 
     .explorePage .person {
-        min-width: 350px;
+        height: 200px;
+        min-width: 300px;
+    }
+
+    .explorePage .person .info {
+        width: 95%;
+        top: 30%;
+        left: 5%;
     }
 
     .explorePage .community {
-        height: 210px;
-        min-width: 350px;
+        height: 200px;
+        min-width: 300px;
     }
 }
