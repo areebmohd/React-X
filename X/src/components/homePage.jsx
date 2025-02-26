@@ -4,21 +4,12 @@ import { profilePictures, names, usernames, content, pics } from '../../data';
 import { valueConverter } from '../../data';
 import dp from '../assets/dp.jpg';
 
-function showLeftbar(){
-  let leftbar = document.querySelector('.leftbar');
-  if(leftbar.style.display === 'none'){
-    leftbar.style.display = 'block'
-  }else{
-    leftbar.style.display = 'none'
-  }
-}
-
-function HomePage({ setContentMenu}) {
+function HomePage({ setContentMenu, toggleLeftBar}) {
   return (
     <div className="homePage">
-      <div className="topBar" onClick={()=>showLeftbar()}>
+      <div className="topBar">
         <div>
-        <img src={dp} alt=""/>
+        <img src={dp} alt="" className="display-image" onClick={toggleLeftBar}/>
         <h2>Home</h2>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height='25px' onClick={() => setContentMenu(prev => !prev)}>
