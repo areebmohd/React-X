@@ -71,6 +71,7 @@
 .explorePage .exploreOptions {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     border-bottom: 1px solid rgba(255, 255, 255, 0.170);
     overflow-y: auto;
 }
@@ -85,10 +86,7 @@
 }
 
 .explorePage .exploreOptions h4 {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 7.1%;
-    padding-right: 7.1%;
+    padding: 15px 43px;
 }
 
 .explorePage .exploreOptions h4:hover {
@@ -104,7 +102,7 @@
 .explorePage .exploreOptions .highlight::after {
     content: "";
     height: 4px;
-    width: 70px;
+    width: 67px;
     position: absolute;
     bottom: 1px;
     border-radius: 2px;

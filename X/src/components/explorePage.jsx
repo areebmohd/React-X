@@ -6,10 +6,11 @@ import SportsSection from './sportsSection';
 import EntertainmentSection from './entertainmentSection';
 import dp from '../assets/dp.jpg';
 
-function ExplorePage({ setExplorePage, toggleLeftBar }) {
+function ExplorePage({ setExplorePage, setHomePage, toggleLeftBar }) {
 
     useEffect(() => {
         setExplorePage(true);
+        setHomePage(false);
     }, []);
 
     const [trending, setTrending] = useState(true)

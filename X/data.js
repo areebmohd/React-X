@@ -67,6 +67,24 @@ import grok from './src/assets/grok.jpg'
 import memes from './src/assets/memes.jpg'
 import op from './src/assets/op.jpg'
 
+export const subsContent = ['Am i the only one who knows?',
+    'Do you watch One Piece?',
+    'Visited Niagara falls yesterday'
+]
+export const subsPics = ['',op,sgpic]
+
+export const orgsContent = ['My new art of DVKnight',
+    'My new retro animation'
+]
+export const orgsPics = [dvkpic,rapic]
+export const postsContent = ['Is this the real world?',
+    'My new art of DVKnight',
+    'tired of apple, I want X Electronics',
+    'Make Grok as useful as Jarvis',
+    'My new retro animation'
+]
+export const postsPics = ['',dvkpic,apple,grok,rapic]
+
 export const trendingPostPeople = [[crpic,bb,bn],[bo,cr,db],[dongwook,zdf,dsm],[srk,duo,dvk],[elon,fidias,jj]]
 
 export const trendingCommunitiesPics = [memes,apple,grok,op,marvel]
