@@ -295,6 +295,93 @@
     font-size: 13px;
 }
 
+.profile .mediaLists {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5px;
+}
+
+.profile .listContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+.profile .listContainer:hover{
+    background-color: #33333376;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.profile .listContainer .list{
+    height: 100px;
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile .listContainer .list img{
+    min-height: 100px;
+    max-height: 200px;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+}
+
+.profile .listContainer .list p{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.620);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: small; 
+}
+
+.profile .listContainer .listInfo{
+    padding-left: 10px;
+}
+
+.profile .listContainer .listInfo p{
+    font-size: small;
+    color: rgba(113, 118, 123, 1);
+}
+
+.profile .createMediaList{
+    text-align: center;
+    font-size: large;
+    color: #0299fe;
+    margin-top: 30px;
+}
+
+.profile .createMediaList:hover{
+    color: #0371bb;
+    cursor: pointer;
+}
+
+.profile .about{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.profile .about h4{
+    margin-top: 20px;
+}
+.profile .about p{
+    font-size: small;
+    color: rgba(113, 118, 123, 1);
+}
+.profile .about .link{
+    font-size: small;
+    color: #0299fe;
+    cursor: pointer;
+}
+
 @media (max-width:1240px){
     .profile{
         width: 100%;
@@ -305,4 +392,8 @@
     .profile .profileOptions h4 {
         padding: 15px 20px;
     }
+    .profile .mediaLists{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
+

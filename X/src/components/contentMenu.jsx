@@ -13,7 +13,7 @@ function createFeed() {
     body.appendChild(newdiv);
     newdiv.style.height = "100vh";
     newdiv.style.width = "100%";
-    newdiv.style.position = "absolute";
+    newdiv.style.position = "fixed";
     newdiv.style.left = "0";
     newdiv.style.top = "0";
     newdiv.style.display = "flex";

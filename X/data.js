@@ -67,6 +67,10 @@ import grok from './src/assets/grok.jpg'
 import memes from './src/assets/memes.jpg'
 import op from './src/assets/op.jpg'
 
+export const mediaPics = [op,crpic,speedpic,mbpic,apple,memes,marvel,rdj,xdnpic] 
+export const mediaPostCount = ['3','4k','99','40','4','2','5','2','3']
+export const mediaListNames = ['Pins','Likes','Replies','Saved','Photos','Vines','Videos','Live','Articles']
+
 export const subsContent = ['Am i the only one who knows?',
     'Do you watch One Piece?',
     'Visited Niagara falls yesterday'
