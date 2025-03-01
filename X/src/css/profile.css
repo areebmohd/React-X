@@ -376,9 +376,10 @@
     font-size: small;
     color: rgba(113, 118, 123, 1);
 }
-.profile .about .link{
+.profile .about a{
     font-size: small;
     color: #0299fe;
+    text-decoration: none;
     cursor: pointer;
 }
 
