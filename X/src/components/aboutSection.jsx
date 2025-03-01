@@ -37,7 +37,7 @@ function AboutSection() {
             <a href="https://github.com/areebmohd" target='_blank'>github.com/areebmohd</a>
             <a href="https://x.com/ashu_cdx" target='_blank'>x.com/ashu_cdx</a>
             <h4>Work History</h4>
-            <p>• Frontend Developer at XXX from July 2024 to present day.</p>
+            <p>• Frontend Developer at XXX from July 2024 to present day</p>
             <p>• Currently Student</p>
             <h4>Contact Info</h4>
             <a href="https://aashu9105628720@gmail.com" target='_blank'>Email</a>

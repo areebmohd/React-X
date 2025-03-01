@@ -365,6 +365,7 @@
 
 .profile .about{
     padding: 10px;
+    padding-left: 20px;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -395,6 +396,21 @@
     }
     .profile .mediaLists{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .profile .info{
+        bottom: 50px;
+    }
+    .profile .info img {
+        height: 110px;
+        width: 110px;
+    }
+    .profile .info button {
+        top: 60px;
+    }
+    
+    .profile .contentBox{
+        position: relative;
+        bottom: 40px;
     }
 }
 

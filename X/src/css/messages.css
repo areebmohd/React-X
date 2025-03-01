@@ -1,0 +1,114 @@
+.messages {
+    width: 30%;
+    background-color: black;
+    border-left: 1px solid rgba(255, 255, 255, 0.170);
+    border-right: 1px solid rgba(255, 255, 255, 0.170);
+    position: absolute;
+    top: 0;
+    left: 25%;
+}
+.messages .topBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(5, 5, 5, 0.820);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    z-index: 12000;
+}
+.messages .topIcons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.messages .stories{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow: auto;
+    padding: 10px;
+    padding-bottom: 15px;
+}
+.messages .stories::-webkit-scrollbar {
+    display: none;
+}
+
+.messages .stories {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.messages .story{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.messages .story p{
+    font-size: small;
+    font-weight: 500;
+}
+.messages .story img{
+    height: 75px;
+    width: 75px;
+    padding: 2px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3.5px solid rgb(0, 170, 255);
+}
+.messages .story svg{
+    position: absolute;
+    top: 45px;
+    left: 70%;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 50%;
+} 
+.messages .messageList{
+    display: flex;
+    flex-direction: column;
+}
+.messages .chat{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    padding-left: 15px;
+}
+.messages .chat:hover{
+    background-color: #33333376;
+    cursor: pointer;
+}
+.messages .chat img{
+    height: 50px;
+    border-radius: 50%;
+}
+.messages .chat .nameMessage{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.messages .chat .name{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.messages .chat .name h4{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.messages .chat .name svg{
+    fill: rgba(29, 155, 240, 1);
+}
+.messages .chat .name p{
+    color: rgb(113, 118, 123);
+    font-size: 15px;
+}

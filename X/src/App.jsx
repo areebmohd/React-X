@@ -14,6 +14,7 @@ import Spaces2 from "./components/spaces2"
 import Spaces3 from "./components/spaces3"
 import Feed1 from "./components/feed1"
 import Profile from "./components/profile"
+import Messages from "./components/messages"
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
   const [homePage,setHomePage] = useState(true)
   const [leftBar, setLeftBar] = useState(window.innerWidth > 1240);
   const [profile,setProfile] = useState(false)
+  const [messages,setMessages] = useState(false)
 
   const leftBarRef = useRef(null);
 
@@ -62,7 +64,7 @@ function App() {
 
   return (
     <div className="app">
-      {!contentMenu ? leftBar?<Leftbar setProfile={setProfile} profile={profile} setExplorePage={setExplorePage} explorePage={explorePage} setHomePage={setHomePage} homePage={homePage} leftBarRef={leftBarRef}/>:'': <ContentMenu />}
+      {!contentMenu ? leftBar?<Leftbar setProfile={setProfile} profile={profile} setExplorePage={setExplorePage} explorePage={explorePage} setHomePage={setHomePage} homePage={homePage} leftBarRef={leftBarRef} messages={messages} setMessages={setMessages}/>:'': <ContentMenu />}
       <Routes>
         <Route path="/" element={<HomePage contentMenu={contentMenu} setContentMenu={setContentMenu} setHomePage={setHomePage} toggleLeftBar={toggleLeftBar} />} />
         <Route path="/originals" element={<Originals contentMenu={contentMenu} setContentMenu={setContentMenu}/>} />
@@ -74,6 +76,7 @@ function App() {
         <Route path="/feed1" element={<Feed1 contentMenu={contentMenu} setContentMenu={setContentMenu}/>} />
         <Route path="/explorePage" element={<ExplorePage setExplorePage={setExplorePage} setHomePage={setHomePage} toggleLeftBar={toggleLeftBar}/>} />
         <Route path="/profile" element={<Profile setProfile={setProfile} setHomePage={setHomePage} />}/>
+        <Route path="/messages" element={<Messages setHomePage={setHomePage} setMessages={setMessages}/>}/>
       </Routes>
       {!spaces2 ? <Rightbar explorePage={explorePage}/>:<Spaces2 setSpaces2={setSpaces2} spaces2={spaces2} setSpacesHost={setSpacesHost} spacesHost={spacesHost} spacesContent={spacesContent} setSpacesContent={setSpacesContent}/>} 
     </div>

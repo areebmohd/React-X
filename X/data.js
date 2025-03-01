@@ -67,43 +67,47 @@ import grok from './src/assets/grok.jpg'
 import memes from './src/assets/memes.jpg'
 import op from './src/assets/op.jpg'
 
-export const mediaPics = [op,crpic,speedpic,mbpic,apple,memes,marvel,rdj,xdnpic] 
-export const mediaPostCount = ['3','4k','99','40','4','2','5','2','3']
-export const mediaListNames = ['Pins','Likes','Replies','Saved','Photos','Vines','Videos','Live','Articles']
+export const messagesUsernames = ['@elonmusk • 1h','@Cristiano • 1h', '@ishowspeedsui • 2d', '@MrBeast • 1h', '@iamsrk • 23m','@DongWookChung2 • 2h', '@BRICSinfo • 1d', '@natemcgrady • 23m', '@retro_twt • 5h', '@nima_owji • 2d', '@stats_feed • 3h', '@MarvelStudios • 2h']
+export const messagesPictures = [elon, cr, speed, mb, srk, dongwook, bn, nate, ra, nima, wos, ms]
+export const messagesNames = ['Elon Musk', 'Christiano', 'Speed', 'Mr. Beast', 'ShahRukh', 'Dongwook', 'BRICS', 'Nate', 'Retro', 'Nima Owji', 'Statistics', 'Marvel']
+
+export const mediaPics = [op, crpic, speedpic, mbpic, apple, memes, marvel, rdj, xdnpic]
+export const mediaPostCount = ['3', '4k', '99', '40', '4', '2', '5', '2', '3']
+export const mediaListNames = ['Pins', 'Likes', 'Replies', 'Saved', 'Photos', 'Vines', 'Videos', 'Live', 'Articles']
 
 export const subsContent = ['Am i the only one who knows?',
     'Do you watch One Piece?',
     'Visited Niagara falls yesterday'
 ]
-export const subsPics = ['',op,sgpic]
+export const subsPics = ['', op, sgpic]
 
 export const orgsContent = ['My new art of DVKnight',
     'My new retro animation'
 ]
-export const orgsPics = [dvkpic,rapic]
+export const orgsPics = [dvkpic, rapic]
 export const postsContent = ['Is this the real world?',
     'My new art of DVKnight',
     'tired of apple, I want X Electronics',
     'Make Grok as useful as Jarvis',
     'My new retro animation'
 ]
-export const postsPics = ['',dvkpic,apple,grok,rapic]
+export const postsPics = ['', dvkpic, apple, grok, rapic]
 
-export const trendingPostPeople = [[crpic,bb,bn],[bo,cr,db],[dongwook,zdf,dsm],[srk,duo,dvk],[elon,fidias,jj]]
+export const trendingPostPeople = [[crpic, bb, bn], [bo, cr, db], [dongwook, zdf, dsm], [srk, duo, dvk], [elon, fidias, jj]]
 
-export const trendingCommunitiesPics = [memes,apple,grok,op,marvel]
-export const trendingCommunitiesName = ['Memes','Apple','Grok','One Piece','Marvel']
-export const trendingCommunitiesMembers = ['381k','439k','101k','65k','79k']
+export const trendingCommunitiesPics = [memes, apple, grok, op, marvel]
+export const trendingCommunitiesName = ['Memes', 'Apple', 'Grok', 'One Piece', 'Marvel']
+export const trendingCommunitiesMembers = ['381k', '439k', '101k', '65k', '79k']
 
-export const trendingPeopleDp = [elon,cr,mb,fidias,speed]
-export const trendingPeopleBanner = [elonbanner,crbanner,mbbanner,fidiasbanner,speedbanner]
-export const trendingPeopleName = ['Elon Musk','Christiano Ronaldo', 'Mr. Beast', 'Fidias Panayiotou', 'Speed']
-export const trendingPeopleUsernames = ['@elonmusk','@Cristiano','@MrBeast','@fidias0','@ishowspeedsui']
+export const trendingPeopleDp = [elon, cr, mb, fidias, speed]
+export const trendingPeopleBanner = [elonbanner, crbanner, mbbanner, fidiasbanner, speedbanner]
+export const trendingPeopleName = ['Elon Musk', 'Christiano Ronaldo', 'Mr. Beast', 'Fidias Panayiotou', 'Speed']
+export const trendingPeopleUsernames = ['@elonmusk', '@Cristiano', '@MrBeast', '@fidias0', '@ishowspeedsui']
 
-export const trendingPostDp = [cr,ms,speed,mb,srk]
+export const trendingPostDp = [cr, ms, speed, mb, srk]
 export const trendingPostNames = ['Christiano Ronaldo', 'Marvel Studios', 'Speed', 'Mr. Beast', 'Shah Rukh Khan']
-export const trendingPostUsernames = ['@Cristiano • 1h', '@MarvelStudios • 2h', '@ishowspeedsui • 2d', '@MrBeast • 1h', '@iamsrk • 23m',]
-export const trendingPostPics = [crpic2,mspic,speedpic,mbpic,srkpic]
+export const trendingPostUsernames = ['@Cristiano • 1h', '@MarvelStudios • 2h', '@ishowspeedsui • 2d', '@MrBeast • 1h', '@iamsrk • 23m']
+export const trendingPostPics = [crpic2, mspic, speedpic, mbpic, srkpic]
 export const trendingPostContent = ['A win and first goal after 40! ✌🏽',
     'New trailer for Marvel Studios’ Thunderbolts',
     'Quitting WWE!',
@@ -111,8 +115,8 @@ export const trendingPostContent = ['A win and first goal after 40! ✌🏽',
     'Midnight Tee and Knight Walker II Pants on dyavolx.com'
 ]
 
-export const trendPictures1 = [elon,mbpic,dvkpic,srkpic,bo]
-export const trendPostCount1 = ['533k','218k','127k','78k','121k',]
+export const trendPictures1 = [elon, mbpic, dvkpic, srkpic, bo]
+export const trendPostCount1 = ['533k', '218k', '127k', '78k', '121k',]
 export const trendTitle1 = ["Elon Musk's xAI Unveils 'scary smart' AI Chatbot to Challenge OpenAI, DeepSeek",
     "MrBeast Said Making 'Beast Games' was 'not a good' Financial Move: 'I lost millions of dollars'",
     'Art Gallery Opens With Show of Mythology Inspired Artworks',
@@ -120,8 +124,8 @@ export const trendTitle1 = ["Elon Musk's xAI Unveils 'scary smart' AI Chatbot to
     "Barack & Michelle Obama Bring In Lawyers For 'Secret' $70 Million Split: Report",
 ]
 
-export const trendPictures2 = [xdnpic,dt,sn,g3,sj]
-export const trendPostCount2 = ['92k','60k','34k','45k','54k']
+export const trendPictures2 = [xdnpic, dt, sn, g3, sj]
+export const trendPostCount2 = ['92k', '60k', '34k', '45k', '54k']
 export const trendTitle2 = ['xAI Discussing 10$ Billion Raise at 75$ Billion Valuation',
     '"People Tired Of...": Trump Hails Conservative Wave In German Election',
     'Satya Nadella Shares Video Of AI-Powered Farming In Baramati, Elon Musk Reacts',
@@ -129,8 +133,8 @@ export const trendTitle2 = ['xAI Discussing 10$ Billion Raise at 75$ Billion Val
     'iPhone Designer Still Asks: ‘I wonder what Steve Jobs would do?’'
 ]
 
-export const trendPictures3 = [crpic,vk,speedpic,dbpic,duopic]
-export const trendPostCount3 = ['79k','86k','57k','35k','34k',]
+export const trendPictures3 = [crpic, vk, speedpic, dbpic, duopic]
+export const trendPostCount3 = ['79k', '86k', '57k', '35k', '34k',]
 export const trendTitle3 = ['Cristiano Ronaldo Questions Lionel Messi’s 7 Ballon d’Or Awards',
     'Virat Kohli Gets the Monkey Off His Back as India Race to an Impressive Win',
     'MrBeast tells IShowSpeed What to Avoid During a Potential Cristiano Ronaldo Collab',
@@ -138,8 +142,8 @@ export const trendTitle3 = ['Cristiano Ronaldo Questions Lionel Messi’s 7 Ball
     'Duolingo ‘killed’ its mascot with a Cybertruck, and it’s going weirdly well',
 ]
 
-export const trendPictures4 = [dsm,hc,mrb,rdj,tc]
-export const trendPostCount4 = ['65k','23k','10k','25k','7K']
+export const trendPictures4 = [dsm, hc, mrb, rdj, tc]
+export const trendPostCount4 = ['65k', '23k', '10k', '25k', '7K']
 export const trendTitle4 = ['‘Demon Slayer’ Infinity Castle Trilogy to Premiere First Film in 2025',
     'Henry Cavill More Likely Than Ever to be Next James Bond with Christopher Nolan Directing',
     'Rowan Atkinson Turns 70: Let’s Talk About Mr. Bean’s Love for Formula 1',
@@ -148,7 +152,7 @@ export const trendTitle4 = ['‘Demon Slayer’ Infinity Castle Trilogy to Premi
 ]
 
 
-export const topicnames = ['@Cristiano', '@elonmusk','@MrBeast', '@DongWookChung2', '@BRICSinfo', '@natemcgrady', '@ishowspeedsui', '@retro_twt', '@nima_owji', '@stats_feed']
+export const topicnames = ['@Cristiano', '@elonmusk', '@MrBeast', '@DongWookChung2', '@BRICSinfo', '@natemcgrady', '@ishowspeedsui', '@retro_twt', '@nima_owji', '@stats_feed']
 export const feedpics = [crpic, mbpic, crpic2, '', '', bnpic, '', speedpic, rapic, '', '']
 export const feedprofilePictures = [cr, mb, cr, elon, dongwook, bn, nate, speed, ra, nima, wos]
 export const feednames = ['Christiano Ronaldo', 'Mr. Beast', 'Christiano Ronaldo', 'Elon Musk', 'Dongwook', 'BRICS News', 'Nate', 'Speed', 'Retro Anime', 'Nima Owji', 'World of Statistics']
