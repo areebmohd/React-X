@@ -25,7 +25,7 @@ function AboutSection() {
             <h4>Birth Date</h4>
             <p>• 7 March 2024</p>
             <h4>Education</h4>
-            <p>• Bachelor of Technology in Computer Science Engineering from Gurugram</p>
+            <p>• Bachelor of Technology in Computer Science Engineering</p>
             <p>• High School from Riverdale International School</p>
             <h4>Skills</h4>
             <p>• Frontend development using React</p>

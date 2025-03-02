@@ -1,6 +1,10 @@
 import '../css/rightbar.css'
+import { useAppContext } from '../App';
 
-function Rightbar({ explorePage }) {
+function Rightbar() {
+
+    const { explorePage } = useAppContext();
+
     return (
         <div className="rightbar">
             {explorePage ? '' : <span className='searchBox'>

@@ -2,6 +2,7 @@ import '../css/homePage.css';
 import { ogProfilePictures, ogNames, ogUsernames, ogContent, ogPics, valueConverter } from '../../data';
 import React, { useRef } from 'react';
 import dp from '../assets/dp.jpg';
+import { useAppContext } from '../App';
 
 function showLeftbar() {
     let leftbar = document.querySelector('.leftbar');
@@ -12,7 +13,10 @@ function showLeftbar() {
     }
 }
 
-function Originals({ setContentMenu }) {
+function Originals() {
+
+    const { setContentMenu } = useAppContext();
+
     const videoRef = useRef(null);
     return (
         <div className="homePage">

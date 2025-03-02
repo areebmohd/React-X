@@ -6,6 +6,15 @@
     position: absolute;
     top: 0;
     left: 25%;
+    overflow-y: auto;
+    height: 100vh;
+}
+.messages::-webkit-scrollbar {
+    display: none;
+}
+.messages {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 .messages .topBar {
     display: flex;
@@ -75,40 +84,51 @@
     display: flex;
     flex-direction: column;
 }
-.messages .chat{
+.messages .chatInfo{
     display: flex;
     align-items: center;
     gap: 10px;
     padding: 10px;
     padding-left: 15px;
 }
-.messages .chat:hover{
+.messages .chatInfo:hover{
     background-color: #33333376;
     cursor: pointer;
 }
-.messages .chat img{
+.messages .chatInfo img{
     height: 50px;
     border-radius: 50%;
 }
-.messages .chat .nameMessage{
+.messages .chatInfo .nameMessage{
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
-.messages .chat .name{
+.messages .chatInfo .nameMessage p{
+    color: rgb(113, 118, 123);
+}
+.messages .chatInfo .name{
     display: flex;
     align-items: center;
     gap: 5px;
 }
-.messages .chat .name h4{
+.messages .chatInfo .name h4{
     display: flex;
     align-items: center;
     gap: 3px;
 }
-.messages .chat .name svg{
+.messages .chatInfo .name svg{
     fill: rgba(29, 155, 240, 1);
 }
-.messages .chat .name p{
+.messages .chatInfo .name p{
     color: rgb(113, 118, 123);
     font-size: 15px;
+}
+@media (max-width:1240px) {
+    .messages {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 }

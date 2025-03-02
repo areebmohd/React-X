@@ -1,6 +1,7 @@
 import '../css/homePage.css';
 import { trprofilePictures, trnames, trusernames, trcontent, trpics, valueConverter } from '../../data';
 import dp from '../assets/dp.jpg';
+import { useAppContext } from '../App';
 
 function showLeftbar() {
   let leftbar = document.querySelector('.leftbar');
@@ -11,7 +12,10 @@ function showLeftbar() {
   }
 }
 
-function Trending({ contentMenu, setContentMenu }) {
+function Trending() {
+
+  const { setContentMenu } = useAppContext();
+
   return (
     <div className="homePage">
       <div className="topBar" onClick={() => showLeftbar()}>

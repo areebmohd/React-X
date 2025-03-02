@@ -2,6 +2,7 @@ import menu from '../assets/menu.png';
 import { Link } from 'react-router-dom';
 import dp from '../assets/dp.jpg';
 import '../css/leftbar.css';
+import { useAppContext } from '../App';
 
 let newdiv;
 
@@ -40,38 +41,50 @@ function create() {
   }
 }
 
-function Leftbar({setExplorePage, setHomePage, homePage, explorePage, leftBarRef, profile, setProfile, messages, setMessages}) {
+function Leftbar() {
+
+  const {setExplorePage, setHomePage, homePage, explorePage, leftBarRef, profile, setProfile, messages, setMessages, setChatBoxPage, setChatInfoPage } = useAppContext();
 
   function home(){
     setHomePage(true);
     setExplorePage(false);
     setProfile(false);
     setMessages(false);
+    setChatBoxPage(false);
+    setChatInfoPage(false);
   }
 
   function explore(){
-    setHomePage(false);
     setExplorePage(true);
+    setHomePage(false);
     setProfile(false);
     setMessages(false);
+    setChatBoxPage(false);
+    setChatInfoPage(false);
   }
   function messagesPage(){
+    setMessages(true);
     setHomePage(false);
     setExplorePage(false);
     setProfile(false);
-    setMessages(true);
+    setChatBoxPage(false);
+    setChatInfoPage(false);
   }
   function services(){
     setHomePage(false);
     setExplorePage(false);
     setProfile(false);
     setMessages(false);
+    setChatBoxPage(false);
+    setChatInfoPage(false);
   }
   function profilePage(){
+    setProfile(true);
     setHomePage(false);
     setExplorePage(false);
     setMessages(false);
-    setProfile(true);
+    setChatBoxPage(false);
+    setChatInfoPage(false);
   }
 
     return (

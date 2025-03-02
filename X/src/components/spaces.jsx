@@ -2,6 +2,7 @@ import '../css/homePage.css';
 import { useState } from 'react';
 import { profilePictures, names, usernames, spaceContent, valueConverter } from '../../data';
 import dp from '../assets/dp.jpg';
+import { useAppContext } from '../App';
 
 function showLeftbar() {
   let leftbar = document.querySelector('.leftbar');
@@ -12,7 +13,9 @@ function showLeftbar() {
   }
 }
 
-function Spaces({ setSpaces2, setContentMenu, setSpacesHost, setSpacesContent }) {
+function Spaces() {
+
+  const { setSpaces2, setContentMenu, setSpacesHost, setSpacesContent } = useAppContext();
 
   const [joinedIndex, setJoinedIndex] = useState(null);
 

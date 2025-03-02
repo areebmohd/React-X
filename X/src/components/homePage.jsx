@@ -1,10 +1,23 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import '../css/homePage.css';
 import { profilePictures, names, usernames, content, pics } from '../../data';
 import { valueConverter } from '../../data';
 import dp from '../assets/dp.jpg';
+import { useAppContext } from '../App';
 
-function HomePage({ setContentMenu, toggleLeftBar}) {
+function HomePage() {
+
+  const { setContentMenu, toggleLeftBar, setHomePage, setExplorePage, setMessages, setProfile, setChatBoxPage, setChatInfoPage} = useAppContext();
+
+  useEffect(() => {
+          setExplorePage(false);
+          setHomePage(true);
+          setMessages(false);
+          setProfile(false);
+          setChatBoxPage(false);
+          setChatInfoPage(false);
+      }, []);
+
   return (
     <div className="homePage">
       <div className="topBar">

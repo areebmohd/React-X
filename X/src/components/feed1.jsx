@@ -3,6 +3,7 @@ import { feedprofilePictures, feednames, feedusernames, feedcontent, feedpics, t
 import { valueConverter } from '../../data';
 import { useState } from 'react';
 import dp from '../assets/dp.jpg';
+import { useAppContext } from '../App';
 
 function showLeftbar() {
   let leftbar = document.querySelector('.leftbar');
@@ -13,7 +14,9 @@ function showLeftbar() {
   }
 }
 
-function Feed1({ setContentMenu }) {
+function Feed1() {
+
+  const { setContentMenu } = useAppContext();
 
   const [currentView, setCurrentView] = useState('topics');
 

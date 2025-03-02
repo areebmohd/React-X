@@ -67,6 +67,10 @@ import grok from './src/assets/grok.jpg'
 import memes from './src/assets/memes.jpg'
 import op from './src/assets/op.jpg'
 
+export const chatMedia = [crpic,crpic2,srkpic,speedpic,dbpic,dvkpic,xdnpic,mbpic]
+export const starredMessages = ['call at 9 for details of work','wedding party on 20 july','homework should be done before holidays','party planning on tuesday','this is awesome','ok done tommorow','coming here']
+
+export const messagesMessage = ['I wanna work for X','great match','yo','reply me pls','big fan sir','i have a new idea for communities','russia or china?','can we unite live videos and spaces?','one piece coming next month','i follow you','your favourite country?','disapointed']
 export const messagesUsernames = ['@elonmusk • 1h','@Cristiano • 1h', '@ishowspeedsui • 2d', '@MrBeast • 1h', '@iamsrk • 23m','@DongWookChung2 • 2h', '@BRICSinfo • 1d', '@natemcgrady • 23m', '@retro_twt • 5h', '@nima_owji • 2d', '@stats_feed • 3h', '@MarvelStudios • 2h']
 export const messagesPictures = [elon, cr, speed, mb, srk, dongwook, bn, nate, ra, nima, wos, ms]
 export const messagesNames = ['Elon Musk', 'Christiano', 'Speed', 'Mr. Beast', 'ShahRukh', 'Dongwook', 'BRICS', 'Nate', 'Retro', 'Nima Owji', 'Statistics', 'Marvel']

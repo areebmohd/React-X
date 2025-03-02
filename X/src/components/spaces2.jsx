@@ -1,8 +1,12 @@
 import '../css/spaces2.css';
 import { spacepics, spacenames } from '../../data';
 import { Link } from 'react-router-dom';
+import { useAppContext } from '../App';
 
-function Spaces2({ spacesContent, spacesHost, setSpaces2 }) {
+function Spaces2() {
+
+    const { spacesContent, spacesHost, setSpaces2 } = useAppContext();
+
     return (
         <div className="spaces">
             <div className="spaces2">

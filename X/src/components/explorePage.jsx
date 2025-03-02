@@ -5,12 +5,19 @@ import NewsSection from './newsSection';
 import SportsSection from './sportsSection';
 import EntertainmentSection from './entertainmentSection';
 import dp from '../assets/dp.jpg';
+import { useAppContext } from '../App';
 
-function ExplorePage({ setExplorePage, setHomePage, toggleLeftBar }) {
+function ExplorePage() {
+
+    const { setExplorePage, setHomePage, toggleLeftBar, setMessages, setProfile, setChatBoxPage, setChatInfoPage } = useAppContext();
 
     useEffect(() => {
         setExplorePage(true);
         setHomePage(false);
+        setMessages(false);
+        setProfile(false);
+        setChatBoxPage(false);
+        setChatInfoPage(false);
     }, []);
 
     const [trending, setTrending] = useState(true)

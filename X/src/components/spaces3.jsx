@@ -1,8 +1,12 @@
 import '../css/spaces3.css'
 import { spacepics, spacenames } from '../../data';
 import { Link } from 'react-router-dom';
+import { useAppContext } from '../App';
 
-function Spaces3({ spacesContent, spacesHost, setSpaces2 }) {
+function Spaces3() {
+
+    const { spacesContent, spacesHost, setSpaces2 } = useAppContext();
+
     return (
         <div className="spaces3">
             <div className="top">

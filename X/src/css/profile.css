@@ -6,6 +6,16 @@
     position: absolute;
     top: 0;
     left: 25%;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.profile::-webkit-scrollbar {
+    display: none;
+}
+.profile {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .profile .topbar {

@@ -2,6 +2,7 @@ import '../css/vines.css';
 import { vineprofilePictures, vinenames, vineusernames, vinecontent, vinepics, valueConverter } from '../../data';
 import React, { useState } from 'react';
 import dp from '../assets/dp.jpg';
+import { useAppContext } from '../App';
 
 function showLeftbar() {
   let leftbar = document.querySelector('.leftbar');
@@ -12,7 +13,10 @@ function showLeftbar() {
   }
 }
 
-function Vines({ setContentMenu }) {
+function Vines() {
+
+  const { setContentMenu } = useAppContext();
+
   const [showOptionsIndex, setShowOptionsIndex] = useState(null);
 
   const handleOptionsClick = (index) => {

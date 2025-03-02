@@ -8,12 +8,19 @@ import OrgsSection from './orgsSection';
 import SubsSection from './subsSection';
 import MediaSection from './mediaSection';
 import AboutSection from './aboutSection';
+import { useAppContext } from '../App';
 
-function Profile({ setProfile, setHomePage }) {
+function Profile() {
+
+    const { setProfile, setHomePage, setChatBoxPage, setChatInfoPage, setMessages, setExplorePage } = useAppContext();
 
     useEffect(() => {
         setProfile(true);
         setHomePage(false);
+        setChatBoxPage(false);
+        setChatInfoPage(false);
+        setMessages(false);
+        setExplorePage(false);
     }, []);
 
     function home() {

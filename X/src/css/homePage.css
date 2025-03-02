@@ -6,6 +6,17 @@
     position: absolute;
     top: 0;
     left: 25%;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.homePage::-webkit-scrollbar {
+    display: none;
+}
+
+.homePage {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .homePage .topBar {
@@ -23,12 +34,13 @@
     backdrop-filter: blur(5px);
 }
 
-.homePage .topBar div{
+.homePage .topBar div {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.homePage .topBar div img{
+
+.homePage .topBar div img {
     height: 30px;
     border-radius: 50%;
     display: none;
@@ -232,14 +244,15 @@
     cursor: pointer;
 }
 
-@media (max-width:1240px){
-    .homePage{
+@media (max-width:1240px) {
+    .homePage {
         width: 100%;
         position: absolute;
         top: 0;
         left: 0;
     }
-    .homePage .topBar div img{
+
+    .homePage .topBar div img {
         display: block;
     }
 }

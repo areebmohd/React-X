@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom"
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect, useRef, createContext, useContext } from "react"
 import Leftbar from "./components/leftbar"
 import Rightbar from "./components/rightbar"
 import HomePage from "./components/homePage"
@@ -15,18 +15,28 @@ import Spaces3 from "./components/spaces3"
 import Feed1 from "./components/feed1"
 import Profile from "./components/profile"
 import Messages from "./components/messages"
+import ChatBox from "./components/chatBox"
+import NewMessage from "./components/newMessage"
+import ChatInfo from "./components/chatInfo"
+
+const AppContext = createContext();
+export const useAppContext = () => useContext(AppContext);
 
 function App() {
-
-  const [contentMenu, setContentMenu] = useState(false)
-  const [spaces2, setSpaces2] = useState(false)
-  const [spacesContent, setSpacesContent] = useState(null)
-  const [spacesHost, setSpacesHost] = useState(null)
-  const [explorePage,setExplorePage] = useState(false)
-  const [homePage,setHomePage] = useState(true)
+  const [contentMenu, setContentMenu] = useState(false);
+  const [spaces2, setSpaces2] = useState(false);
+  const [spacesContent, setSpacesContent] = useState(null);
+  const [spacesHost, setSpacesHost] = useState(null);
+  const [explorePage, setExplorePage] = useState(false);
+  const [homePage, setHomePage] = useState(true);
   const [leftBar, setLeftBar] = useState(window.innerWidth > 1240);
-  const [profile,setProfile] = useState(false)
-  const [messages,setMessages] = useState(false)
+  const [profile, setProfile] = useState(false);
+  const [messages, setMessages] = useState(false);
+  const [message, setMessage] = useState(null);
+  const [chatInfoPage, setChatInfoPage] = useState(false);
+  const [chatName, setChatName] = useState(null);
+  const [chatPic, setChatPic] = useState(null);
+  const [chatBoxPage, setChatBoxPage] = useState(null);
 
   const leftBarRef = useRef(null);
 
@@ -62,24 +72,44 @@ function App() {
     }
   };
 
+  const contextValue = {
+    contentMenu, setContentMenu,
+    spaces2, setSpaces2,
+    spacesContent, setSpacesContent,
+    spacesHost, setSpacesHost,
+    explorePage, setExplorePage,
+    homePage, setHomePage,
+    leftBar, setLeftBar,
+    profile, setProfile,
+    messages, setMessages,
+    message, setMessage,
+    chatBoxPage, setChatBoxPage,
+    chatInfoPage, setChatInfoPage,
+    chatName, setChatName,
+    chatPic, setChatPic,
+    toggleLeftBar
+  };
+
   return (
-    <div className="app">
-      {!contentMenu ? leftBar?<Leftbar setProfile={setProfile} profile={profile} setExplorePage={setExplorePage} explorePage={explorePage} setHomePage={setHomePage} homePage={homePage} leftBarRef={leftBarRef} messages={messages} setMessages={setMessages}/>:'': <ContentMenu />}
-      <Routes>
-        <Route path="/" element={<HomePage contentMenu={contentMenu} setContentMenu={setContentMenu} setHomePage={setHomePage} toggleLeftBar={toggleLeftBar} />} />
-        <Route path="/originals" element={<Originals contentMenu={contentMenu} setContentMenu={setContentMenu}/>} />
-        <Route path="/trending" element={<Trending contentMenu={contentMenu} setContentMenu={setContentMenu}/>} />
-        <Route path="/videos" element={<Videos contentMenu={contentMenu} setContentMenu={setContentMenu}/>} /> 
-        <Route path="/vines" element={<Vines contentMenu={contentMenu} setContentMenu={setContentMenu}/>} />
-        <Route path="/spaces" element={<Spaces contentMenu={contentMenu} setContentMenu={setContentMenu} setSpaces2={setSpaces2} setSpacesHost={setSpacesHost} spacesContent={spacesContent} setSpacesContent={setSpacesContent}/>} />
-        <Route path="/spaces3" element={<Spaces3 contentMenu={contentMenu} setContentMenu={setContentMenu} setSpaces2={setSpaces2} spacesHost={spacesHost} setSpacesHost={setSpacesHost} spacesContent={spacesContent} setSpacesContent={setSpacesContent}/>} />
-        <Route path="/feed1" element={<Feed1 contentMenu={contentMenu} setContentMenu={setContentMenu}/>} />
-        <Route path="/explorePage" element={<ExplorePage setExplorePage={setExplorePage} setHomePage={setHomePage} toggleLeftBar={toggleLeftBar}/>} />
-        <Route path="/profile" element={<Profile setProfile={setProfile} setHomePage={setHomePage} />}/>
-        <Route path="/messages" element={<Messages setHomePage={setHomePage} setMessages={setMessages}/>}/>
-      </Routes>
-      {!spaces2 ? <Rightbar explorePage={explorePage}/>:<Spaces2 setSpaces2={setSpaces2} spaces2={spaces2} setSpacesHost={setSpacesHost} spacesHost={spacesHost} spacesContent={spacesContent} setSpacesContent={setSpacesContent}/>} 
-    </div>
+    <AppContext.Provider value={contextValue}>
+      <div className="app">
+        {!contentMenu ? leftBar ? <Leftbar leftBarRef={leftBarRef} /> : '' : <ContentMenu />}
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/originals" element={<Originals />} />
+          <Route path="/trending" element={<Trending />} />
+          <Route path="/videos" element={<Videos />} />
+          <Route path="/vines" element={<Vines />} />
+          <Route path="/spaces" element={<Spaces />} />
+          <Route path="/spaces3" element={<Spaces3 />} />
+          <Route path="/feed1" element={<Feed1 />} />
+          <Route path="/explorePage" element={<ExplorePage />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/messages" element={<Messages />} />
+        </Routes>
+        {!spaces2 ? chatInfoPage? <ChatInfo/> : chatBoxPage? <ChatBox/> : messages && window.innerWidth > 1240 ? <NewMessage/>: <Rightbar /> : <Spaces2 />}
+      </div>
+    </AppContext.Provider>
   )
 }
 

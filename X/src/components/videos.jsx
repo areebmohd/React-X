@@ -2,6 +2,7 @@ import '../css/homePage.css';
 import { vprofilePictures, vnames, vusernames, vcontent, vpics, valueConverter } from '../../data';
 import React, { useRef, useState } from 'react';
 import dp from '../assets/dp.jpg';
+import { useAppContext } from '../App';
 
 function showLeftbar() {
   let leftbar = document.querySelector('.leftbar');
@@ -12,7 +13,10 @@ function showLeftbar() {
   }
 }
 
-function Videos({ setContentMenu }) {
+function Videos() {
+
+  const { setContentMenu } = useAppContext();
+
   const videoRefs = useRef([]);
   const [currentVideo, setCurrentVideo] = useState(null);
 
