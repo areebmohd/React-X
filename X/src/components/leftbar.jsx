@@ -43,7 +43,7 @@ function create() {
 
 function Leftbar() {
 
-  const {setExplorePage, setHomePage, homePage, explorePage, leftBarRef, profile, setProfile, messages, setMessages, setChatBoxPage, setChatInfoPage } = useAppContext();
+  const {setExplorePage, setHomePage, homePage, explorePage, leftBarRef, profile, setProfile, messages, setMessages, setChatBoxPage, setChatInfoPage, toggleLeftBar } = useAppContext();
 
   function home(){
     setHomePage(true);
@@ -52,6 +52,7 @@ function Leftbar() {
     setMessages(false);
     setChatBoxPage(false);
     setChatInfoPage(false);
+    toggleLeftBar();
   }
 
   function explore(){
@@ -61,6 +62,7 @@ function Leftbar() {
     setMessages(false);
     setChatBoxPage(false);
     setChatInfoPage(false);
+    toggleLeftBar();
   }
   function messagesPage(){
     setMessages(true);
@@ -69,6 +71,7 @@ function Leftbar() {
     setProfile(false);
     setChatBoxPage(false);
     setChatInfoPage(false);
+    toggleLeftBar();
   }
   function services(){
     setHomePage(false);
@@ -77,6 +80,7 @@ function Leftbar() {
     setMessages(false);
     setChatBoxPage(false);
     setChatInfoPage(false);
+    toggleLeftBar();
   }
   function profilePage(){
     setProfile(true);
@@ -85,6 +89,7 @@ function Leftbar() {
     setMessages(false);
     setChatBoxPage(false);
     setChatInfoPage(false);
+    toggleLeftBar();
   }
 
     return (

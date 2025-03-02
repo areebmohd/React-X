@@ -111,7 +111,6 @@
 }
 .chatBox{
     overflow: hidden;
-    height: 100vh;
     background-color: black;
     width: 45%;
     height: 100vh;
@@ -242,13 +241,13 @@
     fill: tomato;
 }
 .chatBox .options .svg2{
-    fill: blueviolet;
+    fill: palegreen;
 }
 .chatBox .options .svg3{
-    fill: yellowgreen;
-}
-.chatBox .options .svg4{
     fill: orange;
+}
+.chatBox .options #svg4{
+    fill: white;
 }
 .chatBox .options .svg5{
     fill: royalblue;
