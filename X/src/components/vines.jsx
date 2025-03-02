@@ -4,18 +4,9 @@ import React, { useState } from 'react';
 import dp from '../assets/dp.jpg';
 import { useAppContext } from '../App';
 
-function showLeftbar() {
-  let leftbar = document.querySelector('.leftbar');
-  if (leftbar.style.display === 'none') {
-    leftbar.style.display = 'block'
-  } else {
-    leftbar.style.display = 'none'
-  }
-}
-
 function Vines() {
 
-  const { setContentMenu } = useAppContext();
+  const { setContentMenu,toggleLeftBar } = useAppContext();
 
   const [showOptionsIndex, setShowOptionsIndex] = useState(null);
 
@@ -25,9 +16,9 @@ function Vines() {
 
   return (
     <div className="vinePage">
-      <div className="topBar" onClick={() => showLeftbar()}>
+      <div className="topBar">
         <div>
-          <img src={dp} alt="" />
+          <img src={dp} alt="" className="display-image" onClick={toggleLeftBar}/>
           <h2>Vines</h2>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height='25px' onClick={() => setContentMenu(prev => !prev)}>

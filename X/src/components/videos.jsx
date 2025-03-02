@@ -4,18 +4,10 @@ import React, { useRef, useState } from 'react';
 import dp from '../assets/dp.jpg';
 import { useAppContext } from '../App';
 
-function showLeftbar() {
-  let leftbar = document.querySelector('.leftbar');
-  if (leftbar.style.display === 'none') {
-    leftbar.style.display = 'block'
-  } else {
-    leftbar.style.display = 'none'
-  }
-}
 
 function Videos() {
 
-  const { setContentMenu } = useAppContext();
+  const { setContentMenu,toggleLeftBar } = useAppContext();
 
   const videoRefs = useRef([]);
   const [currentVideo, setCurrentVideo] = useState(null);
@@ -37,9 +29,9 @@ function Videos() {
 
   return (
     <div className="homePage">
-      <div className="topBar" onClick={() => showLeftbar()}>
+      <div className="topBar">
         <div>
-          <img src={dp} alt="" />
+          <img src={dp} alt="" className="display-image" onClick={toggleLeftBar}/>
           <h2>Videos</h2>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height='25px' onClick={() => setContentMenu(prev => !prev)}>

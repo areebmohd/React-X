@@ -31,6 +31,17 @@
     backdrop-filter: blur(5px);
     z-index: 12000;
 }
+.messages .topBar .leftSide{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.messages .topBar .leftSide img{
+    height: 30px;
+    border-radius: 50%;
+    display: none;
+}
 .messages .topIcons{
     display: flex;
     align-items: center;
@@ -130,5 +141,8 @@
         position: absolute;
         top: 0;
         left: 0;
+    }
+    .messages .topBar .leftSide img {
+        display: block;
     }
 }

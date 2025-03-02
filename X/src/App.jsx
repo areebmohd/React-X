@@ -87,13 +87,13 @@ function App() {
     chatInfoPage, setChatInfoPage,
     chatName, setChatName,
     chatPic, setChatPic,
-    toggleLeftBar
+    leftBarRef,toggleLeftBar
   };
 
   return (
     <AppContext.Provider value={contextValue}>
       <div className="app">
-        {!contentMenu ? leftBar ? <Leftbar leftBarRef={leftBarRef} /> : '' : <ContentMenu />}
+        {!contentMenu ? leftBar ? <Leftbar /> : '' : <ContentMenu />}
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/originals" element={<Originals />} />
