@@ -67,6 +67,32 @@ import grok from './src/assets/grok.jpg'
 import memes from './src/assets/memes.jpg'
 import op from './src/assets/op.jpg'
 
+import jd from './src/assets/jd.jpg'
+import sky from './src/assets/sky.jpg'
+import tcn from './src/assets/tcn.jpg'
+import xn from './src/assets/xn.jpg'
+
+import jdpic from './src/assets/jdpic.jpg'
+import tcnpic from './src/assets/tcnpic.jpg'
+import xnpic from './src/assets/xnpic.webp'
+import xdnpic2 from './src/assets/xdnpic2.png'
+
+export const events = ['Grammys 2025','IIFA 2025', 'AnimeJapan', 'Rose Parade', 'FoodieLand']
+export const eventTitles = ['USA','India', 'Japan', 'UK', 'Canada']
+
+export const sportsTeams = ['New Zealand vs India', 'South Africa vs Afghanistan', 'England vs Australia', 'Bangladesh vs Australia', 'Pakistan vs England']
+
+export const newsPictures = [jd, sky, tcn, xn, xdn]
+export const newsNames = ['JD Vance','Sky News','Tucker Carlson','News','X Daily News']
+export const newsUserNames = ['@JDVanceNewsX • live','@SkyNews • live','@TuckerCNews • live','@XNews • 1h','@xDaily • 2h']
+export const newsPics = [jdpic,dt,tcnpic,xnpic,xdnpic2]
+export const newsContent = ["A private investigator has uncovered evidence that Thomas Matthew Crooks was a part of criminal network",
+    "Trump has paused military aid to Ukraine just days after his row with Zelenskyy, according to US media reports",
+    'FBI agents are saying if Kash Patel becomes FBI Director, it would cause "massive damage" to the agency',
+    'A New Era for the Everything App: X Launches Video Tab, report says that it will include topics to select particular content ',
+    'Users discovered that Grok 3 could be easily jailbroken to provide information ranging from assasination to synthesize drugs'
+]
+
 export const chatMedia = [crpic,crpic2,srkpic,speedpic,dbpic,dvkpic,xdnpic,mbpic]
 export const starredMessages = ['call at 9 for details of work','wedding party on 20 july','homework should be done before holidays','party planning on tuesday','this is awesome','ok done tommorow','coming here']
 

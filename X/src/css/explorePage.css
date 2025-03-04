@@ -402,6 +402,147 @@
     z-index: 1;
 }
 
+.explorePage .postPic{
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.explorePage .postPic img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.explorePage .livestamp{
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+    font-size: small;
+    background-color: red;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.explorePage .newsArticles .postPic{
+    margin-top: 10px;
+}
+
+.explorePage .newsArticles .articlestamp{
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+    font-size: small;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.600);
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.explorePage .ongoing{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.explorePage .ongoing .box{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px;
+    background-color: rgb(155, 50, 250);
+    border-radius: 10px;
+}
+
+.explorePage .ongoing .box .teams{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.explorePage .ongoing .box .score{
+    font-size: 14px;
+}
+
+.explorePage .ongoing .box .buttons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.explorePage .ongoing .box .buttons button{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.explorePage .ongoing .liveVideo{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.explorePage .ongoing .liveVideo img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    height: 250px;
+}
+
+.explorePage .upcoming .box{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    background-color: royalblue;
+    border-radius: 10px;
+    min-width: 300px;
+    position: relative;
+}
+
+.explorePage .upcoming .box .date{
+    font-size: 14px;
+}
+
+.explorePage .upcoming .box .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.explorePage .upcoming .box .buttons button{
+    width: 47%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.explorePage #eventBox{
+    background-color: orange;
+}
+
+.explorePage #eventBoxes{
+    background-color: orangered;
+}
+
 @media (max-width:1240px) {
     .explorePage {
         width: 100%;
