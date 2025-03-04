@@ -86,11 +86,11 @@ export const newsPictures = [jd, sky, tcn, xn, xdn]
 export const newsNames = ['JD Vance','Sky News','Tucker Carlson','News','X Daily News']
 export const newsUserNames = ['@JDVanceNewsX • live','@SkyNews • live','@TuckerCNews • live','@XNews • 1h','@xDaily • 2h']
 export const newsPics = [jdpic,dt,tcnpic,xnpic,xdnpic2]
-export const newsContent = ["A private investigator has uncovered evidence that Thomas Matthew Crooks was a part of criminal network",
-    "Trump has paused military aid to Ukraine just days after his row with Zelenskyy, according to US media reports",
-    'FBI agents are saying if Kash Patel becomes FBI Director, it would cause "massive damage" to the agency',
-    'A New Era for the Everything App: X Launches Video Tab, report says that it will include topics to select particular content ',
-    'Users discovered that Grok 3 could be easily jailbroken to provide information ranging from assasination to synthesize drugs'
+export const newsContent = ["Thomas Matthew Crooks was a part of criminal network?",
+    "Trump paused military aid to Ukraine just days after his row with Zelenskyy",
+    '"Massive damage" to the agency if Kash Patel becomes FBI Director',
+    'A New Era for the Everything App: X Launches Video Tab',
+    'Grok 3 could provide information ranging from assasination to synthesize drugs'
 ]
 
 export const chatMedia = [crpic,crpic2,srkpic,speedpic,dbpic,dvkpic,xdnpic,mbpic]
