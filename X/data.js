@@ -90,7 +90,7 @@ export const newsContent = ["Thomas Matthew Crooks was a part of criminal networ
     "Trump paused military aid to Ukraine just days after his row with Zelenskyy",
     '"Massive damage" to the agency if Kash Patel becomes FBI Director',
     'A New Era for the Everything App: X Launches Video Tab',
-    'Grok 3 could provide information ranging from assasination to synthesize drugs'
+    'Grok 3 could provide information ranging from assasination to drugs'
 ]
 
 export const chatMedia = [crpic,crpic2,srkpic,speedpic,dbpic,dvkpic,xdnpic,mbpic]
