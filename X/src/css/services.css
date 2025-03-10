@@ -108,4 +108,8 @@
     .services .box{
         align-items: center;
     }
+
+    .services .box .text p{
+        font-size: small;
+    }
 }
