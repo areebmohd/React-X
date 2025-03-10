@@ -12,7 +12,7 @@ import { useAppContext } from '../App';
 
 function Profile() {
 
-    const { setProfile, setHomePage, setChatBoxPage, setChatInfoPage, setMessages, setExplorePage } = useAppContext();
+    const { setProfile, setHomePage, setChatBoxPage, setChatInfoPage, setMessages, setExplorePage, setServices } = useAppContext();
 
     useEffect(() => {
         setProfile(true);
@@ -21,6 +21,7 @@ function Profile() {
         setChatInfoPage(false);
         setMessages(false);
         setExplorePage(false);
+        setServices(false);
     }, []);
 
     function home() {

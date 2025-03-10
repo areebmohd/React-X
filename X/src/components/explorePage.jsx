@@ -9,7 +9,7 @@ import { useAppContext } from '../App';
 
 function ExplorePage() {
 
-    const { setExplorePage, setHomePage, toggleLeftBar, setMessages, setProfile, setChatBoxPage, setChatInfoPage } = useAppContext();
+    const { setExplorePage, setHomePage, toggleLeftBar, setMessages, setProfile, setChatBoxPage, setChatInfoPage, setServices } = useAppContext();
 
     useEffect(() => {
         setExplorePage(true);
@@ -18,6 +18,7 @@ function ExplorePage() {
         setProfile(false);
         setChatBoxPage(false);
         setChatInfoPage(false);
+        setServices(false);
     }, []);
 
     const [trending, setTrending] = useState(true)

@@ -77,6 +77,22 @@ import tcnpic from './src/assets/tcnpic.jpg'
 import xnpic from './src/assets/xnpic.webp'
 import xdnpic2 from './src/assets/xdnpic2.png'
 
+import xpay from './src/assets/xpay.jpg'
+import xai from './src/assets/xai.jpg'
+import xads from './src/assets/xads.jpg'
+import xjobs from './src/assets/xjobs.jpg'
+import xfood from './src/assets/xfood.jpg'
+import xride from './src/assets/xride.jpg'
+import xshopping from './src/assets/xshopping.jpg'
+import xbookings from './src/assets/xbookings.jpg'
+import xcinema from './src/assets/xcinema.jpg'
+import xmail from './src/assets/xmail.jpg'
+import xmaps from './src/assets/xmaps.jpg'
+import xcloud from './src/assets/xcloud.jpg'
+
+export const servicesTitle = ['X Pay', 'X AI', 'X Jobs', 'X Ads', 'X Food', 'X Ride', 'X Shopping', 'X Bookings', 'X Cinema', 'X Mail', 'X Maps', 'X Cloud']
+export const servicesPics = [xpay, xai, xjobs, xads, xfood, xride, xshopping, xbookings, xcinema, xmail, xmaps, xcloud]
+
 export const events = ['Grammys 2025','IIFA 2025', 'AnimeJapan', 'Rose Parade', 'FoodieLand']
 export const eventTitles = ['USA','India', 'Japan', 'UK', 'Canada']
 

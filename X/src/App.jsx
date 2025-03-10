@@ -18,6 +18,7 @@ import Messages from "./components/messages"
 import ChatBox from "./components/chatBox"
 import NewMessage from "./components/newMessage"
 import ChatInfo from "./components/chatInfo"
+import Services from "./components/services"
 
 const AppContext = createContext();
 export const useAppContext = () => useContext(AppContext);
@@ -36,7 +37,8 @@ function App() {
   const [chatInfoPage, setChatInfoPage] = useState(false);
   const [chatName, setChatName] = useState(null);
   const [chatPic, setChatPic] = useState(null);
-  const [chatBoxPage, setChatBoxPage] = useState(null);
+  const [chatBoxPage, setChatBoxPage] = useState(false);
+  const [services, setServices] = useState(false);
 
   const leftBarRef = useRef(null);
 
@@ -87,6 +89,7 @@ function App() {
     chatInfoPage, setChatInfoPage,
     chatName, setChatName,
     chatPic, setChatPic,
+    services, setServices,
     leftBarRef,toggleLeftBar
   };
 
@@ -106,6 +109,7 @@ function App() {
           <Route path="/explorePage" element={<ExplorePage />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/messages" element={<Messages />} />
+          <Route path="/services" element={<Services />} />
         </Routes>
         {!spaces2 ? chatInfoPage? <ChatInfo/> : chatBoxPage? <ChatBox/> : messages && window.innerWidth > 1240 ? <NewMessage/>: <Rightbar /> : <Spaces2 />}
       </div>

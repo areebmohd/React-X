@@ -7,7 +7,7 @@ import { useAppContext } from '../App';
 
 function HomePage() {
 
-  const { setContentMenu, toggleLeftBar, setHomePage, setExplorePage, setMessages, setProfile, setChatBoxPage, setChatInfoPage} = useAppContext();
+  const { setContentMenu, toggleLeftBar, setHomePage, setExplorePage, setMessages, setProfile, setChatBoxPage, setChatInfoPage, setServices } = useAppContext();
 
   useEffect(() => {
           setExplorePage(false);
@@ -16,6 +16,7 @@ function HomePage() {
           setProfile(false);
           setChatBoxPage(false);
           setChatInfoPage(false);
+          setServices(false);
       }, []);
 
   return (
