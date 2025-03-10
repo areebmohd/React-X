@@ -2,7 +2,8 @@ import '../css/services.css'
 import dp from '../assets/dp.jpg';
 import { useAppContext } from '../App';
 import { useEffect } from 'react';
-import { servicesPics, servicesTitle } from '../../data';
+import { servicesPics, servicesTitle, servicesInfo } from '../../data';
+import { Link } from 'react-router-dom';
 function Services() {
 
     const { toggleLeftBar, setHomePage, setExplorePage, setMessages, setProfile, setChatBoxPage, setChatInfoPage, setServices } = useAppContext();
@@ -29,14 +30,15 @@ function Services() {
             <div className="boxes">
                 {servicesPics.map((picture, index) => {
                     return (
-                        <div className="box" key={index}>
+                        <Link to={`/service/${index}`} className="box" key={index}>
                             <div className="image">
                                 <img src={picture} alt="img" />
                             </div>
-                            <div className="title">
+                            <div className="text">
                                 <h2>{servicesTitle[index]}</h2>
+                                <p>{servicesInfo[index]}</p>
                             </div>
-                        </div>
+                        </Link>
                     )
                 })}
             </div>

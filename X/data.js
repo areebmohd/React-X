@@ -90,6 +90,19 @@ import xmail from './src/assets/xmail.jpg'
 import xmaps from './src/assets/xmaps.jpg'
 import xcloud from './src/assets/xcloud.jpg'
 
+export const servicesInfo = ['A payment system integrated into the X platform, send money to friends, pay for goods and services, or even invest — all in a seamless experience.',
+    'An artificial intelligence service offering AI-powered tools for tasks like data analysis, content creation, or automating customer service interactions.',
+    'A job search and recruitment platform connecting job seekers with employers, complete with tools like resume building, job alerts, and application tracking.',
+    'An advertising platform for businesses and individuals to create, manage, target and add ads to content for earning on the X platform.',
+    'A food delivery service where users can order from local restaurants, track their deliveries, and settle payments via X Pay.',
+    'A ride-sharing service, enabling users to book rides from anywhere, track drivers, and pay directly through the X platform.',
+    'An e-commerce platform for browsing and buying products from various sellers, featuring reviews, personalized recommendations, and secure payment options.',
+    'A booking platform for travel or events, letting users reserve hotels or tickets with added perks like reviews and price comparisons.',
+    'A movie streaming or ticketing service, allowing users to watch films and series online through the X ecosystem.',
+    'A secure, user-friendly email service featuring encryption, advanced spam filtering, and integration with other X services for a cohesive communication hub.',
+    'A mapping and navigation service providing directions, real-time traffic updates, and location-based recommendations.',
+    'A cloud storage and computing service offering secure storage space, file sharing, and scalable computing resources for individuals and businesses.'
+]
 export const servicesTitle = ['X Pay', 'X AI', 'X Jobs', 'X Ads', 'X Food', 'X Ride', 'X Shopping', 'X Bookings', 'X Cinema', 'X Mail', 'X Maps', 'X Cloud']
 export const servicesPics = [xpay, xai, xjobs, xads, xfood, xride, xshopping, xbookings, xcinema, xmail, xmaps, xcloud]
 
