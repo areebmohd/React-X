@@ -250,6 +250,7 @@
   .xpay .option img {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
+    height: 60%;
   }
 
   .xpay .option p {
