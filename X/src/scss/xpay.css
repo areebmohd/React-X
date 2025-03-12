@@ -241,14 +241,19 @@
   }
 
   .xpay .option {
-    padding: 10px;
-    gap: 10px;
+    padding: 0;
+    gap: 5px;
     padding-bottom: 10px;
     text-align: center;
   }
 
+  .xpay .option img {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
   .xpay .option p {
-    padding-left: 7px;
-    padding-right: 7px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }

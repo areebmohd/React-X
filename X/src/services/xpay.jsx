@@ -93,7 +93,7 @@ function XPay() {
                     <div class="options">
                         <div class="option">
                             <img src={stocks} alt="" />
-                            <p>Stocks</p>
+                            <p>All Stocks</p>
                         </div>
                         <div class="option">
                             <img src={ploan} alt="" />
