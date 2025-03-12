@@ -302,6 +302,10 @@
         display: none;
     }
 
+    .xai .logo {
+        margin-top: 50px;
+    }
+
     .xai .main {
         width: 90%;
     }
@@ -322,5 +326,10 @@
         height: 110px;
         margin-left: 10px;
         margin-bottom: 10px;
+    }
+
+    .xai .boxes .box p{
+        font-size: small;
+        font-weight: lighter;
     }
 }

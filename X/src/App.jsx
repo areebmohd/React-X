@@ -94,7 +94,7 @@ function App() {
     chatPic, setChatPic,
     services, setServices,
     service, setService,
-    leftBarRef,toggleLeftBar
+    leftBarRef, toggleLeftBar
   };
 
   return (
@@ -117,7 +117,7 @@ function App() {
           <Route path="/service/0" element={<XPay />} />
           <Route path="/service/1" element={<XAI />} />
         </Routes>
-        {!spaces2 ? !service? chatInfoPage? <ChatInfo/> : chatBoxPage? <ChatBox/> : messages && window.innerWidth > 1240 ? <NewMessage/>: <Rightbar /> : '' : <Spaces2 />}
+        {!spaces2 ? !service ? chatInfoPage ? <ChatInfo /> : chatBoxPage ? <ChatBox /> : messages && window.innerWidth > 1240 ? <NewMessage /> : <Rightbar /> : '' : <Spaces2 />}
       </div>
     </AppContext.Provider>
   )

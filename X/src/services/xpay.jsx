@@ -81,11 +81,11 @@ function XPay() {
                         <div class="option">
                             <img src={electricity} alt="" />
                             <p>Electricity Bill</p>
-                            </div>
+                        </div>
                         <div class="option">
                             <img src={house} alt="" />
                             <p>House Rent</p>
-                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="section">
@@ -94,15 +94,15 @@ function XPay() {
                         <div class="option">
                             <img src={stocks} alt="" />
                             <p>Stocks</p>
-                            </div>
+                        </div>
                         <div class="option">
                             <img src={ploan} alt="" />
                             <p>Personal Loans</p>
-                            </div>
+                        </div>
                         <div class="option">
                             <img src={bloan} alt="" />
                             <p>Business Loans</p>
-                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="small-boxes">

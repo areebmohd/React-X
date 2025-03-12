@@ -64,7 +64,7 @@ function XAI1({ setChatPage, setChatMessage }) {
                         <p>Solve the hardest problems in math, science, and coding with our reasoning model.</p>
                     </div>
                     <div className="box">
-                        <h3>Analyze Uploaded Content</h3>
+                        <h3>Analyze Content</h3>
                         <p>Review user-uploaded materials like images, PDFs, and text files for insights or explanations.</p>
                     </div>
                     <div className="box">
