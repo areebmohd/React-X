@@ -19,6 +19,8 @@ import ChatBox from "./components/chatBox"
 import NewMessage from "./components/newMessage"
 import ChatInfo from "./components/chatInfo"
 import Services from "./components/services"
+import XAI from "./services/xai"
+import XPay from "./services/xpay"
 
 const AppContext = createContext();
 export const useAppContext = () => useContext(AppContext);
@@ -39,6 +41,7 @@ function App() {
   const [chatPic, setChatPic] = useState(null);
   const [chatBoxPage, setChatBoxPage] = useState(false);
   const [services, setServices] = useState(false);
+  const [service, setService] = useState(false);
 
   const leftBarRef = useRef(null);
 
@@ -90,6 +93,7 @@ function App() {
     chatName, setChatName,
     chatPic, setChatPic,
     services, setServices,
+    service, setService,
     leftBarRef,toggleLeftBar
   };
 
@@ -110,8 +114,10 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/messages" element={<Messages />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/service/0" element={<XPay />} />
+          <Route path="/service/1" element={<XAI />} />
         </Routes>
-        {!spaces2 ? chatInfoPage? <ChatInfo/> : chatBoxPage? <ChatBox/> : messages && window.innerWidth > 1240 ? <NewMessage/>: <Rightbar /> : <Spaces2 />}
+        {!spaces2 ? !service? chatInfoPage? <ChatInfo/> : chatBoxPage? <ChatBox/> : messages && window.innerWidth > 1240 ? <NewMessage/>: <Rightbar /> : '' : <Spaces2 />}
       </div>
     </AppContext.Provider>
   )

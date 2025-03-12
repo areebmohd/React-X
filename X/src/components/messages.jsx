@@ -6,7 +6,7 @@ import { messagesPictures, messagesNames, messagesUsernames, messagesMessage } f
 
 function Messages() {
 
-    const { setHomePage, setMessages, setChatBoxPage, setChatPic, setChatName, setProfile, setExplorePage, setMessage, toggleLeftBar, setServices } = useAppContext();
+    const { setHomePage, setMessages, setChatBoxPage, setChatPic, setChatName, setProfile, setExplorePage, setMessage, toggleLeftBar, setServices, setService } = useAppContext();
 
     useEffect(() => {
         setExplorePage(false);
@@ -14,6 +14,7 @@ function Messages() {
         setMessages(true);
         setProfile(false);
         setServices(false);
+        setService(false);
     }, []);
 
     const handleClick = (index) => {
@@ -54,7 +55,7 @@ function Messages() {
             <div className="messageList">
                 {messagesPictures.map((picture, index) => {
                     return (
-                        <div className="chatInfo" onClick={() => handleClick(index)}>
+                        <div className="chatInfo" onClick={() => handleClick(index)} key={index}>
                             <img src={picture} alt="dp" />
                             <div className='nameMessage'>
                                 <div className="name">

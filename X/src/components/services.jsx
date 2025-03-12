@@ -6,7 +6,7 @@ import { servicesPics, servicesTitle, servicesInfo } from '../../data';
 import { Link } from 'react-router-dom';
 function Services() {
 
-    const { toggleLeftBar, setHomePage, setExplorePage, setMessages, setProfile, setChatBoxPage, setChatInfoPage, setServices } = useAppContext();
+    const { toggleLeftBar, setHomePage, setExplorePage, setMessages, setProfile, setChatBoxPage, setChatInfoPage, setServices, setService } = useAppContext();
 
     useEffect(() => {
         setExplorePage(false);
@@ -16,6 +16,7 @@ function Services() {
         setChatBoxPage(false);
         setChatInfoPage(false);
         setServices(true);
+        setService(false);
     }, []);
 
     return (
@@ -30,7 +31,7 @@ function Services() {
             <div className="boxes">
                 {servicesPics.map((picture, index) => {
                     return (
-                        <Link to={`/service/${index}`} className="box" key={index}>
+                        <Link to={`/service/${index}`} className="box" key={index} onClick={()=>setService(true)}>
                             <div className="image">
                                 <img src={picture} alt="img" />
                             </div>

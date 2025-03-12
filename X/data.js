@@ -90,7 +90,7 @@ import xmail from './src/assets/xmail.jpg'
 import xmaps from './src/assets/xmaps.jpg'
 import xcloud from './src/assets/xcloud.jpg'
 
-export const servicesInfo = ['A payment system integrated into the X platform, send money to friends, pay for goods and services, or even invest — all in a seamless experience.',
+export const servicesInfo = ['A payment system integrated into the X platform, send money to friends, pay for goods and services, even invest — all in a seamless experience.',
     'An artificial intelligence service offering AI-powered tools for tasks like data analysis, content creation, or automating customer service interactions.',
     'A job search and recruitment platform connecting job seekers with employers, complete with tools like resume building, job alerts, and application tracking.',
     'An advertising platform for businesses and individuals to create, manage, target and add ads to content for earning on the X platform.',
