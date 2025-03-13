@@ -50,13 +50,13 @@
     cursor: pointer;
 }
 
-.xjobs .topBar .options{
+.xjobs .topBar .options {
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-.xjobs .topBar .options p{
+.xjobs .topBar .options p {
     color: rgba(113, 118, 123, 1);
     font-family: system-ui;
     cursor: pointer;
@@ -66,7 +66,7 @@
     width: 100%;
 }
 
-.xjobs .searchBar{
+.xjobs .searchBar {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -97,7 +97,7 @@
     border: 2px solid rgb(29, 155, 240);
 }
 
-.xjobs .searchBar button{
+.xjobs .searchBar button {
     background-color: rgb(29, 155, 240);
     padding: 15px;
     padding-left: 30px;
@@ -111,30 +111,28 @@
 
 .xjobs .boxes {
     display: flex;
-    align-items: center;
     width: 100%;
     margin-top: 10px;
 }
 
-.xjobs .p1{
+.xjobs .p1 {
     font-size: small;
     color: rgba(113, 118, 123, 1);
 }
 
-.xjobs .p2{
-    font-size: medium;
+.xjobs .p2 {
     color: #0299fe;
     cursor: pointer;
     position: absolute;
     right: 0;
 }
 
-.xjobs .boxes .box{
+.xjobs .boxes .box {
     width: 50%;
     padding: 20px;
 }
 
-.xjobs .jobs{
+.xjobs .jobs {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -148,54 +146,55 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.170);
-    padding-bottom: 10px;
     position: relative;
 }
 
-.xjobs .job img{
+.xjobs .jobBottom {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.170);
+    padding-bottom: 10px;
+}
+
+.xjobs .job img {
     height: 80px;
     width: 80px;
     border-radius: 20px;
 }
 
-.xjobs .job .details{
+.xjobs .details {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.xjobs .job .details p{
+.xjobs .details p {
     font-size: small;
 }
 
-.xjobs .applications{
+.xjobs .applications {
     padding: 20px;
     margin-bottom: 40px;
 }
 
-.xjobs .appliedJobs{
+.xjobs .appliedJobs {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.170);
-    padding-bottom: 10px;
     position: relative;
 }
 
-.xjobs .appliedJob img{
+.xjobs .appliedJob img {
     height: 80px;
     width: 80px;
     border-radius: 20px;
 }
 
-.xjobs .appliedJob{
+.xjobs .appliedJob {
     display: flex;
     align-items: center;
     gap: 10px;
     position: relative;
 }
 
-.xjobs .statusBar{
+.xjobs .statusBar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -204,7 +203,7 @@
     position: relative;
 }
 
-.xjobs .statusBar::before{
+.xjobs .statusBar::before {
     content: '';
     position: absolute;
     top: 20px;
@@ -215,7 +214,7 @@
     z-index: 1;
 }
 
-.xjobs .statusStep{
+.xjobs .statusStep {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -223,7 +222,7 @@
     width: 16%;
 }
 
-.xjobs .statusNumber1{
+.xjobs .statusNumber1 {
     font-size: large;
     border-radius: 50%;
     background-color: grey;
@@ -233,17 +232,140 @@
     z-index: 2;
 }
 
-.xjobs .statusNumber2{
+.xjobs .statusNumber2 {
     font-size: large;
     border-radius: 50%;
-    background-color: rgb(0, 196, 0);
+    background-color: rgb(2, 215, 2);
     padding: 10px;
     padding-left: 15px;
     padding-right: 15px;
     z-index: 2;
 }
 
-.xjobs .statusText{
+.xjobs .statusText {
     font-size: 15px;
     font-family: system-ui;
+}
+
+.xjobs .jobPost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.xjobs .jobPost button {
+    padding: 15px;
+    width: 40%;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+.xjobs .jobPost p {
+    font-size: 14px;
+    font-family: system-ui;
+    color: #0299fe;
+    cursor: pointer;
+}
+
+.xjobs .jobAnalytics {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.xjobs .analytics {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 90px;
+}
+
+.xjobs .people {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+    background-color: rgb(22, 24, 29);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.xjobs .people img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.xjobs .person {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.xjobs .personDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.xjobs hr {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.170);
+    border: none;
+}
+
+@media (max-width:1240px) {
+    .xjobs {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .xjobs .topBar {
+        padding-right: 20px;
+    }
+    
+    .xjobs .topBar .options {
+        gap: 20px;
+    }
+    
+    .xjobs .topBar .options p {
+        font-size: small;
+    }
+    
+    .xjobs .input {
+        flex-direction: column;
+    }
+    
+    .xjobs .searchBar input {
+        width: 70%;
+    }
+    
+    .xjobs .boxes {
+        flex-direction: column;
+    }
+    
+    .xjobs .boxes .box {
+        width: 100%;
+    }
+    
+    .xjobs .statusText {
+        font-size: 10px;
+        text-align: center;
+    }
+    
+    .xjobs .jobPost button {
+        width: 60%;
+    }
 }

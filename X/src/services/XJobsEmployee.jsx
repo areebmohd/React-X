@@ -30,7 +30,7 @@ function XJobsEmployee({ setEmployerPage }) {
                     <p className='p1'>These jobs are suggested on the basis of your resume.</p>
                     <div className="jobs">
                         {suggestedJobsPictures.map((picture, index) => (
-                            <div key={index} className="job">
+                            <div key={index} className={index<2?'job jobBottom':'job'}>
                                 <img src={picture} alt='picture' />
                                 <div className="details">
                                     <h3>{jobtitles1[index]}</h3>
@@ -47,7 +47,7 @@ function XJobsEmployee({ setEmployerPage }) {
                     <p className='p1'>Your saved jobs are shown here.</p>
                     <div className="jobs">
                         {savedJobsPictures.map((picture, index) => (
-                            <div key={index} className="job">
+                            <div key={index} className={index<2?'job jobBottom':'job'}>
                                 <img src={picture} alt='picture' />
                                 <div className="details">
                                     <h3>{jobtitles2[index]}</h3>
@@ -66,7 +66,7 @@ function XJobsEmployee({ setEmployerPage }) {
                 <div className="applicationBox">
                     <div className="jobs">
                         {savedJobsPictures.slice(0, 2).map((picture, index) => (
-                            <div key={index} className="appliedJobs">
+                            <div key={index} className={index<1?'appliedJobs jobBottom':'appliedJobs'}>
                                 <div className="appliedJob">
                                     <img src={picture} alt='picture' />
                                     <div className="details">
@@ -77,9 +77,9 @@ function XJobsEmployee({ setEmployerPage }) {
                                     <p className='p2'>view job</p>
                                 </div>
                                 <div className="statusBar">
-                                    {['Submitted', 'Checking system', 'Recruiters Review', 'Shortlisted', 'Interview', 'Final Decision'].map((text, stepIndex) => (
+                                    {['Applied', 'Resume Checking', 'Recruiters Review', 'Shortlisted', 'Interview', 'Final Decision'].map((text, stepIndex) => (
                                         <div key={stepIndex} className="statusStep">
-                                            <div className={stepIndex > 2 ? "statusNumber1" : "statusNumber2"}>{stepIndex + 1}</div>
+                                            <div className={(index === 0 && stepIndex > 2) || (index === 1 && stepIndex > 4) ? "statusNumber1" : "statusNumber2"}>{stepIndex + 1}</div>
                                             <div className="statusText">{text}</div>
                                         </div>
                                     ))}
