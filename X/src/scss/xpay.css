@@ -234,16 +234,10 @@
     padding-top: 20px;
   }
 
-  .xpay .options {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-  }
-
   .xpay .option {
     padding: 0;
     gap: 5px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     text-align: center;
   }
 

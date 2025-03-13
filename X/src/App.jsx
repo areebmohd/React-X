@@ -21,6 +21,7 @@ import ChatInfo from "./components/chatInfo"
 import Services from "./components/services"
 import XAI from "./services/xai"
 import XPay from "./services/xpay"
+import XJobs from "./services/xjobs"
 
 const AppContext = createContext();
 export const useAppContext = () => useContext(AppContext);
@@ -116,6 +117,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/service/0" element={<XPay />} />
           <Route path="/service/1" element={<XAI />} />
+          <Route path="/service/2" element={<XJobs />} />
         </Routes>
         {!spaces2 ? !service ? chatInfoPage ? <ChatInfo /> : chatBoxPage ? <ChatBox /> : messages && window.innerWidth > 1240 ? <NewMessage /> : <Rightbar /> : '' : <Spaces2 />}
       </div>

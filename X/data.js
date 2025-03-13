@@ -90,6 +90,21 @@ import xmail from './src/assets/xmail.jpg'
 import xmaps from './src/assets/xmaps.jpg'
 import xcloud from './src/assets/xcloud.jpg'
 
+import epic from './src/assets/Epic Games.jpg'
+import sofi from './src/assets/SoFi.jpg'
+import swiss from './src/assets/SwissDevJobs.ch.jpg'
+import titan from './src/assets/TitanTechnologies.jpg'
+import workos from './src/assets/workos.png'
+
+export const suggestedJobsPictures = [epic,sofi,swiss]
+export const savedJobsPictures = [workos,epic,titan]
+export const jobtitles1 = ['Web Engineer','Designer, Web','Web Developer']
+export const jobtitles2 = ['Web Designer','Web Engineer','Web Architect']
+export const jobcompany2 = ['WorkOS','Epic Games','Titan Technologies']
+export const jobcompany1 = ['Epic Games','SoFi','SwissDevJobs.ch']
+export const joblocation1 = ['Cary,North Carolina,United States (Onsite)','San Francisco - CA (Onsite)','newmarket, US']
+export const joblocation2 = ['New York City-Hybrid; San Francisco-Hybrid','Cary,North Carolina,United States (Onsite)','San Francisco,US']
+
 export const servicesInfo = ['A payment system integrated into the X platform, send money to friends, pay for goods and services, even invest — all in a seamless experience.',
     'An artificial intelligence service offering AI-powered tools for tasks like data analysis, content creation, or automating customer service interactions.',
     'A job search and recruitment platform connecting job seekers with employers, complete with tools like resume building, job alerts, and application tracking.',
