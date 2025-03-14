@@ -227,6 +227,8 @@
         position: absolute;
         top: 0;
         left: 0;
+        border-left: none;
+        border-right: none;
     }
     .vinePage .topBar div img {
         display: block;

@@ -121,14 +121,18 @@
 
 @media (max-width:1240px) {
     .xads {
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-left: none;
+        border-right: none;
     }
+
     .xads .boxes {
         flex-direction: column;
     }
+
     .xads .boxes .box {
         width: 100%;
     }

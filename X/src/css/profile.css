@@ -400,6 +400,8 @@
         position: absolute;
         top: 0;
         left: 0;
+        border-left: none;
+        border-right: none;
     }
     .profile .profileOptions h4 {
         padding: 15px 20px;

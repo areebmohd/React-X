@@ -222,7 +222,7 @@
     font-size: 14px;
 }
 
-.explorePage .postContent{
+.explorePage .postContent {
     margin-top: 7px;
     margin-bottom: 7px;
 }
@@ -402,17 +402,19 @@
     z-index: 1;
 }
 
-.explorePage .postPic{
+.explorePage .postPic {
     position: relative;
     overflow: hidden;
     border-radius: 20px;
 }
-.explorePage .postPic img{
+
+.explorePage .postPic img {
     width: 100%;
     height: 250px;
     object-fit: cover;
 }
-.explorePage .livestamp{
+
+.explorePage .livestamp {
     position: absolute;
     bottom: 0;
     margin: 10px;
@@ -423,11 +425,11 @@
     cursor: pointer;
 }
 
-.explorePage .newsArticles .postPic{
+.explorePage .newsArticles .postPic {
     margin-top: 10px;
 }
 
-.explorePage .newsArticles .articlestamp{
+.explorePage .newsArticles .articlestamp {
     position: absolute;
     bottom: 0;
     margin: 10px;
@@ -439,13 +441,13 @@
     cursor: pointer;
 }
 
-.explorePage .ongoing{
+.explorePage .ongoing {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.explorePage .ongoing .box{
+.explorePage .ongoing .box {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -454,17 +456,17 @@
     border-radius: 10px;
 }
 
-.explorePage .ongoing .box .teams{
+.explorePage .ongoing .box .teams {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.explorePage .ongoing .box .score{
+.explorePage .ongoing .box .score {
     font-size: 14px;
 }
 
-.explorePage .ongoing .box .buttons{
+.explorePage .ongoing .box .buttons {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -472,7 +474,7 @@
     margin-top: 10px;
 }
 
-.explorePage .ongoing .box .buttons button{
+.explorePage .ongoing .box .buttons button {
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -486,20 +488,20 @@
     cursor: pointer;
 }
 
-.explorePage .ongoing .liveVideo{
+.explorePage .ongoing .liveVideo {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
 }
 
-.explorePage .ongoing .liveVideo img{
+.explorePage .ongoing .liveVideo img {
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
     height: 250px;
 }
 
-.explorePage .upcoming .box{
+.explorePage .upcoming .box {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -510,11 +512,11 @@
     position: relative;
 }
 
-.explorePage .upcoming .box .date{
+.explorePage .upcoming .box .date {
     font-size: 14px;
 }
 
-.explorePage .upcoming .box .buttons{
+.explorePage .upcoming .box .buttons {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -522,7 +524,7 @@
     margin-top: 10px;
 }
 
-.explorePage .upcoming .box .buttons button{
+.explorePage .upcoming .box .buttons button {
     width: 47%;
     padding: 10px;
     border: none;
@@ -535,11 +537,11 @@
     cursor: pointer;
 }
 
-.explorePage #eventBox{
+.explorePage #eventBox {
     background-color: orange;
 }
 
-.explorePage #eventBoxes{
+.explorePage #eventBoxes {
     background-color: orangered;
 }
 
@@ -549,6 +551,8 @@
         position: absolute;
         top: 0;
         left: 0;
+        border-left: none;
+        border-right: none;
     }
 
     .explorePage .topbar .search img {
@@ -573,19 +577,19 @@
         height: 250px;
         min-width: 300px;
     }
-    
+
     .explorePage .post .account img {
         height: 15px;
     }
-    
+
     .explorePage .post .account div {
         font-size: small;
     }
-    
+
     .explorePage .post .account svg {
         height: 15px;
     }
-    
+
     .explorePage .post .account p {
         font-size: 13px;
     }

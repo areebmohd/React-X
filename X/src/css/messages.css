@@ -141,6 +141,8 @@
         position: absolute;
         top: 0;
         left: 0;
+        border-left: none;
+        border-right: none;
     }
     .messages .topBar .leftSide img {
         display: block;
