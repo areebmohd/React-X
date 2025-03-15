@@ -50,6 +50,12 @@
     cursor: pointer;
 }
 
+.xride .topBar .options p {
+    color: rgba(113, 118, 123, 1);
+    font-family: system-ui;
+    cursor: pointer;
+}
+
 .xride .logo img {
     width: 100%;
 }
@@ -155,6 +161,14 @@
         left: 0;
         border-left: none;
         border-right: none;
+    }
+
+    .xride .topBar{
+        padding-right: 10px;
+    }
+
+    .xride .topBar .options p {
+        font-size: small;
     }
 
     .xride .inputBox{

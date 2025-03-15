@@ -168,9 +168,9 @@
 }
 
 .xfood .main .food .details .rating {
-    background-color: rgb(1, 157, 1);
-    padding-left: 3px;
-    padding-right: 3px;
+    background-color: rgb(16, 137, 52);
+    padding-left: 4px;
+    padding-right: 4px;
     border-radius: 3px;
 }
 
