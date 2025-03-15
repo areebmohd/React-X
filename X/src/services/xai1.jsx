@@ -84,7 +84,7 @@ function XAI1({ setChatPage, setChatMessage }) {
                         <p>Examine individual X user profiles, including their posts and linked content.</p>
                     </div>
                     <div className="box">
-                        <h3>News</h3>
+                        <h3>Grok News</h3>
                         <p>Provide latest news from around the world using posts on X platform.</p>
                     </div>
                 </div>

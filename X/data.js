@@ -96,6 +96,47 @@ import swiss from './src/assets/SwissDevJobs.ch.jpg'
 import titan from './src/assets/TitanTechnologies.jpg'
 import workos from './src/assets/workos.png'
 
+
+import LegalSeaFoods from './src/assets/Legal Sea Foods.jpg'
+import HoneyBakedHam from './src/assets/Honey Baked Ham.jpg'
+import Dennys from './src/assets/Denny’s.jpg'
+import DickeysBarbecuePit from './src/assets/Dickey’s Barbecue Pit.jpg'
+import Dominos from './src/assets/Domino’s.jpg'
+import PaneraBreads from './src/assets/Panera Bread.jpg'
+import Perkins from './src/assets/Perkins.jpg'
+import NathansFamous from './src/assets/Nathan’s Famous.jpg'
+import McDonalds from './src/assets/McDonald’s.jpg'
+import kfc from './src/assets/kfc.jpg'
+
+import ClamChowder from './src/assets/Clam Chowder.jpg'
+import friedchicken from './src/assets/friedchicken.jpg'
+import hamburger from './src/assets/hamburger.jpg'
+import hotdog from './src/assets/hotdog.jpg'
+import JellySandwich from './src/assets/Jelly Sandwich.jpg'
+import Macaroni from './src/assets/Macaroni and Cheese.jpg'
+import Turkey from './src/assets/Thanksgiving Turkey.jpg'
+import applepie from './src/assets/applepie.jpg'
+import BarbecueRibs from './src/assets/Barbecue Ribs.jpg'
+
+import pizza from './src/assets/pizza.jpg'
+import biryani from './src/assets/biryani.jpg'
+import burger from './src/assets/burger.jpg'
+import cake from './src/assets/cake.jpg'
+import fruits from './src/assets/fruits.jpg'
+import juice from './src/assets/juice.jpg'
+import shake from './src/assets/shake.jpg'
+import meat from './src/assets/meat.jpg'
+import salad from './src/assets/salad.jpg'
+import snacks from './src/assets/snacks.jpg'
+import sandwich from './src/assets/sandwich.jpg'
+
+export const foodItems = [pizza, cake, burger, fruits, shake, juice, meat, salad, snacks, sandwich, biryani]
+export const foodItemsNames = ['Pizza', 'Cake', 'Burger', 'Fruits', 'Shake', 'Juice', 'Meat', 'Salad', 'Snacks', 'Sandwich','Biryani']
+export const stores = [kfc,McDonalds,NathansFamous,Dennys,PaneraBreads,HoneyBakedHam,Perkins,DickeysBarbecuePit,Dominos,LegalSeaFoods]
+export const storesNames = ['KFC',"McDonald's","Nathan's Famous","Denny's","Panera Breads",'Honey Baked Ham',"Perkins","Dickey's Barbecue","Dominos","Legal Sea Foods"]
+export const dishes = [friedchicken,hamburger,hotdog,JellySandwich,Macaroni,Turkey,applepie,BarbecueRibs,pizza,ClamChowder]
+export const dishesNames = ['Fried Chicken','Hamburger','Hotdog','Jelly Sandwich','Macaroni','Turkey','Applepie','Barbecue Ribs','Pizza','Clam Chowder']
+
 export const suggestedPeople1 = [bb,jj]
 export const suggestedPeople2 = [dvk,nima]
 export const suggestedPersonUserNames2 = ['@DVKtheartist','@nima_owji']
@@ -120,13 +161,12 @@ export const servicesInfo = ['A payment system integrated into the X platform, s
     'A ride-sharing service, enabling users to book rides from anywhere, track drivers, and pay directly through the X platform.',
     'An e-commerce platform for browsing and buying products from various sellers, featuring reviews, personalized recommendations, and secure payment options.',
     'A booking platform for travel or events, letting users reserve hotels or tickets with added perks like reviews and price comparisons.',
-    'A movie streaming or ticketing service, allowing users to watch films and series online through the X ecosystem.',
     'A secure, user-friendly email service featuring encryption, advanced spam filtering, and integration with other X services for a cohesive communication hub.',
     'A mapping and navigation service providing directions, real-time traffic updates, and location-based recommendations.',
     'A cloud storage and computing service offering secure storage space, file sharing, and scalable computing resources for individuals and businesses.'
 ]
-export const servicesTitle = ['X Pay', 'X AI', 'X Jobs', 'X Ads', 'X Food', 'X Ride', 'X Shopping', 'X Bookings', 'X Cinema', 'X Mail', 'X Maps', 'X Cloud']
-export const servicesPics = [xpay, xai, xjobs, xads, xfood, xride, xshopping, xbookings, xcinema, xmail, xmaps, xcloud]
+export const servicesTitle = ['X Pay', 'X AI', 'X Jobs', 'X Ads', 'X Food', 'X Ride', 'X Shopping', 'X Bookings', 'X Mail', 'X Maps', 'X Cloud']
+export const servicesPics = [xpay, xai, xjobs, xads, xfood, xride, xshopping, xbookings, xmail, xmaps, xcloud]
 
 export const events = ['Grammys 2025','IIFA 2025', 'AnimeJapan', 'Rose Parade', 'FoodieLand']
 export const eventTitles = ['USA','India', 'Japan', 'UK', 'Canada']

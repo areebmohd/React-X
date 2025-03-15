@@ -1,0 +1,217 @@
+.xfood {
+    width: 75%;
+    background-color: black;
+    border-left: 1px solid rgba(255, 255, 255, 0.170);
+    position: absolute;
+    top: 0;
+    left: 25%;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.xfood::-webkit-scrollbar {
+    display: none;
+}
+
+.xfood {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.xfood .topBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 40px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(5, 5, 5, 0.820);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    z-index: 10000;
+}
+
+.xfood .topBar .title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.xfood .topBar .title svg {
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.xfood .topBar .title svg:hover {
+    background-color: #33333376;
+    cursor: pointer;
+}
+
+.xfood .topBar .input {
+    width: 50%;
+    border-radius: 30px;
+    background-color: rgb(22, 24, 29);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.xfood .topBar .input input {
+    padding: 15px;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+    width: 90%;
+    background-color: transparent;
+    font-size: 14px;
+    font-family: system-ui;
+}
+
+.xfood .topBar .input input::placeholder {
+    color: rgb(113, 118, 123);
+}
+
+.xfood .topBar .input svg {
+    fill: rgb(113, 118, 123);
+}
+
+.xfood .logo img {
+    width: 100%;
+}
+
+.xfood .main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.xfood .main h2 {
+    font-family: system-ui;
+    font-weight: lighter;
+    color: white;
+    margin-left: 20px;
+}
+
+.xfood .main .foodItems {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    overflow-x: scroll;
+}
+
+.xfood .main .foodItems::-webkit-scrollbar {
+    display: none;
+}
+
+.xfood .main .foodItems {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.xfood .main .food {
+    border-radius: 10px;
+    background-color: rgb(22, 24, 29);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.xfood .main .food:hover {
+    background-color: rgb(32, 35, 39);
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+.xfood .main .food img {
+    height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.xfood .main .food .foodNames {
+    padding-bottom: 15px;
+    padding-top: 10px;
+    font-family: system-ui;
+    text-align: center;
+}
+
+.xfood .main .food .details {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.xfood .main .food .details p {
+    font-family: system-ui;
+}
+
+.xfood .main .food .details .p2 {
+    font-size: 14px;
+    color: rgba(113, 118, 123, 1);
+}
+
+.xfood .main .food .details .p3 {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 14px;
+    color: rgba(113, 118, 123, 1);
+    padding-top: 3px;
+}
+
+.xfood .main .food .details .rating {
+    background-color: rgb(1, 157, 1);
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 3px;
+}
+
+@media (max-width:1240px) {
+    .xfood {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-left: none;
+        border-right: none;
+    }
+
+    .xfood .topBar {
+        padding-right: 20px;
+    }
+
+    .xfood .topBar .input {
+        width: 10%;
+        border-radius: 50%;
+        background-color: transparent;
+    }
+
+    .xfood .topBar .input input {
+        display: none;
+    }
+
+    .xfood .topBar .input svg {
+        height: 25px;
+        fill: white;
+    }
+    .xfood .main h2{
+        margin-left: 10px;
+    }
+    
+    .xfood .main .foodItems{
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 10px;
+    }
+    .xfood .main .food img{
+        height: 110px;
+    }
+}

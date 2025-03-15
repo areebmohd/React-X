@@ -33,7 +33,7 @@ function XAds() {
                     <h2>For Advertisers</h2>
                     <div className="innerBox">
                         <img src={advertisers} alt="" />
-                        <p>X Ads is a powerful online advertising network for brands, agencies, and media buyers. With over 20 targeting settings, you deliver ads to the best-matching audiences. X offers a variety of formats for advertisers to showcase their content,
+                        <p>X Ads is a powerful online advertising network for brands, agencies, and media buyers. With over 20 targeting settings, you deliver ads to the best-matching audiences. <br /><br /> X offers a variety of formats for advertisers to showcase their content,
                         including Promoted Ads, Vertical Video Ads, X Takeovers, Dynamic Product Ads and Collection Ads.</p>
                         <button>Get Started</button>
                     </div>
@@ -42,7 +42,7 @@ function XAds() {
                     <h2>For Publishers</h2>
                     <div className="innerBox">
                         <img src={publishers} alt="" />
-                        <p>With the highest-paying ad network, publishers can monetize X content like vines, videos, live videos and articles, also websites and apps. AI algorithms are finetuned to send the most relevant CPM rates and ad feed.
+                        <p>With the highest-paying ad network, publishers can monetize X content like vines, videos, live videos and articles, also websites and apps. <br /><br /> AI algorithms are finetuned to send the most relevant CPM rates and ad feed.
                         X offers a variety of formats for publishers to add on their content, websites and apps including image, video and banner ads.</p>
                         <button>Get Started</button>
                     </div>

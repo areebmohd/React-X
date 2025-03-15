@@ -23,6 +23,8 @@ import XAI from "./services/xai"
 import XPay from "./services/xpay"
 import XJobs from "./services/xjobs"
 import XAds from "./services/xads"
+import XFood from "./services/xfood"
+import XRide from "./services/xride"
 
 const AppContext = createContext();
 export const useAppContext = () => useContext(AppContext);
@@ -120,6 +122,8 @@ function App() {
           <Route path="/service/1" element={<XAI />} />
           <Route path="/service/2" element={<XJobs />} />
           <Route path="/service/3" element={<XAds />} />
+          <Route path="/service/4" element={<XFood />} />
+          <Route path="/service/5" element={<XRide />} />
         </Routes>
         {!spaces2 ? !service ? chatInfoPage ? <ChatInfo /> : chatBoxPage ? <ChatBox /> : messages && window.innerWidth > 1240 ? <NewMessage /> : <Rightbar /> : '' : <Spaces2 />}
       </div>

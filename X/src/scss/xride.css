@@ -1,0 +1,174 @@
+.xride {
+    width: 75%;
+    background-color: black;
+    border-left: 1px solid rgba(255, 255, 255, 0.170);
+    position: absolute;
+    top: 0;
+    left: 25%;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.xride::-webkit-scrollbar {
+    display: none;
+}
+
+.xride {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.xride .topBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 40px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(5, 5, 5, 0.820);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    z-index: 10000;
+}
+
+.xride .topBar .title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.xride .topBar .title svg {
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.xride .topBar .title svg:hover {
+    background-color: #33333376;
+    cursor: pointer;
+}
+
+.xride .logo img {
+    width: 100%;
+}
+
+.xride .main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.xride .inputBox{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.170);
+    width: 50%;
+    border-radius: 20px;
+}
+
+.xride .input {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.xride .input1{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.170);
+}
+
+.xride .input svg {
+    fill: rgb(113, 118, 123);
+}
+
+.xride .input input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 10px;
+    width: 80%;
+    font-family: system-ui;
+    font-size: 15px;
+}
+
+.xride .input input::placeholder {
+    color: rgb(113, 118, 123);
+    font-size: 15px;
+    font-family: system-ui;
+}
+
+.xride .main button{
+    padding: 13px;
+    width: 30%;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+.xride .main .tickets {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.xride .main .ticket {
+    border-radius: 10px;
+    background-color: rgb(22, 24, 29);
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.xride .main .ticket:hover {
+    background-color: rgb(32, 35, 39);
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+.xride .main .ticket img {
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.xride .main .ticket p{
+    font-family: system-ui;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+@media (max-width:1240px) {
+    .xride {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-left: none;
+        border-right: none;
+    }
+
+    .xride .inputBox{
+        width: 80%;
+    }
+    
+    .xride .main button{
+        width: 60%;
+        font-size: 17px;
+    }
+    
+    .xride .main .tickets {
+        gap: 30px;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+}

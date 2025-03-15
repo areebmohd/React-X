@@ -67,6 +67,7 @@
   width: 90%;
   background-color: transparent;
   font-size: 14px;
+  font-family: system-ui;
 }
 
 .xpay .topBar .input input::placeholder {
