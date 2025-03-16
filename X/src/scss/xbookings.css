@@ -1,0 +1,218 @@
+.xbookings {
+    width: 75%;
+    background-color: black;
+    border-left: 1px solid rgba(255, 255, 255, 0.170);
+    position: absolute;
+    top: 0;
+    left: 25%;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.xbookings::-webkit-scrollbar {
+    display: none;
+}
+
+.xbookings {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.xbookings .topBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 40px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(5, 5, 5, 0.820);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    z-index: 10000;
+}
+
+.xbookings .topBar .title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.xbookings .topBar .title svg {
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.xbookings .topBar .title svg:hover {
+    background-color: #33333376;
+    cursor: pointer;
+}
+
+.xbookings .topBar .input {
+    width: 50%;
+    border-radius: 30px;
+    background-color: rgb(22, 24, 29);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.xbookings .topBar .input input {
+    padding: 15px;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+    width: 90%;
+    background-color: transparent;
+    font-size: 14px;
+    font-family: system-ui;
+}
+
+.xbookings .topBar .input input::placeholder {
+    color: rgb(113, 118, 123);
+}
+
+.xbookings .topBar .input svg {
+    fill: rgb(113, 118, 123);
+}
+
+.xbookings .logo img {
+    width: 100%;
+}
+
+.xbookings .main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.xbookings .main h2 {
+    font-family: system-ui;
+    font-weight: lighter;
+    color: white;
+    margin-left: 20px;
+}
+
+.xbookings .main .shows {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    overflow-x: scroll;
+}
+
+.xbookings .main .shows::-webkit-scrollbar {
+    display: none;
+}
+
+.xbookings .main .shows {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.xbookings .main .show {
+    border-radius: 10px;
+    background-color: rgb(22, 24, 29);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.xbookings .main .show:hover {
+    background-color: rgb(32, 35, 39);
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+.xbookings .main .show img {
+    height: 300px;
+    width: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.xbookings .main .show .showsNames {
+    padding-bottom: 15px;
+    padding-top: 5px;
+    font-family: system-ui;
+    text-align: center;
+}
+
+.xbookings .main .show .details {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+
+.xbookings .main .show .details .p1 {
+    font-family: system-ui;
+    font-weight: 600;
+}
+
+.xbookings .main .show .details .p2 {
+    font-size: 14px;
+    font-family: system-ui;
+    color: rgba(113, 118, 123, 1);
+}
+
+.xbookings .main .show .details .p3 {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 14px;
+    color: rgba(113, 118, 123, 1);
+    padding-top: 3px;
+    font-family: system-ui;
+}
+
+.xbookings .main .show .details .rating {
+    background-color: rgb(16, 137, 52);
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 3px;
+}
+
+@media (max-width:1240px) {
+    .xbookings {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-left: none;
+        border-right: none;
+    }
+
+    .xbookings .topBar {
+        padding-right: 20px;
+    }
+
+    .xbookings .topBar .input {
+        width: 10%;
+        border-radius: 50%;
+        background-color: transparent;
+    }
+
+    .xbookings .topBar .input input {
+        display: none;
+    }
+
+    .xbookings .topBar .input svg {
+        height: 22px;
+        fill: white;
+    }
+    .xbookings .main h2{
+        margin-left: 10px;
+    }
+    
+    .xbookings .main .shows{
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 10px;
+    }
+}

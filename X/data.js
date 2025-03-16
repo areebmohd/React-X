@@ -162,6 +162,37 @@ import TheManCompanyPerfume  from './src/assets/The Man Company Perfume.jpg'
 import CarlingtonWatch  from './src/assets/Carlington Watch.jpg'
 import BlackMythWukong  from './src/assets/BlackMythWukong.jpg'
 
+import movies  from './src/assets/movies.avif'
+import event  from './src/assets/event.png'
+import plays  from './src/assets/plays.png'
+import sport  from './src/assets/sport.png'
+import activities  from './src/assets/activities.png'
+import concerts  from './src/assets/concerts.avif'
+
+import Novocaine  from './src/assets/Novocaine.avif'
+import ACompleteUnknown  from './src/assets/A Complete Unknown.avif'
+import Dune2  from './src/assets/Dune 2.avif'
+import Crazxy  from './src/assets/Crazxy.avif'
+import Mickey17  from './src/assets/Mickey 17.avif'
+import Mufasa  from './src/assets/Mufasa.avif'
+import Sonic3  from './src/assets/Sonic 3.avif'
+
+import NehruPlanetarium  from './src/assets/Nehru Planetarium.avif'
+import BrazilvsIndia  from './src/assets/Brazil vs India.avif'
+import FormulaKarting  from './src/assets/Formula Karting.avif'
+import GunsNRoses  from './src/assets/Guns N Roses.avif'
+import KKRvsRCB  from './src/assets/KKR vs RCB.avif'
+import MasterPeace  from './src/assets/Master Peace.avif'
+import ParkbyManav  from './src/assets/Park by Manav.avif'
+
+export const moviesPics = [Novocaine,Mickey17,ACompleteUnknown,Dune2,Crazxy,Mufasa,Sonic3]
+export const moviesNames = ['Novocaine','Mickey 17','A Complete Unknown','Dune 2','Crazxy','Mufasa','Sonic 3']
+export const moviesGenre = ['Action, Comedy, Thriller','Adventure, Comedy, Sci-Fi','Biography, Drama, Musical','Action, Adventure, Drama','Drama, Thriller','Adventure, Animation, Drama','Action, Adventure, Animation']
+export const shows = [movies, event, plays, sport, activities, concerts]
+export const showsNames = ['Movies', 'Events', 'Plays', 'Sports', 'Activites', 'Concerts']
+export const popularShowsNames = ['Park by Manav', 'Master Peace', 'KKR vs RCB', "Guns N' Roses", 'Formula Karting', 'Brazil vs India', 'Nehru Planetarium']
+export const popularShows = [MasterPeace,ParkbyManav,KKRvsRCB,GunsNRoses,FormulaKarting,BrazilvsIndia,NehruPlanetarium]
+
 export const shoppingItems = [Electronics,Clothing,HomeKitchen,BeautyPersonalCare,HealthWellness,ToysGames,Outdoors,BooksMedia,Automotive,sports]
 export const shoppingItemsNames = ['Electronics','Clothing','Home & Kitchen','Beauty & Care','Health & Wellness','Toys & Games','Outdoors','Books & Media','Automotive','Sports']
 export const bestSellingItemsPrices = ['22000','929','571','800','799','2516','900','450','279','2199']
