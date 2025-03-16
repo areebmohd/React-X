@@ -169,7 +169,7 @@ import sport  from './src/assets/sport.png'
 import activities  from './src/assets/activities.png'
 import concerts  from './src/assets/concerts.avif'
 
-import Novocaine  from './src/assets/Novocaine.avif'
+import flow  from './src/assets/flow.avif'
 import ACompleteUnknown  from './src/assets/A Complete Unknown.avif'
 import Dune2  from './src/assets/Dune 2.avif'
 import Crazxy  from './src/assets/Crazxy.avif'
@@ -182,16 +182,16 @@ import BrazilvsIndia  from './src/assets/Brazil vs India.avif'
 import FormulaKarting  from './src/assets/Formula Karting.avif'
 import GunsNRoses  from './src/assets/Guns N Roses.avif'
 import KKRvsRCB  from './src/assets/KKR vs RCB.avif'
-import MasterPeace  from './src/assets/Master Peace.avif'
+import Comedynights  from './src/assets/Comedy nights.avif'
 import ParkbyManav  from './src/assets/Park by Manav.avif'
 
-export const moviesPics = [Novocaine,Mickey17,ACompleteUnknown,Dune2,Crazxy,Mufasa,Sonic3]
-export const moviesNames = ['Novocaine','Mickey 17','A Complete Unknown','Dune 2','Crazxy','Mufasa','Sonic 3']
-export const moviesGenre = ['Action, Comedy, Thriller','Adventure, Comedy, Sci-Fi','Biography, Drama, Musical','Action, Adventure, Drama','Drama, Thriller','Adventure, Animation, Drama','Action, Adventure, Animation']
+export const moviesPics = [flow,Mickey17,ACompleteUnknown,Dune2,Crazxy,Mufasa,Sonic3]
+export const moviesNames = ['Flow','Mickey 17','A Complete Unknown','Dune 2','Crazxy','Mufasa','Sonic 3']
+export const moviesGenre = ['Adventure, Animation','Adventure, Comedy, Sci-Fi','Biography, Drama, Musical','Action, Adventure, Drama','Drama, Thriller','Adventure, Animation, Drama','Action, Adventure, Animation']
 export const shows = [movies, event, plays, sport, activities, concerts]
 export const showsNames = ['Movies', 'Events', 'Plays', 'Sports', 'Activites', 'Concerts']
-export const popularShowsNames = ['Park by Manav', 'Master Peace', 'KKR vs RCB', "Guns N' Roses", 'Formula Karting', 'Brazil vs India', 'Nehru Planetarium']
-export const popularShows = [MasterPeace,ParkbyManav,KKRvsRCB,GunsNRoses,FormulaKarting,BrazilvsIndia,NehruPlanetarium]
+export const popularShowsNames = ['Comedy Nights', 'Park by Manav', 'KKR vs RCB', "Guns N' Roses", 'Formula Karting', 'Brazil vs India', 'Nehru Planetarium']
+export const popularShows = [Comedynights,ParkbyManav,KKRvsRCB,GunsNRoses,FormulaKarting,BrazilvsIndia,NehruPlanetarium]
 
 export const shoppingItems = [Electronics,Clothing,HomeKitchen,BeautyPersonalCare,HealthWellness,ToysGames,Outdoors,BooksMedia,Automotive,sports]
 export const shoppingItemsNames = ['Electronics','Clothing','Home & Kitchen','Beauty & Care','Health & Wellness','Toys & Games','Outdoors','Books & Media','Automotive','Sports']
