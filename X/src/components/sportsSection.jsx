@@ -6,7 +6,7 @@ function SportsSection() {
     return (
         <div className="content">
             <div className="ongoing">
-                <h2>Ongoing</h2>
+                <h2>Latest</h2>
                 <div className="box">
                     <div className="title">ICC Champions Trophy</div>
                     <div className="teams"><h1>IND</h1><h2>vs</h2><h1>AUS</h1></div>

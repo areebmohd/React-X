@@ -5,7 +5,7 @@ function NewsSection() {
     return (
         <div className="content">
             <div className="latestNews">
-                <h2>Latest News</h2>
+                <h2>Latest</h2>
                 <div className="posts">
                     {newsPictures.map((picture, index) => {
                         return (
@@ -51,7 +51,7 @@ function NewsSection() {
                 )
             })}
             <div className="newsArticles">
-                <h2>News Articles</h2>
+                <h2>Articles</h2>
                 <div className="posts">
                     {newsPictures.map((picture, index) => {
                         return (
