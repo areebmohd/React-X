@@ -129,6 +129,48 @@ import salad from './src/assets/salad.jpg'
 import snacks from './src/assets/snacks.jpg'
 import sandwich from './src/assets/sandwich.jpg'
 
+import Electronics from './src/assets/electronics.jpg'
+import Clothing from './src/assets/clothing.jpg'
+import HomeKitchen from './src/assets/Home & Kitchen.jpg'
+import BeautyPersonalCare from './src/assets/Beauty & Personal Care.jpg'
+import HealthWellness from './src/assets/Health & Wellness.jpg'
+import ToysGames from './src/assets/Toys & Games.jpg'
+import Outdoors from './src/assets/Outdoors.jpg'
+import BooksMedia from './src/assets/Books & Media.jpg'
+import Automotive from './src/assets/Automotive.jpg'
+import sports from './src/assets/sports.jpg'
+
+import LenovoThinkpad from './src/assets/Lenovo Thinkpad.jpg'
+import Nokia105 from './src/assets/Nokia 105.jpg'
+import CetaphilFaceWash from './src/assets/Cetaphil Face Wash.jpg'
+import LymioMenCargo from './src/assets/Lymio Men Cargo.jpg'
+import ScottInternationalTShirt from './src/assets/Scott International T Shirt.jpg'
+import SteelbirdHelmet from './src/assets/Steelbird Helmet.jpg'
+import Centrino3392Shoes from './src/assets/Centrino 3392 Shoes.jpg'
+import AIRSONAL5Slipper from './src/assets/AIRSON AL-5 Slipper.jpg'
+import StorioToyOctopus from './src/assets/Storio Toy Octopus.jpg'
+import PopsugarRemoteControlCar from './src/assets/Popsugar Remote Control Car.jpg'
+
+import SymbolMensShirt from "./src/assets/Symbol Men's Shirt.jpg"
+import SafariTrolleyBags from './src/assets/Safari Trolley Bags.jpg'
+import Carrier1TonAC  from './src/assets/Carrier 1 Ton AC.jpg'
+import AppleWatchSE  from './src/assets/Apple Watch SE.jpg'
+import ASIANShoes  from './src/assets/ASIAN Shoes.jpg'
+import SonyPlayStation5  from './src/assets/Sony PlayStation5 Gaming Console.jpg'
+import DettolSoapBar  from './src/assets/Dettol Skincare Moisturizing Beauty Bathing Soap Bar.jpg'
+import TheManCompanyPerfume  from './src/assets/The Man Company Perfume.jpg'
+import CarlingtonWatch  from './src/assets/Carlington Watch.jpg'
+import BlackMythWukong  from './src/assets/BlackMythWukong.jpg'
+
+export const shoppingItems = [Electronics,Clothing,HomeKitchen,BeautyPersonalCare,HealthWellness,ToysGames,Outdoors,BooksMedia,Automotive,sports]
+export const shoppingItemsNames = ['Electronics','Clothing','Home & Kitchen','Beauty & Care','Health & Wellness','Toys & Games','Outdoors','Books & Media','Automotive','Sports']
+export const bestSellingItemsPrices = ['22000','929','571','800','799','2516','900','450','279','2199']
+export const bestSellingItemsNames = ['Lenovo Thinkpad','Nokia 105','Cetaphil Face Wash','Lymio Men Cargo','Scott T-Shirt','Steelbird Helmet','Centrino Shoes','AIRSON Slipper','Storio Octopus','Popsugar Car']
+export const bestSellingItems = [LenovoThinkpad,Nokia105,CetaphilFaceWash,LymioMenCargo,ScottInternationalTShirt,SteelbirdHelmet,Centrino3392Shoes,AIRSONAL5Slipper,StorioToyOctopus,PopsugarRemoteControlCar]
+export const offerItems = [SymbolMensShirt,SafariTrolleyBags,ASIANShoes,Carrier1TonAC,AppleWatchSE,SonyPlayStation5,DettolSoapBar,TheManCompanyPerfume,CarlingtonWatch,BlackMythWukong]
+export const offerItemsNames = ['Symbol Men Shirt','Safari Trolley Bags','ASIAN Shoes','Carrier 1 Ton AC','Apple Watch SE','Sony PlayStation 5','Dettol Soap Bar','TMC Perfume','Carlington Watch','Black Myth Wukong']
+export const offerItemsPrices = ['2000','1929','1800','22799','12516','33900','450','4279','2199','1111']
+
 export const foodItems = [pizza, cake, burger, fruits, shake, juice, meat, salad, snacks, sandwich, biryani]
 export const foodItemsNames = ['Pizza', 'Cake', 'Burger', 'Fruits', 'Shake', 'Juice', 'Meat', 'Salad', 'Snacks', 'Sandwich','Biryani']
 export const stores = [kfc,McDonalds,NathansFamous,Dennys,PaneraBreads,HoneyBakedHam,Perkins,DickeysBarbecuePit,Dominos,LegalSeaFoods]

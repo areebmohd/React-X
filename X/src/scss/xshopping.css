@@ -1,0 +1,237 @@
+.xshopping {
+    width: 75%;
+    background-color: black;
+    border-left: 1px solid rgba(255, 255, 255, 0.170);
+    position: absolute;
+    top: 0;
+    left: 25%;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.xshopping::-webkit-scrollbar {
+    display: none;
+}
+
+.xshopping {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.xshopping .topBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 40px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(5, 5, 5, 0.820);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    z-index: 10000;
+}
+
+.xshopping .topBar .title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.xshopping .topBar .title svg {
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.xshopping .topBar .title svg:hover {
+    background-color: #33333376;
+    cursor: pointer;
+}
+
+.xshopping .topBar .input {
+    width: 50%;
+    border-radius: 30px;
+    background-color: rgb(22, 24, 29);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.xshopping .topBar .input input {
+    padding: 15px;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+    width: 90%;
+    background-color: transparent;
+    font-size: 14px;
+    font-family: system-ui;
+}
+
+.xshopping .topBar .input input::placeholder {
+    color: rgb(113, 118, 123);
+}
+
+.xshopping .topBar .input svg {
+    fill: rgb(113, 118, 123);
+}
+
+.xshopping .logo img {
+    width: 100%;
+}
+
+.xshopping .main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.xshopping .main h2 {
+    font-family: system-ui;
+    font-weight: lighter;
+    color: white;
+    margin-left: 20px;
+}
+
+.xshopping .main .Items {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    overflow-x: scroll;
+}
+
+.xshopping .main .Items::-webkit-scrollbar {
+    display: none;
+}
+
+.xshopping .main .Items {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.xshopping .main .item {
+    border-radius: 10px;
+    background-color: rgb(22, 24, 29);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.xshopping .main .item:hover {
+    background-color: rgb(32, 35, 39);
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+.xshopping .main .item .image{
+    width: 200px;
+    height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.xshopping .main .item img {
+    height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.xshopping .main .item .shoppingItemsNames {
+    padding-bottom: 15px;
+    padding-top: 10px;
+    font-family: system-ui;
+    text-align: center;
+}
+
+.xshopping .main .item .details {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.xshopping .main .item .details .p1 {
+    font-weight: 600;
+    font-family: system-ui;
+}
+
+.xshopping .main .item .details .p2 {
+    font-size: 14px;
+    font-family: system-ui;
+}
+
+.xshopping .main .item .details .p3 {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 14px;
+    color: rgba(113, 118, 123, 1);
+    padding-top: 3px;
+    font-family: system-ui;
+}
+
+.xshopping .main .item .details .p4{
+    font-family: system-ui;
+    font-weight: bold;
+    color: rgb(16, 160, 60);
+}
+
+.xshopping .main .item .details .rating {
+    background-color: rgb(16, 137, 52);
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 3px;
+}
+
+@media (max-width:1240px) {
+    .xshopping {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-left: none;
+        border-right: none;
+    }
+
+    .xshopping .topBar {
+        padding-right: 20px;
+    }
+
+    .xshopping .topBar .input {
+        width: 10%;
+        border-radius: 50%;
+        background-color: transparent;
+    }
+
+    .xshopping .topBar .input input {
+        display: none;
+    }
+
+    .xshopping .topBar .input svg {
+        height: 22px;
+        fill: white;
+    }
+    .xshopping .main h2{
+        margin-left: 10px;
+    }
+    
+    .xshopping .main .Items{
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 10px;
+    }
+    .xshopping .main .item img{
+        height: 120px;
+    }
+}
