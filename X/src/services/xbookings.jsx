@@ -2,7 +2,7 @@ import '../scss/xbookings.css'
 import { useAppContext } from '../App';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import xbookingslogo from '../assets/xbookingslogo.png';
+import xbookingslogo from '../assets/X Bookings.png';
 import { showsNames, shows, moviesNames, moviesPics, moviesGenre, popularShowsNames, popularShows } from '../../data';
 
 function XBookings() {
