@@ -58,6 +58,10 @@ function XAI2({ setChatPage, chatMessage, setChatMessage }) {
                     <div className='options'>
                         <div className="left">
                             <div>
+                                <svg viewBox="0 0 24 24" aria-hidden="true" height='15px' class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1pexk7n r-1mcorv5"><g><path d="M14 4c-1.66 0-3 1.34-3 3v8c0 .55.45 1 1 1s1-.45 1-1V8h2v7c0 1.66-1.34 3-3 3s-3-1.34-3-3V7c0-2.76 2.24-5 5-5s5 2.24 5 5v8c0 3.87-3.13 7-7 7s-7-3.13-7-7V8h2v7c0 2.76 2.24 5 5 5s5-2.24 5-5V7c0-1.66-1.34-3-3-3z"></path></g></svg>
+                                <p>Attach</p>
+                            </div>
+                            <div>
                                 <svg viewBox="0 0 16 16" aria-hidden="true" height='15px' class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1pexk7n r-1mcorv5"><g><path d="M1.333 8.882C3 14.795 12 13.886 12 9.036c0-2.737-4.038-3.307-4.856-1.921-.616 1.043 2.328.961 1.712 2.004C8.038 10.505 4 9.935 4 7.2c0-5.075 9.667-6.049 10.667-.136" fill="none" stroke="currentColor" stroke-width="1.333"></path></g></svg>
                                 <p>DeepSearch</p>
                             </div>
@@ -67,10 +71,6 @@ function XAI2({ setChatPage, chatMessage, setChatMessage }) {
                             </div>
                         </div>
                         <div className="right">
-                            <div>
-                                <svg viewBox="0 0 24 24" aria-hidden="true" height='15px' class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1pexk7n r-1mcorv5"><g><path d="M14 4c-1.66 0-3 1.34-3 3v8c0 .55.45 1 1 1s1-.45 1-1V8h2v7c0 1.66-1.34 3-3 3s-3-1.34-3-3V7c0-2.76 2.24-5 5-5s5 2.24 5 5v8c0 3.87-3.13 7-7 7s-7-3.13-7-7V8h2v7c0 2.76 2.24 5 5 5s5-2.24 5-5V7c0-1.66-1.34-3-3-3z"></path></g></svg>
-                                <p>Attach</p>
-                            </div>
                             <svg viewBox="0 0 32 32" aria-hidden="true" height='35px' onClick={() => send()} class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-mabqd8 r-1yvhtrz"><g><defs><mask id="4-a"><path d="M0 0h32v32H0z" fill="#fff"></path><path d="M15.25 12.562l-3.78 3.783-1.065-1.06L16 9.69l5.595 5.593-1.065 1.06-3.78-3.782v10.19h-1.5v-10.19z" fill="#000"></path></mask></defs><rect fill="currentColor" height="30" mask="url(#4-a)" rx="15" width="30" x="1" y="1"></rect></g></svg>
                         </div>
                     </div>

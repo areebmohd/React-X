@@ -293,11 +293,11 @@
     }
 
     .xai .topBar {
-        padding-right: 20px;
+        padding-right: 10px;
     }
 
     .xai .topBar .options {
-        gap: 5px;
+        gap: 0;
     }
 
     .xai .topBar .options p {
@@ -313,10 +313,6 @@
     }
 
     .xai .messageBox .options .left {
-        gap: 10px;
-    }
-
-    .xai .messageBox .options .right {
         gap: 10px;
     }
 
