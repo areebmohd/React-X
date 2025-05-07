@@ -23,10 +23,10 @@ function create() {
       let itemDiv = document.createElement("div");
       itemDiv.innerHTML = newbox[i];
       itemDiv.style.padding = "13px";
-      itemDiv.style.width = "fit-content"
+      itemDiv.style.width = "fit-content";
       itemDiv.style.color = "white";
       itemDiv.style.cursor = "pointer";
-      itemDiv.style.borderRadius = "20px"
+      itemDiv.style.borderRadius = "20px";
       itemDiv.addEventListener("mouseover", function(){
         itemDiv.style.backgroundColor = '#33333376';
       })

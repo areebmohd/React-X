@@ -50,7 +50,7 @@
     display: flex;
     gap: 10px;
     padding: 10px;
-    padding-bottom: 0;
+    padding-bottom: 3px;
     overflow-x: scroll;
 }
 
@@ -68,11 +68,21 @@
     padding: 7px;
     padding-left: 15px;
     padding-right: 15px;
-    width: fit-content;
-    border: 1px solid rgba(255, 255, 255, 0.270);
-    border-radius: 20px;
-    font-family: monospace;
+    border: none;
+    background-color: rgb(36, 39, 47);
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 500;
     cursor: pointer;
+}
+
+.homePage .topic:hover{
+    background-color: rgb(55, 55, 66);
+}
+
+.homePage .topic:active{
+    background-color: rgb(6, 30, 99);
+    color: rgb(0, 185, 255);
 }
 
 .topics::-webkit-scrollbar {
