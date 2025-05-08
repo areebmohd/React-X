@@ -77,7 +77,8 @@
 }
 
 .homePage .topic:hover{
-    background-color: rgb(55, 55, 66);
+    background-color: rgb(6, 30, 99);
+    color: rgb(0, 185, 255);
 }
 
 .homePage .topic:active{
