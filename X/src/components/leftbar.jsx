@@ -104,7 +104,7 @@ function Leftbar() {
                 </div>
                 <div className="input">
                 <input type="text" placeholder='Title'/>
-                <input type="text" placeholder='Description'/> 
+                <textarea placeholder='Description' id="autoResizeTextarea"></textarea>
                 </div>
                 <div className="bottom">
                   <div className="b1"><button>Public ▾</button><button>Everyone can reply ▾</button></div>

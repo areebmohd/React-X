@@ -97,8 +97,8 @@
 }
 .leftbar .postBox{
     background-color: black;
-    height: 550px;
-    width: 550px;
+    height: 500px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -131,13 +131,22 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.170);
     padding-bottom: 5px;
 }
+.leftbar .postBox textarea{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: larger;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.170);
+    resize: none;
+    overflow: hidden;
+}
 .leftbar .bottom{
     position: absolute;
     bottom: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 510px;
+    width: 460px;
 }
 .leftbar .bottom .b1{
     display: flex;
@@ -189,5 +198,17 @@
         width: fit-content;
         padding-right: 10%;
         padding-left: 5%;
+    }
+    .leftbar .postBox{
+        height: 100vh;
+        margin-top: 0;
+        border-radius: 0;
+        width: 100vw;
+    }
+    .leftbar .top{
+        margin-bottom: 10px;
+    }
+    .leftbar .bottom{
+        width: 350px;
     }
 }
