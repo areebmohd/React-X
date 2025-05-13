@@ -112,6 +112,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 .leftbar .postBox .top p{
     font-weight: 600;
@@ -204,9 +205,6 @@
         margin-top: 0;
         border-radius: 0;
         width: 100vw;
-    }
-    .leftbar .top{
-        margin-bottom: 10px;
     }
     .leftbar .bottom{
         width: 350px;
