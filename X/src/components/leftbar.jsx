@@ -4,46 +4,11 @@ import { Link } from 'react-router-dom';
 import dp from '../assets/dp.jpg';
 import '../css/leftbar.css';
 import { useAppContext } from '../App';
-
-let newdiv;
-
-function create() {
-  let leftBar = document.querySelector(".leftbar");
-  if (leftBar.contains(newdiv)) {
-    newdiv.remove();
-  } else {
-    newdiv = document.createElement("div");
-    newdiv.style.padding = "20px";
-    newdiv.style.paddingRight = "50px";
-    newdiv.style.borderRadius = "10px";
-    newdiv.style.backgroundColor = "black";
-    newdiv.style.border = "1px solid rgba(255, 255, 255, 0.170)";
-    let newbox = ['Post', 'Article','Spaces','Live Stream'];
-    for (let i = 0; i < newbox.length; i++) {
-      let itemDiv = document.createElement("div");
-      itemDiv.innerHTML = newbox[i];
-      itemDiv.style.padding = "13px";
-      itemDiv.style.width = "fit-content";
-      itemDiv.style.color = "white";
-      itemDiv.style.cursor = "pointer";
-      itemDiv.style.borderRadius = "20px";
-      itemDiv.addEventListener("mouseover", function(){
-        itemDiv.style.backgroundColor = '#33333376';
-      })
-      itemDiv.addEventListener("mouseout", function(){
-        itemDiv.style.backgroundColor = 'black';
-      })
-      newdiv.appendChild(itemDiv);
-    }
-    leftBar.appendChild(newdiv);
-    newdiv.style.position = "absolute";
-    newdiv.style.left = "30%";
-    newdiv.style.top = "400px";
-  }
-}
+import { useState } from "react"
 
 function Leftbar() {
 
+  const [createPost, setCreatePost] = useState(false);
   const {setExplorePage, setHomePage, homePage, explorePage, leftBarRef, profile, setProfile, messages, setMessages, setChatBoxPage, setChatInfoPage, toggleLeftBar, services, setServices, service } = useAppContext();
 
   function home(){
@@ -110,7 +75,7 @@ function Leftbar() {
                 <li><svg viewBox="0 0 24 24" aria-hidden="true" height='2rem' class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-1q142lx r-1kihuf0 r-1472mwg r-di8nfa r-lrsllp" data-testid="icon"><g><path d="M10.54 1.75h2.92l1.57 2.36c.11.17.32.25.53.21l2.53-.59 2.17 2.17-.58 2.54c-.05.2.04.41.21.53l2.36 1.57v2.92l-2.36 1.57c-.17.12-.26.33-.21.53l.58 2.54-2.17 2.17-2.53-.59c-.21-.04-.42.04-.53.21l-1.57 2.36h-2.92l-1.58-2.36c-.11-.17-.32-.25-.52-.21l-2.54.59-2.17-2.17.58-2.54c.05-.2-.03-.41-.21-.53l-2.35-1.57v-2.92L4.1 8.97c.18-.12.26-.33.21-.53L3.73 5.9 5.9 3.73l2.54.59c.2.04.41-.04.52-.21l1.58-2.36zm1.07 2l-.98 1.47C10.05 6.08 9 6.5 7.99 6.27l-1.46-.34-.6.6.33 1.46c.24 1.01-.18 2.07-1.05 2.64l-1.46.98v.78l1.46.98c.87.57 1.29 1.63 1.05 2.64l-.33 1.46.6.6 1.46-.34c1.01-.23 2.06.19 2.64 1.05l.98 1.47h.78l.97-1.47c.58-.86 1.63-1.28 2.65-1.05l1.45.34.61-.6-.34-1.46c-.23-1.01.18-2.07 1.05-2.64l1.47-.98v-.78l-1.47-.98c-.87-.57-1.28-1.63-1.05-2.64l.34-1.46-.61-.6-1.45.34c-1.02.23-2.07-.19-2.65-1.05l-.97-1.47h-.78zM12 10.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5c.82 0 1.5-.67 1.5-1.5s-.68-1.5-1.5-1.5zM8.5 12c0-1.93 1.56-3.5 3.5-3.5 1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5c-1.94 0-3.5-1.57-3.5-3.5z"></path></g></svg><p>Settings</p></li>
             </ul>
             <div className='leftbarBottom'>
-                <button className="createButton" onClick={()=>create()}>Create</button>
+                <button className="createButton" onClick={()=>setCreatePost(true)}>Post</button>
                 <div className="account">
                     <div className="accountLeft">
                         <img src={dp} alt="" />
@@ -124,6 +89,38 @@ function Leftbar() {
                     </div>
                 </div>
             </div>
+            {createPost?<div className="createPost">
+              <div className="postBox">
+                <div className="top">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" onClick={()=>setCreatePost(false)} height='25px'><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                  <p>Drafts</p>
+                </div>
+                <div className="accountLeft">
+                        <img src={dp} alt="" />
+                        <div>
+                            <h4>Ashu</h4>
+                            <p>@ashu</p>
+                        </div>
+                </div>
+                <div className="input">
+                <input type="text" placeholder='Title'/>
+                <input type="text" placeholder='Description'/> 
+                </div>
+                <div className="bottom">
+                  <div className="b1"><button>Public ▾</button><button>Everyone can reply ▾</button></div>
+                  <hr />
+                  <div className="b2">
+                    <div className="svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height='20px'><path d="M0 96C0 60.7 28.7 32 64 32l384 0c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96zM323.8 202.5c-4.5-6.6-11.9-10.5-19.8-10.5s-15.4 3.9-19.8 10.5l-87 127.6L170.7 297c-4.6-5.7-11.5-9-18.7-9s-14.2 3.3-18.7 9l-64 80c-5.8 7.2-6.9 17.1-2.9 25.4s12.4 13.6 21.6 13.6l96 0 32 0 208 0c8.9 0 17.1-4.9 21.2-12.8s3.6-17.4-1.4-24.7l-120-176zM112 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height='20px'><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM164.1 325.5C182 346.2 212.6 368 256 368s74-21.8 91.9-42.5c5.8-6.7 15.9-7.4 22.6-1.6s7.4 15.9 1.6 22.6C349.8 372.1 311.1 400 256 400s-93.8-27.9-116.1-53.5c-5.8-6.7-5.1-16.8 1.6-22.6s16.8-5.1 22.6 1.6zM144.4 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm156.4 25.6c-5.3 7.1-15.3 8.5-22.4 3.2s-8.5-15.3-3.2-22.4c30.4-40.5 91.2-40.5 121.6 0c5.3 7.1 3.9 17.1-3.2 22.4s-17.1 3.9-22.4-3.2c-17.6-23.5-52.8-23.5-70.4 0z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height='20px'><path d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zm64 192c17.7 0 32 14.3 32 32l0 96c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-96c0-17.7 14.3-32 32-32zm64-64c0-17.7 14.3-32 32-32s32 14.3 32 32l0 192c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-192zM320 288c17.7 0 32 14.3 32 32l0 32c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-32c0-17.7 14.3-32 32-32z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height='20px'><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                    </div>
+                    <button>Post</button>
+                  </div>
+                </div>
+              </div>
+            </div>:''}
         </div>
     )
 }
