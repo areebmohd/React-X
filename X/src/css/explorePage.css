@@ -235,6 +235,10 @@
     margin-bottom: 7px;
 }
 
+.explorePage .postContent p{
+    color: white;
+}
+
 .explorePage .post .media {
     overflow: hidden;
     border-radius: 20px;
@@ -593,11 +597,11 @@
     }
 
     .explorePage .post .account img {
-        height: 15px;
+        height: 20px;
     }
 
     .explorePage .post .account div {
-        font-size: small;
+        font-size: 14px;
     }
 
     .explorePage .post .account svg {
@@ -606,6 +610,10 @@
 
     .explorePage .post .account p {
         font-size: 13px;
+    }
+
+    .explorePage .postContent p{
+        font-size: 14px;
     }
 
     .explorePage .person {
