@@ -1,4 +1,5 @@
 import '../css/explorePage.css'
+import { valueConverter } from '../../data'
 import { trendPictures1, trendPostCount1, trendTitle1, trendPictures2, trendPostCount2, trendTitle2, trendingPostPeople, newsPictures, newsContent, newsNames, newsUserNames, newsPics } from '../../data';
 
 function NewsSection() {
@@ -26,7 +27,7 @@ function NewsSection() {
                                             <path d="M22.2275 17.1971V43.6465L43.0304 30.4218L22.2275 17.1971Z" fill="white"></path>
                                         </g>
                                     </svg>
-                                    {index < 3 ? <div className="livestamp">LIVE</div> : ''}
+                                    {index < 3 ? <div className="livestamp">{valueConverter(Math.floor(Math.random() * 100000))} LIVE</div> : ''}
                                 </div>
                             </div>
                         )

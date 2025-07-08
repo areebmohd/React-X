@@ -435,9 +435,12 @@
     bottom: 0;
     margin: 10px;
     font-size: small;
-    background-color: red;
-    border-radius: 10px;
-    padding: 5px;
+    font-weight: 600;
+    background-color: rgba(251, 1, 51, 0.9);
+    border-radius: 5px;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
     cursor: pointer;
 }
 
