@@ -247,7 +247,7 @@ export const sportsTeams = ['New Zealand vs India', 'South Africa vs Afghanistan
 
 export const newsPictures = [jd, sky, tcn, xn, xdn]
 export const newsNames = ['JD Vance','Sky News','Tucker Carlson','News','X Daily News']
-export const newsUserNames = ['@JDVanceNewsX • live','@SkyNews • live','@TuckerCNews • live','@XNews • 1h','@xDaily • 2h']
+export const newsUserNames = ['@JDVanceNewsX • 30m','@SkyNews • 15m','@TuckerCNews • 41m','@XNews • 1h','@xDaily • 2h']
 export const newsPics = [jdpic,dt,tcnpic,xnpic,xdnpic2]
 export const newsContent = ["Thomas Matthew Crooks was a part of criminal network?",
     "Trump paused military aid to Ukraine just days after his row with Zelenskyy",
